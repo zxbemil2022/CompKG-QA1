@@ -1,0 +1,29 @@
+{
+"generation_mode": "semantic_curated",
+  "node_count": 1126,
+  "edge_count": 1155,
+  "subject_count": 4,
+  "subjects": [
+    "操作系统",
+    "数据结构",
+    "计算机组成原理",
+    "计算机网络"
+  ],
+  "allowed_relations": [
+    "APPLIES_TO",
+    "BELONGS_TO",
+    "CAUSE",
+    "DEPENDS_ON",
+    "EQUIVALENT",
+    "HAS_COMPLEXITY",
+    "HAS_METHOD",
+    "HAS_PROPERTY",
+    "HAS_SUB",
+    "MEASURED_BY",
+    "OPTIMIZED_BY",
+    "PREREQUISITE",
+    "SOLVES",
+    "USED_IN",
+    "VERIFIED_BY"
+  ]
+}

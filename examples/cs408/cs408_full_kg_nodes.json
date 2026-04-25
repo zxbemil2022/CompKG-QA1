@@ -1,0 +1,7884 @@
+[
+  {
+    "id": "N00001",
+    "name": "AVL树",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00002",
+    "name": "AVL树优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00003",
+    "name": "AVL树典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00004",
+    "name": "AVL树判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00005",
+    "name": "AVL树应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00006",
+    "name": "AVL树易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00007",
+    "name": "AVL树核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00008",
+    "name": "AVL树考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00009",
+     "name": "AVL树高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00010",
+    "name": "B+树",
+    "subject": "操作系统|数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00011",
+    "name": "CIDR",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00012",
+    "name": "CIDR优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00013",
+    "name": "CIDR典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00014",
+    "name": "CIDR判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00015",
+    "name": "CIDR应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00016",
+    "name": "CIDR易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00017",
+    "name": "CIDR核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00018",
+    "name": "CIDR考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00019",
+    "name": "CIDR高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00020",
+    "name": "Cache",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00021",
+    "name": "Cache优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00022",
+    "name": "Cache典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00023",
+    "name": "Cache判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00024",
+    "name": "Cache应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00025",
+    "name": "Cache易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00026",
+    "name": "Cache核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00027",
+    "name": "Cache考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00028",
+    "name": "Cache高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00029",
+    "name": "DMA",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00030",
+    "name": "DMA优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00031",
+    "name": "DMA典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00032",
+    "name": "DMA判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00033",
+    "name": "DMA应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00034",
+    "name": "DMA易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00035",
+    "name": "DMA核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00036",
+    "name": "DMA考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00037",
+    "name": "DMA高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00038",
+    "name": "DNS",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00039",
+    "name": "DNS优化策略",
+    "subject": "计算机网络",
+    "chapter": "传输层",
+    "type": "Method"
+  },
+  {
+    "id": "N00040",
+    "name": "DNS典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00041",
+    "name": "DNS判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00042",
+    "name": "DNS应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00043",
+    "name": "DNS易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00044",
+    "name": "DNS核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00045",
+    "name": "DNS考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00046",
+    "name": "DNS高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00047",
+    "name": "Dijkstra算法",
+    "subject": "数据结构|计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00048",
+    "name": "Dijkstra算法优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00049",
+    "name": "Dijkstra算法典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00050",
+    "name": "Dijkstra算法判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00051",
+    "name": "Dijkstra算法应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00052",
+    "name": "Dijkstra算法易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00053",
+    "name": "Dijkstra算法核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00054",
+    "name": "Dijkstra算法考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00055",
+    "name": "Dijkstra算法高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00056",
+    "name": "FIFO",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00057",
+    "name": "FIFO优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00058",
+    "name": "FIFO典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00059",
+    "name": "FIFO判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00060",
+    "name": "FIFO应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00061",
+    "name": "FIFO易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00062",
+    "name": "FIFO核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00063",
+    "name": "FIFO考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00064",
+    "name": "FIFO高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00065",
+    "name": "FTP",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00066",
+    "name": "FTP优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00067",
+    "name": "FTP典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00068",
+    "name": "FTP判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00069",
+    "name": "FTP应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00070",
+    "name": "FTP易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00071",
+    "name": "FTP核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00072",
+    "name": "FTP考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00073",
+    "name": "FTP高频考点",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00074",
+    "name": "HTTP",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00075",
+    "name": "HTTP优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00076",
+    "name": "HTTP典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00077",
+    "name": "HTTP判定条件",
+    "subject": "计算机网络",
+    "chapter": "应用层",
+    "type": "Property"
+  },
+  {
+    "id": "N00078",
+    "name": "HTTP应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00079",
+    "name": "HTTP易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00080",
+    "name": "HTTP核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00081",
+    "name": "HTTP考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00082",
+    "name": "HTTP高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00083",
+    "name": "IEEE754",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00084",
+    "name": "IEEE754优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00085",
+    "name": "IEEE754典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00086",
+    "name": "IEEE754判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00087",
+    "name": "IEEE754应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00088",
+    "name": "IEEE754易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00089",
+    "name": "IEEE754核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00090",
+    "name": "IEEE754考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00091",
+    "name": "IEEE754高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00092",
+    "name": "IP",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00093",
+    "name": "IPv4",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00094",
+    "name": "IPv4优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00095",
+    "name": "IPv4典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00096",
+    "name": "IPv4判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00097",
+    "name": "IPv4应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00098",
+    "name": "IPv4易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00099",
+    "name": "IPv4核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00100",
+    "name": "IPv4考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00101",
+    "name": "IPv4高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00102",
+    "name": "IPv6",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00103",
+    "name": "IPv6优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00104",
+    "name": "IPv6典型题型",
+    "subject": "计算机网络",
+    "chapter": "数据表示",
+    "type": "Example"
+  },
+  {
+    "id": "N00105",
+    "name": "IPv6判定条件",
+    "subject": "计算机网络",
+    "chapter": "文件系统",
+    "type": "Property"
+  },
+  {
+    "id": "N00106",
+    "name": "IPv6应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00107",
+    "name": "IPv6易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00108",
+    "name": "IPv6核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00109",
+    "name": "IPv6考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00110",
+    "name": "IPv6高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00111",
+    "name": "IP优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00112",
+    "name": "IP典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00113",
+    "name": "IP判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00114",
+    "name": "IP应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00115",
+    "name": "IP易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00116",
+    "name": "IP核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00117",
+    "name": "IP考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00118",
+    "name": "IP高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00119",
+    "name": "Kruskal算法",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00120",
+    "name": "Kruskal算法优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00121",
+    "name": "Kruskal算法典型题型",
+    "subject": "数据结构",
+    "chapter": "流水线",
+    "type": "Example"
+  },
+  {
+    "id": "N00122",
+    "name": "Kruskal算法判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00123",
+    "name": "Kruskal算法应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00124",
+    "name": "Kruskal算法易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00125",
+    "name": "Kruskal算法核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00126",
+    "name": "Kruskal算法考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00127",
+    "name": "Kruskal算法高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00128",
+    "name": "LRU",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00129",
+    "name": "LRU优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00130",
+    "name": "LRU典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00131",
+    "name": "LRU判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00132",
+    "name": "LRU应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00133",
+    "name": "LRU易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00134",
+    "name": "LRU核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00135",
+    "name": "LRU考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00136",
+    "name": "LRU高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00137",
+    "name": "O(nlogn)",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00138",
+    "name": "OSI",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00139",
+    "name": "OSPF",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00140",
+    "name": "OSPF优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00141",
+    "name": "OSPF典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00142",
+    "name": "OSPF判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00143",
+    "name": "OSPF应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00144",
+    "name": "OSPF易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00145",
+    "name": "OSPF核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00146",
+    "name": "OSPF考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00147",
+    "name": "OSPF高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00148",
+    "name": "Prim算法",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00149",
+    "name": "Prim算法优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00150",
+    "name": "Prim算法典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00151",
+    "name": "Prim算法判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00152",
+    "name": "Prim算法应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00153",
+    "name": "Prim算法易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00154",
+    "name": "Prim算法核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00155",
+    "name": "Prim算法考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00156",
+    "name": "Prim算法高频考点权重",
+    "subject": "数据结构",
+    "chapter": "进程线程",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00157",
+    "name": "RIP",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00158",
+    "name": "RIP优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00159",
+    "name": "RIP典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00160",
+    "name": "RIP判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00161",
+    "name": "RIP应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00162",
+    "name": "RIP易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00163",
+    "name": "RIP核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00164",
+    "name": "RIP考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00165",
+    "name": "RIP高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00166",
+    "name": "SCAN",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00167",
+    "name": "SCAN优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00168",
+    "name": "SCAN典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00169",
+    "name": "SCAN判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00170",
+    "name": "SCAN应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00171",
+    "name": "SCAN易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00172",
+    "name": "SCAN核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00173",
+    "name": "SCAN考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00174",
+    "name": "SCAN高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00175",
+    "name": "SMTP",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00176",
+    "name": "SMTP优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00177",
+    "name": "SMTP典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00178",
+    "name": "SMTP判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00179",
+    "name": "SMTP应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00180",
+    "name": "SMTP易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00181",
+    "name": "SMTP核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00182",
+    "name": "SMTP考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00183",
+    "name": "SMTP高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00184",
+    "name": "SSTF",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00185",
+    "name": "SSTF优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00186",
+    "name": "SSTF典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00187",
+    "name": "SSTF判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00188",
+    "name": "SSTF应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00189",
+    "name": "SSTF易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00190",
+    "name": "SSTF核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00191",
+    "name": "SSTF考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00192",
+    "name": "SSTF高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00193",
+    "name": "TCP",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00194",
+    "name": "TCP优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00195",
+    "name": "TCP典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00196",
+    "name": "TCP判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00197",
+    "name": "TCP应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00198",
+    "name": "TCP易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00199",
+    "name": "TCP核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00200",
+    "name": "TCP考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00201",
+    "name": "TCP高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00202",
+    "name": "UDP",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00203",
+    "name": "UDP优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00204",
+    "name": "UDP典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00205",
+    "name": "UDP判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00206",
+    "name": "UDP应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00207",
+    "name": "UDP易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00208",
+    "name": "UDP核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00209",
+    "name": "UDP考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00210",
+    "name": "UDP高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00211",
+    "name": "inode",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00212",
+    "name": "inode优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00213",
+    "name": "inode典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00214",
+    "name": "inode判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00215",
+    "name": "inode应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00216",
+    "name": "inode易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00217",
+    "name": "inode核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00218",
+    "name": "inode考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00219",
+    "name": "inode高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00220",
+    "name": "一致性",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00221",
+    "name": "三次握手",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00222",
+    "name": "三次握手优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00223",
+    "name": "三次握手典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00224",
+    "name": "三次握手判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00225",
+    "name": "三次握手应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00226",
+    "name": "三次握手易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00227",
+    "name": "三次握手核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00228",
+    "name": "三次握手考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00229",
+    "name": "三次握手高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00230",
+    "name": "上下文切换",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00231",
+    "name": "上下文切换优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00232",
+    "name": "上下文切换典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00233",
+    "name": "上下文切换判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00234",
+    "name": "上下文切换应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00235",
+    "name": "上下文切换开销",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00236",
+    "name": "上下文切换易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00237",
+    "name": "上下文切换核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00238",
+    "name": "上下文切换考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00239",
+    "name": "上下文切换高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00240",
+    "name": "不可剥夺",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00241",
+    "name": "不可剥夺优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00242",
+    "name": "不可剥夺典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00243",
+    "name": "不可剥夺判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00244",
+    "name": "不可剥夺应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00245",
+    "name": "不可剥夺易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00246",
+    "name": "不可剥夺核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00247",
+    "name": "不可剥夺考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00248",
+    "name": "不可剥夺高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00249",
+    "name": "中断",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00250",
+    "name": "中断系统",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00251",
+    "name": "主存",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00252",
+    "name": "主存优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00253",
+    "name": "主存典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00254",
+    "name": "主存判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00255",
+    "name": "主存应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00256",
+    "name": "主存易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00257",
+    "name": "主存核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00258",
+    "name": "主存考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00259",
+    "name": "主存高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00260",
+    "name": "二叉树",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00261",
+    "name": "二叉树优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00262",
+    "name": "二叉树典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00263",
+    "name": "二叉树判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00264",
+    "name": "二叉树应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00265",
+    "name": "二叉树易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00266",
+    "name": "二叉树核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00267",
+    "name": "二叉树考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00268",
+    "name": "二叉树高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00269",
+    "name": "互斥",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00270",
+    "name": "互斥优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00271",
+    "name": "互斥典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00272",
+    "name": "互斥判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00273",
+    "name": "互斥应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00274",
+    "name": "互斥易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00275",
+    "name": "互斥核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00276",
+    "name": "互斥考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00277",
+    "name": "互斥锁",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00278",
+    "name": "互斥锁优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00279",
+    "name": "互斥锁典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00280",
+    "name": "互斥锁判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00281",
+    "name": "互斥锁应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00282",
+    "name": "互斥锁易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00283",
+    "name": "互斥锁核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00284",
+    "name": "互斥锁考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00285",
+    "name": "互斥锁高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00286",
+    "name": "互斥高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00287",
+    "name": "传输层",
+    "subject": "计算机网络",
+    "chapter": "传输层",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00288",
+    "name": "传输层常见失分点",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00289",
+    "name": "传输层高效复习策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00290",
+    "name": "传输层高频考点清单",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00291",
+    "name": "信号量",
+    "subject": "操作系统|数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00292",
+    "name": "信号量优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00293",
+    "name": "信号量典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00294",
+    "name": "信号量判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00295",
+    "name": "信号量应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00296",
+    "name": "信号量易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00297",
+    "name": "信号量核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00298",
+    "name": "信号量考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00299",
+    "name": "信号量高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00300",
+    "name": "先进先出",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00301",
+    "name": "内存保护",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00302",
+    "name": "内存保护优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00303",
+    "name": "内存保护典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00304",
+    "name": "内存保护判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00305",
+    "name": "内存保护应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00306",
+    "name": "内存保护易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00307",
+    "name": "内存保护核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00308",
+    "name": "内存保护考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00309",
+    "name": "内存保护高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00310",
+    "name": "内存管理",
+    "subject": "操作系统",
+    "chapter": "内存管理",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00311",
+    "name": "内存管理常见失分点",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00312",
+    "name": "内存管理高效复习策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00313",
+    "name": "内存管理高频考点清单",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00314",
+    "name": "内核态",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00315",
+    "name": "内核态优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00316",
+    "name": "内核态典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00317",
+    "name": "内核态判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00318",
+    "name": "内核态应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00319",
+    "name": "内核态易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00320",
+    "name": "内核态核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00321",
+    "name": "内核态考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00322",
+    "name": "内核态高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00323",
+    "name": "写回策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00324",
+    "name": "写回策略优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00325",
+    "name": "写回策略典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00326",
+    "name": "写回策略判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00327",
+    "name": "写回策略应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00328",
+    "name": "写回策略易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00329",
+    "name": "写回策略核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00330",
+    "name": "写回策略考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00331",
+    "name": "写回策略高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00332",
+    "name": "写直达策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00333",
+    "name": "写直达策略优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00334",
+    "name": "写直达策略典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00335",
+    "name": "写直达策略判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00336",
+    "name": "写直达策略应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00337",
+    "name": "写直达策略易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00338",
+    "name": "写直达策略核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00339",
+    "name": "写直达策略考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00340",
+    "name": "写直达策略高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00341",
+    "name": "分支预测",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00342",
+    "name": "分支预测优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00343",
+    "name": "分支预测典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00344",
+    "name": "分支预测判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00345",
+    "name": "分支预测应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00346",
+    "name": "分支预测易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00347",
+    "name": "分支预测核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00348",
+    "name": "分支预测考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00349",
+    "name": "分支预测高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00350",
+    "name": "分治",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00351",
+    "name": "分治优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00352",
+    "name": "分治典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00353",
+    "name": "分治判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00354",
+    "name": "分治应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00355",
+    "name": "分治易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00356",
+    "name": "分治核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00357",
+    "name": "分治考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00358",
+    "name": "分治高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00359",
+    "name": "分片",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00360",
+    "name": "加速比",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00361",
+    "name": "取指",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00362",
+    "name": "取指优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00363",
+    "name": "取指典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00364",
+    "name": "取指判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00365",
+    "name": "取指应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00366",
+    "name": "取指易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00367",
+    "name": "取指核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00368",
+    "name": "取指考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00369",
+    "name": "取指高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00370",
+    "name": "可靠传输",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00371",
+    "name": "后进先出",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00372",
+    "name": "吞吐率",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00373",
+    "name": "命中率",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00374",
+    "name": "哈希表",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00375",
+    "name": "哈希表优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00376",
+    "name": "哈希表典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00377",
+    "name": "哈希表判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00378",
+    "name": "哈希表应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00379",
+    "name": "哈希表易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00380",
+    "name": "哈希表核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00381",
+    "name": "哈希表考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00382",
+    "name": "哈希表高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00383",
+    "name": "四次挥手",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00384",
+    "name": "四次挥手优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00385",
+    "name": "四次挥手典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00386",
+    "name": "四次挥手判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00387",
+    "name": "四次挥手应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00388",
+    "name": "四次挥手易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00389",
+    "name": "四次挥手核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00390",
+    "name": "四次挥手考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00391",
+    "name": "四次挥手高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00392",
+    "name": "图",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00393",
+    "name": "图优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00394",
+    "name": "图典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00395",
+    "name": "图判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00396",
+    "name": "图应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00397",
+    "name": "图易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00398",
+    "name": "图核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00399",
+    "name": "图考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00400",
+    "name": "图高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00401",
+    "name": "地址总线",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00402",
+    "name": "地址总线优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00403",
+    "name": "地址总线典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00404",
+    "name": "地址总线判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00405",
+    "name": "地址总线应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00406",
+    "name": "地址总线易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00407",
+    "name": "地址总线核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00408",
+    "name": "地址总线考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00409",
+    "name": "地址总线高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00410",
+    "name": "域名解析",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00411",
+    "name": "域名解析优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00412",
+    "name": "域名解析典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00413",
+    "name": "域名解析判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00414",
+    "name": "域名解析应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00415",
+    "name": "域名解析易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00416",
+    "name": "域名解析核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00417",
+    "name": "域名解析考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00418",
+    "name": "域名解析高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00419",
+    "name": "堆排序",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00420",
+    "name": "堆排序优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00421",
+    "name": "堆排序典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00422",
+    "name": "堆排序判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00423",
+    "name": "堆排序应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00424",
+    "name": "堆排序易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00425",
+    "name": "堆排序核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00426",
+    "name": "堆排序考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00427",
+    "name": "堆排序高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00428",
+    "name": "堆调整",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00429",
+    "name": "堆调整优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00430",
+    "name": "堆调整典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00431",
+    "name": "堆调整判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00432",
+    "name": "堆调整应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00433",
+    "name": "堆调整易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00434",
+    "name": "堆调整核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00435",
+    "name": "堆调整考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00436",
+    "name": "堆调整高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00437",
+    "name": "头插法",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00438",
+    "name": "头插法优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00439",
+    "name": "头插法典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00440",
+    "name": "头插法判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00441",
+    "name": "头插法应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00442",
+    "name": "头插法易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00443",
+    "name": "头插法核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00444",
+    "name": "头插法考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00445",
+    "name": "头插法高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00446",
+    "name": "套接字",
+    "subject": "操作系统|计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00447",
+    "name": "字长",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00448",
+    "name": "字长优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00449",
+    "name": "字长典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00450",
+    "name": "字长判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00451",
+    "name": "字长应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00452",
+    "name": "字长易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00453",
+    "name": "字长核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00454",
+    "name": "字长考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00455",
+    "name": "字长高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00456",
+    "name": "存储系统",
+    "subject": "计算机组成原理",
+    "chapter": "存储系统",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00457",
+    "name": "存储系统常见失分点",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00458",
+    "name": "存储系统高效复习策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00459",
+    "name": "存储系统高频考点清单",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00460",
+    "name": "完全二叉树",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00461",
+    "name": "完全二叉树优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00462",
+    "name": "完全二叉树典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00463",
+    "name": "完全二叉树判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00464",
+    "name": "完全二叉树应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00465",
+    "name": "完全二叉树易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00466",
+    "name": "完全二叉树核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00467",
+    "name": "完全二叉树考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00468",
+    "name": "完全二叉树高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00469",
+    "name": "寻址",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00470",
+    "name": "寻址方式",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00471",
+    "name": "寻址方式优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00472",
+    "name": "寻址方式典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00473",
+    "name": "寻址方式判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00474",
+    "name": "寻址方式应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00475",
+    "name": "寻址方式易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00476",
+    "name": "寻址方式核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00477",
+    "name": "寻址方式考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00478",
+    "name": "寻址方式高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00479",
+    "name": "尾插法",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00480",
+    "name": "尾插法优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00481",
+    "name": "尾插法典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00482",
+    "name": "尾插法判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00483",
+    "name": "尾插法应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00484",
+    "name": "尾插法易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00485",
+    "name": "尾插法核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00486",
+    "name": "尾插法考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00487",
+    "name": "尾插法高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00488",
+    "name": "局部性原理",
+    "subject": "操作系统|计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00489",
+    "name": "局部性原理优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00490",
+    "name": "局部性原理典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00491",
+    "name": "局部性原理判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00492",
+    "name": "局部性原理应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00493",
+    "name": "局部性原理易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00494",
+    "name": "局部性原理核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00495",
+    "name": "局部性原理考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00496",
+    "name": "局部性原理高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00497",
+    "name": "带宽",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00498",
+    "name": "平衡二叉树",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00499",
+    "name": "平衡二叉树优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00500",
+    "name": "平衡二叉树典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00501",
+    "name": "平衡二叉树判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00502",
+    "name": "平衡二叉树应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00503",
+    "name": "平衡二叉树易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00504",
+    "name": "平衡二叉树核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00505",
+    "name": "平衡二叉树考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00506",
+    "name": "平衡二叉树高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00507",
+    "name": "并发性",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00508",
+    "name": "并发控制",
+    "subject": "操作系统|数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00509",
+    "name": "广度优先搜索",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00510",
+    "name": "广度优先搜索优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00511",
+    "name": "广度优先搜索典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00512",
+    "name": "广度优先搜索判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00513",
+    "name": "广度优先搜索应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00514",
+    "name": "广度优先搜索易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00515",
+    "name": "广度优先搜索核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00516",
+    "name": "广度优先搜索考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00517",
+    "name": "广度优先搜索高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00518",
+    "name": "应用层",
+    "subject": "计算机网络",
+    "chapter": "应用层",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00519",
+    "name": "应用层常见失分点",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00520",
+    "name": "应用层语义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00521",
+    "name": "应用层高效复习策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00522",
+    "name": "应用层高频考点清单",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00523",
+    "name": "归并排序",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00524",
+    "name": "归并排序优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00525",
+    "name": "归并排序典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00526",
+    "name": "归并排序判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00527",
+    "name": "归并排序应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00528",
+    "name": "归并排序易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00529",
+    "name": "归并排序核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00530",
+    "name": "归并排序考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00531",
+    "name": "归并排序高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00532",
+    "name": "循环等待",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00533",
+    "name": "循环等待优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00534",
+    "name": "循环等待典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00535",
+    "name": "循环等待判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00536",
+    "name": "循环等待应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00537",
+    "name": "循环等待易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00538",
+    "name": "循环等待核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00539",
+    "name": "循环等待考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00540",
+    "name": "循环等待高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00541",
+    "name": "循环队列",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00542",
+    "name": "循环队列优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00543",
+    "name": "循环队列典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00544",
+    "name": "循环队列判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00545",
+    "name": "循环队列应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00546",
+    "name": "循环队列易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00547",
+    "name": "循环队列核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00548",
+    "name": "循环队列考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00549",
+    "name": "循环队列高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00550",
+    "name": "微程序",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00551",
+    "name": "微程序优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00552",
+    "name": "微程序典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00553",
+    "name": "微程序判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00554",
+    "name": "微程序应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00555",
+    "name": "微程序易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00556",
+    "name": "微程序核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00557",
+    "name": "微程序考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00558",
+    "name": "微程序高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00559",
+    "name": "快速排序",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00560",
+    "name": "快速排序优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00561",
+    "name": "快速排序典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00562",
+    "name": "快速排序判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00563",
+    "name": "快速排序应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00564",
+    "name": "快速排序易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00565",
+    "name": "快速排序核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00566",
+    "name": "快速排序考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00567",
+    "name": "快速排序高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00568",
+    "name": "总线",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00569",
+    "name": "总线优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00570",
+    "name": "总线典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00571",
+    "name": "总线判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00572",
+    "name": "总线协议",
+    "subject": "操作系统|计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00573",
+    "name": "总线协议优化策略",
+    "subject": "操作系统|计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00574",
+    "name": "总线协议典型题型",
+    "subject": "操作系统|计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00575",
+    "name": "总线协议判定条件",
+    "subject": "操作系统|计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00576",
+    "name": "总线协议应用边界",
+    "subject": "操作系统|计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00577",
+    "name": "总线协议易错陷阱",
+    "subject": "操作系统|计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00578",
+    "name": "总线协议核心定义",
+    "subject": "操作系统|计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00579",
+    "name": "总线协议考研真题场景",
+    "subject": "操作系统|计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00580",
+    "name": "总线协议高频考点权重",
+    "subject": "操作系统|计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00581",
+    "name": "总线应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00582",
+    "name": "总线易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00583",
+    "name": "总线核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00584",
+    "name": "总线考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00585",
+    "name": "总线高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00586",
+    "name": "慢启动",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00587",
+    "name": "慢启动优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00588",
+    "name": "慢启动典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00589",
+    "name": "慢启动判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00590",
+    "name": "慢启动应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00591",
+    "name": "慢启动易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00592",
+    "name": "慢启动核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00593",
+    "name": "慢启动考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00594",
+    "name": "慢启动高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00595",
+    "name": "执行",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00596",
+    "name": "执行优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00597",
+    "name": "执行典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00598",
+    "name": "执行判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00599",
+    "name": "执行应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00600",
+    "name": "执行易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00601",
+    "name": "执行核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00602",
+    "name": "执行考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00603",
+    "name": "执行高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00604",
+    "name": "拥塞控制",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00605",
+    "name": "拥塞控制优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00606",
+    "name": "拥塞控制典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00607",
+    "name": "拥塞控制判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00608",
+    "name": "拥塞控制应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00609",
+    "name": "拥塞控制易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00610",
+    "name": "拥塞控制核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00611",
+    "name": "拥塞控制考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00612",
+    "name": "拥塞控制高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00613",
+    "name": "拥塞避免",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00614",
+    "name": "拥塞避免优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00615",
+    "name": "拥塞避免典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00616",
+    "name": "拥塞避免判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00617",
+    "name": "拥塞避免应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00618",
+    "name": "拥塞避免易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00619",
+    "name": "拥塞避免核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00620",
+    "name": "拥塞避免考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00621",
+    "name": "拥塞避免高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00622",
+    "name": "持久性",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00623",
+    "name": "指令兼容性",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00624",
+    "name": "指令周期",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00625",
+    "name": "指令周期优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00626",
+    "name": "指令周期典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00627",
+    "name": "指令周期判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00628",
+    "name": "指令周期应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00629",
+    "name": "指令周期易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00630",
+    "name": "指令周期核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00631",
+    "name": "指令周期考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00632",
+    "name": "指令周期高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00633",
+    "name": "指令并行性",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00634",
+    "name": "指令系统",
+    "subject": "计算机组成原理",
+    "chapter": "指令系统",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00635",
+    "name": "指令系统常见失分点",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00636",
+    "name": "指令系统高效复习策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00637",
+    "name": "指令系统高频考点清单",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00638",
+    "name": "指令级并行",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00639",
+    "name": "指令级并行优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00640",
+    "name": "指令级并行典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00641",
+    "name": "指令级并行判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00642",
+    "name": "指令级并行应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00643",
+    "name": "指令级并行易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00644",
+    "name": "指令级并行核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00645",
+    "name": "指令级并行考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00646",
+    "name": "指令级并行高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00647",
+    "name": "控制器",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00648",
+    "name": "控制器优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00649",
+    "name": "控制器典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00650",
+    "name": "控制器判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00651",
+    "name": "控制器应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00652",
+    "name": "控制器易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00653",
+    "name": "控制器核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00654",
+    "name": "控制器考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00655",
+    "name": "控制器高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00656",
+    "name": "控制相关",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00657",
+    "name": "控制相关优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00658",
+    "name": "控制相关典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00659",
+    "name": "控制相关判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00660",
+    "name": "控制相关应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00661",
+    "name": "控制相关易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00662",
+    "name": "控制相关核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00663",
+    "name": "控制相关考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00664",
+    "name": "控制相关高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00665",
+    "name": "操作系统",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Course"
+  },
+  {
+    "id": "N00666",
+    "name": "散列函数",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00667",
+    "name": "散列函数优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00668",
+    "name": "散列函数典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00669",
+    "name": "散列函数判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00670",
+    "name": "散列函数应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00671",
+    "name": "散列函数易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00672",
+    "name": "散列函数核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00673",
+    "name": "散列函数考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00674",
+    "name": "散列函数设计",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00675",
+    "name": "散列函数设计优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00676",
+    "name": "散列函数设计典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00677",
+    "name": "散列函数设计判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00678",
+    "name": "散列函数设计应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00679",
+    "name": "散列函数设计易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00680",
+    "name": "散列函数设计核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00681",
+    "name": "散列函数设计考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00682",
+    "name": "散列函数设计高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00683",
+    "name": "散列函数高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00684",
+    "name": "数据总线",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00685",
+    "name": "数据总线优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00686",
+    "name": "数据总线典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00687",
+    "name": "数据总线判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00688",
+    "name": "数据总线应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00689",
+    "name": "数据总线易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00690",
+    "name": "数据总线核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00691",
+    "name": "数据总线考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00692",
+    "name": "数据总线高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00693",
+    "name": "数据相关",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00694",
+    "name": "数据相关优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00695",
+    "name": "数据相关典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00696",
+    "name": "数据相关判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00697",
+    "name": "数据相关应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00698",
+    "name": "数据相关易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00699",
+    "name": "数据相关核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00700",
+    "name": "数据相关考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00701",
+    "name": "数据相关高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00702",
+    "name": "数据结构",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Course"
+  },
+  {
+    "id": "N00703",
+    "name": "数据表示",
+    "subject": "计算机组成原理",
+    "chapter": "数据表示",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00704",
+    "name": "数据表示常见失分点",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00705",
+    "name": "数据表示高效复习策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00706",
+    "name": "数据表示高频考点清单",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00707",
+    "name": "文件系统",
+    "subject": "操作系统",
+    "chapter": "文件系统",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00708",
+    "name": "文件系统优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00709",
+    "name": "文件系统典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00710",
+    "name": "文件系统判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00711",
+    "name": "文件系统常见失分点",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00712",
+    "name": "文件系统应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00713",
+    "name": "文件系统易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00714",
+    "name": "文件系统核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00715",
+    "name": "文件系统索引",
+    "subject": "操作系统|数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00716",
+    "name": "文件系统考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00717",
+    "name": "文件系统高效复习策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00718",
+    "name": "文件系统高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00719",
+    "name": "文件系统高频考点清单",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00720",
+    "name": "旁路转发",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00721",
+    "name": "旁路转发优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00722",
+    "name": "旁路转发典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00723",
+    "name": "旁路转发判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00724",
+    "name": "旁路转发应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00725",
+    "name": "旁路转发易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00726",
+    "name": "旁路转发核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00727",
+    "name": "旁路转发考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00728",
+    "name": "旁路转发高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00729",
+    "name": "旋转",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00730",
+    "name": "旋转优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00731",
+    "name": "旋转典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00732",
+    "name": "旋转判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00733",
+    "name": "旋转应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00734",
+    "name": "旋转易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00735",
+    "name": "旋转核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00736",
+    "name": "旋转考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00737",
+    "name": "旋转高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00738",
+    "name": "无状态协议",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00739",
+    "name": "无环性",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00740",
+    "name": "时钟算法",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00741",
+    "name": "时钟算法优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00742",
+    "name": "时钟算法典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00743",
+    "name": "时钟算法判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00744",
+    "name": "时钟算法应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00745",
+    "name": "时钟算法易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00746",
+    "name": "时钟算法核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00747",
+    "name": "时钟算法考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00748",
+    "name": "时钟算法高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00749",
+    "name": "时间复杂度",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00750",
+    "name": "暂停气泡",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00751",
+    "name": "暂停气泡优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00752",
+    "name": "暂停气泡典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00753",
+    "name": "暂停气泡判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00754",
+    "name": "暂停气泡应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00755",
+    "name": "暂停气泡易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00756",
+    "name": "暂停气泡核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00757",
+    "name": "暂停气泡考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00758",
+    "name": "暂停气泡高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00759",
+    "name": "最小生成树",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00760",
+    "name": "最小生成树优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00761",
+    "name": "最小生成树典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00762",
+    "name": "最小生成树判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00763",
+    "name": "最小生成树应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00764",
+    "name": "最小生成树易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00765",
+    "name": "最小生成树核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00766",
+    "name": "最小生成树考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00767",
+    "name": "最小生成树高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00768",
+    "name": "最短路径",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00769",
+    "name": "最短路径优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00770",
+    "name": "最短路径典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00771",
+    "name": "最短路径判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00772",
+    "name": "最短路径应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00773",
+    "name": "最短路径易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00774",
+    "name": "最短路径核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00775",
+    "name": "最短路径考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00776",
+    "name": "最短路径高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00777",
+    "name": "有符号数表示",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00778",
+    "name": "查找排序",
+    "subject": "数据结构",
+    "chapter": "查找排序",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00779",
+    "name": "查找排序常见失分点",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00780",
+    "name": "查找排序高效复习策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00781",
+    "name": "查找排序高频考点清单",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00782",
+    "name": "栈",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00783",
+    "name": "栈优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00784",
+    "name": "栈典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00785",
+    "name": "栈判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00786",
+    "name": "栈应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00787",
+    "name": "栈易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00788",
+    "name": "栈核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00789",
+    "name": "栈考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00790",
+    "name": "栈高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00791",
+    "name": "树与图",
+    "subject": "数据结构",
+    "chapter": "树与图",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00792",
+    "name": "树与图常见失分点",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00793",
+    "name": "树与图高效复习策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00794",
+    "name": "树与图高频考点清单",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00795",
+    "name": "死锁",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00796",
+    "name": "死锁优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00797",
+    "name": "死锁典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00798",
+    "name": "死锁判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00799",
+    "name": "死锁应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00800",
+    "name": "死锁易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00801",
+    "name": "死锁核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00802",
+    "name": "死锁考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00803",
+    "name": "死锁高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00804",
+    "name": "流水线",
+    "subject": "计算机组成原理",
+    "chapter": "流水线",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00805",
+    "name": "流水线冲突",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00806",
+    "name": "流水线冲突优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00807",
+    "name": "流水线冲突典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00808",
+    "name": "流水线冲突判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00809",
+    "name": "流水线冲突应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00810",
+    "name": "流水线冲突易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00811",
+    "name": "流水线冲突核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00812",
+    "name": "流水线冲突考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00813",
+    "name": "流水线冲突高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00814",
+    "name": "流水线常见失分点",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00815",
+    "name": "流水线高效复习策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00816",
+    "name": "流水线高频考点清单",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00817",
+    "name": "流量控制",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00818",
+    "name": "流量控制优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00819",
+    "name": "流量控制典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00820",
+    "name": "流量控制判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00821",
+    "name": "流量控制应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00822",
+    "name": "流量控制易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00823",
+    "name": "流量控制核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00824",
+    "name": "流量控制考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00825",
+    "name": "流量控制高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00826",
+    "name": "浮点数",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00827",
+    "name": "浮点数优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00828",
+    "name": "浮点数典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00829",
+    "name": "浮点数判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00830",
+    "name": "浮点数应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00831",
+    "name": "浮点数易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00832",
+    "name": "浮点数核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00833",
+    "name": "浮点数考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00834",
+    "name": "浮点数高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00835",
+    "name": "深度优先搜索",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00836",
+    "name": "深度优先搜索优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00837",
+    "name": "深度优先搜索典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00838",
+    "name": "深度优先搜索判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00839",
+    "name": "深度优先搜索应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00840",
+    "name": "深度优先搜索易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00841",
+    "name": "深度优先搜索核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00842",
+    "name": "深度优先搜索考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00843",
+    "name": "深度优先搜索高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00844",
+    "name": "滑动窗口",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00845",
+    "name": "滑动窗口优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00846",
+    "name": "滑动窗口典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00847",
+    "name": "滑动窗口判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00848",
+    "name": "滑动窗口应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00849",
+    "name": "滑动窗口易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00850",
+    "name": "滑动窗口核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00851",
+    "name": "滑动窗口考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00852",
+    "name": "滑动窗口高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00853",
+    "name": "满二叉树",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00854",
+    "name": "满二叉树优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00855",
+    "name": "满二叉树典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00856",
+    "name": "满二叉树判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00857",
+    "name": "满二叉树应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00858",
+    "name": "满二叉树易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00859",
+    "name": "满二叉树核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00860",
+    "name": "满二叉树考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00861",
+    "name": "满二叉树高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00862",
+    "name": "目录结构",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00863",
+    "name": "目录结构优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00864",
+    "name": "目录结构典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00865",
+    "name": "目录结构判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00866",
+    "name": "目录结构应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00867",
+    "name": "目录结构易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00868",
+    "name": "目录结构核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00869",
+    "name": "目录结构考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00870",
+    "name": "目录结构高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00871",
+    "name": "磁盘调度",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00872",
+    "name": "磁盘调度优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00873",
+    "name": "磁盘调度典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00874",
+    "name": "磁盘调度判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00875",
+    "name": "磁盘调度应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00876",
+    "name": "磁盘调度易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00877",
+    "name": "磁盘调度核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00878",
+    "name": "磁盘调度考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00879",
+    "name": "磁盘调度高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00880",
+    "name": "稳定性",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00881",
+    "name": "精度",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00882",
+    "name": "系统调用",
+    "subject": "操作系统|计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00883",
+    "name": "系统调用优化策略",
+    "subject": "操作系统|计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00884",
+    "name": "系统调用典型题型",
+    "subject": "操作系统|计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00885",
+    "name": "系统调用判定条件",
+    "subject": "操作系统|计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00886",
+    "name": "系统调用应用边界",
+    "subject": "操作系统|计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00887",
+    "name": "系统调用易错陷阱",
+    "subject": "操作系统|计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00888",
+    "name": "系统调用核心定义",
+    "subject": "操作系统|计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00889",
+    "name": "系统调用考研真题场景",
+    "subject": "操作系统|计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00890",
+    "name": "系统调用高频考点权重",
+    "subject": "操作系统|计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00891",
+    "name": "索引分配",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00892",
+    "name": "索引分配优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00893",
+    "name": "索引分配典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00894",
+    "name": "索引分配判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00895",
+    "name": "索引分配应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00896",
+    "name": "索引分配易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00897",
+    "name": "索引分配核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00898",
+    "name": "索引分配考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00899",
+    "name": "索引分配高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00900",
+    "name": "红黑树",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00901",
+    "name": "红黑树优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00902",
+    "name": "红黑树典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00903",
+    "name": "红黑树判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00904",
+    "name": "红黑树应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00905",
+    "name": "红黑树易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00906",
+    "name": "红黑树核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00907",
+    "name": "红黑树考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00908",
+    "name": "红黑树高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00909",
+    "name": "线性表",
+    "subject": "数据结构",
+    "chapter": "线性表",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00910",
+    "name": "线性表常见失分点",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00911",
+    "name": "线性表高效复习策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00912",
+    "name": "线性表高频考点清单",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00913",
+    "name": "线程",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00914",
+    "name": "线程优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00915",
+    "name": "线程典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00916",
+    "name": "线程判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00917",
+    "name": "线程应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00918",
+    "name": "线程易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00919",
+    "name": "线程核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00920",
+    "name": "线程考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00921",
+    "name": "线程高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00922",
+    "name": "结构相关",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00923",
+    "name": "结构相关优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00924",
+    "name": "结构相关典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00925",
+    "name": "结构相关判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00926",
+    "name": "结构相关应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00927",
+    "name": "结构相关易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00928",
+    "name": "结构相关核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00929",
+    "name": "结构相关考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00930",
+    "name": "结构相关高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00931",
+    "name": "缓存一致性",
+    "subject": "操作系统|计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00932",
+    "name": "缺页率",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00933",
+    "name": "网络层",
+    "subject": "计算机网络",
+    "chapter": "网络层",
+    "type": "Chapter"
+  },
+  {
+    "id": "N00934",
+    "name": "网络层常见失分点",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00935",
+    "name": "网络层高效复习策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00936",
+    "name": "网络层高频考点清单",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00937",
+    "name": "舍入策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00938",
+    "name": "舍入策略优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00939",
+    "name": "舍入策略典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00940",
+    "name": "舍入策略判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00941",
+    "name": "舍入策略应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00942",
+    "name": "舍入策略易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00943",
+    "name": "舍入策略核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00944",
+    "name": "舍入策略考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00945",
+    "name": "舍入策略高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00946",
+    "name": "虚拟内存",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00947",
+    "name": "虚拟内存优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00948",
+    "name": "虚拟内存典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00949",
+    "name": "虚拟内存判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00950",
+    "name": "虚拟内存应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00951",
+    "name": "虚拟内存易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00952",
+    "name": "虚拟内存核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00953",
+    "name": "虚拟内存考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00954",
+    "name": "虚拟内存高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00955",
+    "name": "补码",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00956",
+    "name": "补码优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00957",
+    "name": "补码典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00958",
+    "name": "补码判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00959",
+    "name": "补码应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00960",
+    "name": "补码易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00961",
+    "name": "补码核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00962",
+    "name": "补码考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00963",
+    "name": "补码高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00964",
+    "name": "表示范围",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00965",
+    "name": "规格化",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00966",
+    "name": "规格化优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00967",
+    "name": "规格化典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00968",
+    "name": "规格化判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00969",
+    "name": "规格化应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00970",
+    "name": "规格化易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00971",
+    "name": "规格化核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00972",
+    "name": "规格化考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00973",
+    "name": "规格化高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00974",
+    "name": "计算机系统",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00975",
+    "name": "计算机组成原理",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Course"
+  },
+  {
+    "id": "N00976",
+    "name": "计算机网络",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Course"
+  },
+  {
+    "id": "N00977",
+    "name": "译码",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00978",
+    "name": "译码优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00979",
+    "name": "译码典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00980",
+    "name": "译码判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00981",
+    "name": "译码应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00982",
+    "name": "译码易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00983",
+    "name": "译码核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00984",
+    "name": "译码考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00985",
+    "name": "译码高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00986",
+    "name": "请求响应模型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00987",
+    "name": "请求响应模型优化策略",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00988",
+    "name": "请求响应模型典型题型",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00989",
+    "name": "请求响应模型判定条件",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00990",
+    "name": "请求响应模型应用边界",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00991",
+    "name": "请求响应模型易错陷阱",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00992",
+    "name": "请求响应模型核心定义",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00993",
+    "name": "请求响应模型考研真题场景",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00994",
+    "name": "请求响应模型高频考点权重",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00995",
+    "name": "请求并保持",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N00996",
+    "name": "请求并保持优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N00997",
+    "name": "请求并保持典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N00998",
+    "name": "请求并保持判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N00999",
+    "name": "请求并保持应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01000",
+    "name": "请求并保持易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01001",
+    "name": "请求并保持核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01002",
+    "name": "请求并保持考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01003",
+    "name": "请求并保持高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01004",
+    "name": "路由选择",
+    "subject": "数据结构|计算机网络",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01005",
+    "name": "路由选择优化策略",
+    "subject": "数据结构|计算机网络",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01006",
+    "name": "路由选择典型题型",
+    "subject": "数据结构|计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01007",
+    "name": "路由选择判定条件",
+    "subject": "数据结构|计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01008",
+    "name": "路由选择应用边界",
+    "subject": "数据结构|计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01009",
+    "name": "路由选择易错陷阱",
+    "subject": "数据结构|计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01010",
+    "name": "路由选择核心定义",
+    "subject": "数据结构|计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01011",
+    "name": "路由选择考研真题场景",
+    "subject": "数据结构|计算机网络",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01012",
+    "name": "路由选择高频考点权重",
+    "subject": "数据结构|计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01013",
+    "name": "运算器",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01014",
+    "name": "运算器优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01015",
+    "name": "运算器典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01016",
+    "name": "运算器判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01017",
+    "name": "运算器应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01018",
+    "name": "运算器易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01019",
+    "name": "运算器核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01020",
+    "name": "运算器考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01021",
+    "name": "运算器高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01022",
+    "name": "进程",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01023",
+    "name": "进程优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01024",
+    "name": "进程典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01025",
+    "name": "进程判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01026",
+    "name": "进程同步",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01027",
+    "name": "进程同步优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01028",
+    "name": "进程同步典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01029",
+    "name": "进程同步判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01030",
+    "name": "进程同步应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01031",
+    "name": "进程同步易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01032",
+    "name": "进程同步核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01033",
+    "name": "进程同步考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01034",
+    "name": "进程同步高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01035",
+    "name": "进程应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01036",
+    "name": "进程易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01037",
+    "name": "进程核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01038",
+    "name": "进程线程",
+    "subject": "操作系统",
+    "chapter": "进程线程",
+    "type": "Chapter"
+  },
+  {
+    "id": "N01039",
+    "name": "进程线程常见失分点",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01040",
+    "name": "进程线程高效复习策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01041",
+    "name": "进程线程高频考点清单",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01042",
+    "name": "进程考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01043",
+    "name": "进程调度",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01044",
+    "name": "进程调度优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01045",
+    "name": "进程调度典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01046",
+    "name": "进程调度判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01047",
+    "name": "进程调度应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01048",
+    "name": "进程调度易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01049",
+    "name": "进程调度核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01050",
+    "name": "进程调度考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01051",
+    "name": "进程调度高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01052",
+    "name": "进程高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01053",
+    "name": "连通性",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01054",
+    "name": "银行家算法",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01055",
+    "name": "银行家算法优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01056",
+    "name": "银行家算法典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01057",
+    "name": "银行家算法判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01058",
+    "name": "银行家算法应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01059",
+    "name": "银行家算法易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01060",
+    "name": "银行家算法核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01061",
+    "name": "银行家算法考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01062",
+    "name": "银行家算法高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01063",
+    "name": "链表",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01064",
+    "name": "链表优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01065",
+    "name": "链表典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01066",
+    "name": "链表判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01067",
+    "name": "链表应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01068",
+    "name": "链表易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01069",
+    "name": "链表核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01070",
+    "name": "链表考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01071",
+    "name": "链表高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01072",
+    "name": "队列",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01073",
+    "name": "队列优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01074",
+    "name": "队列典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01075",
+    "name": "队列判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01076",
+    "name": "队列应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01077",
+    "name": "队列易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01078",
+    "name": "队列核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01079",
+    "name": "队列考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01080",
+    "name": "队列高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01081",
+    "name": "面向连接",
+    "subject": "计算机网络",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01082",
+    "name": "页表",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01083",
+    "name": "页表优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01084",
+    "name": "页表典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01085",
+    "name": "页表判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01086",
+    "name": "页表应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01087",
+    "name": "页表易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01088",
+    "name": "页表核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01089",
+    "name": "页表考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01090",
+    "name": "页表高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01091",
+    "name": "页面置换",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01092",
+    "name": "页面置换优化策略",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01093",
+    "name": "页面置换典型题型",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01094",
+    "name": "页面置换判定条件",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01095",
+    "name": "页面置换应用边界",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01096",
+    "name": "页面置换易错陷阱",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01097",
+    "name": "页面置换核心定义",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01098",
+    "name": "页面置换考研真题场景",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01099",
+    "name": "页面置换高频考点权重",
+    "subject": "操作系统",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01100",
+    "name": "顺序表",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01101",
+    "name": "顺序表优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01102",
+    "name": "顺序表典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01103",
+    "name": "顺序表判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01104",
+    "name": "顺序表应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01105",
+    "name": "顺序表易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01106",
+    "name": "顺序表核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01107",
+    "name": "顺序表考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01108",
+    "name": "顺序表高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01109",
+    "name": "顺序遍历",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01110",
+    "name": "顺序遍历优化策略",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01111",
+    "name": "顺序遍历典型题型",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01112",
+    "name": "顺序遍历判定条件",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01113",
+    "name": "顺序遍历应用边界",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01114",
+    "name": "顺序遍历易错陷阱",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01115",
+    "name": "顺序遍历核心定义",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01116",
+    "name": "顺序遍历考研真题场景",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01117",
+    "name": "顺序遍历高频考点权重",
+    "subject": "数据结构",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01118",
+    "name": "预取",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Concept"
+  },
+  {
+    "id": "N01119",
+    "name": "预取优化策略",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Method"
+  },
+  {
+    "id": "N01120",
+    "name": "预取典型题型",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01121",
+    "name": "预取判定条件",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01122",
+    "name": "预取应用边界",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01123",
+    "name": "预取易错陷阱",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01124",
+    "name": "预取核心定义",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  },
+  {
+    "id": "N01125",
+    "name": "预取考研真题场景",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Example"
+  },
+  {
+    "id": "N01126",
+    "name": "预取高频考点权重",
+    "subject": "计算机组成原理",
+    "chapter": "",
+    "type": "Property"
+  }
+]

@@ -1,0 +1,9242 @@
+[
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "数据结构",
+    "t_type": "Course",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "数据结构",
+    "t_type": "Course",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "数据结构",
+    "t_type": "Course",
+    "subject": "数据结构"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "操作系统",
+    "t_type": "Course",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "操作系统",
+    "t_type": "Course",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "操作系统",
+    "t_type": "Course",
+    "subject": "操作系统"
+  },
+  {
+    "h": "应用层",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "计算机网络",
+    "t_type": "Course",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "计算机网络",
+    "t_type": "Course",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "计算机网络",
+    "t_type": "Course",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "指令系统",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "计算机组成原理",
+    "t_type": "Course",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "计算机组成原理",
+    "t_type": "Course",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "计算机组成原理",
+    "t_type": "Course",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "顺序表",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "链表",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "栈",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "后进先出",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "队列",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "先进先出",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "二叉树",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "满二叉树",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "二叉树",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "完全二叉树",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "平衡二叉树",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "旋转",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "红黑树",
+    "h_type": "Concept",
+    "r": "EQUIVALENT",
+    "t": "AVL树",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "哈希表",
+    "h_type": "Concept",
+    "r": "PREREQUISITE",
+    "t": "散列函数",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "快速排序",
+    "h_type": "Concept",
+    "r": "HAS_COMPLEXITY",
+    "t": "O(nlogn)",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆排序",
+    "h_type": "Concept",
+    "r": "PREREQUISITE",
+    "t": "完全二叉树",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "图",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "深度优先搜索",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "图",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "广度优先搜索",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最小生成树",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "Prim算法",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最小生成树",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "Kruskal算法",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "进程",
+    "h_type": "Concept",
+    "r": "EQUIVALENT",
+    "t": "线程",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程同步",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "互斥锁",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程同步",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "信号量",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "死锁",
+    "h_type": "Concept",
+    "r": "PREREQUISITE",
+    "t": "互斥",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "死锁",
+    "h_type": "Concept",
+    "r": "PREREQUISITE",
+    "t": "请求并保持",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "死锁",
+    "h_type": "Concept",
+    "r": "PREREQUISITE",
+    "t": "不可剥夺",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "死锁",
+    "h_type": "Concept",
+    "r": "PREREQUISITE",
+    "t": "循环等待",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "虚拟内存",
+    "h_type": "Concept",
+    "r": "PREREQUISITE",
+    "t": "页表",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页面置换",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "LRU",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页面置换",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "FIFO",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "磁盘调度",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "SCAN",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "磁盘调度",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "SSTF",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "HAS_METHOD",
+    "t": "索引分配",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "系统调用",
+    "h_type": "Concept",
+    "r": "CAUSE",
+    "t": "内核态",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "中断",
+    "h_type": "Concept",
+    "r": "CAUSE",
+    "t": "上下文切换",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "OSI",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "应用层",
+    "t_type": "Chapter",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "OSI",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "传输层",
+    "t_type": "Chapter",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "OSI",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "网络层",
+    "t_type": "Chapter",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "TCP",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "三次握手",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "TCP",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "四次挥手",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+     "h": "TCP",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "滑动窗口",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "UDP",
+    "h_type": "Concept",
+    "r": "EQUIVALENT",
+    "t": "TCP",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IP",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "IPv4",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IP",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "IPv6",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "路由选择",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "RIP",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "路由选择",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "OSPF",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "HTTP",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "TCP",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "DNS",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "UDP",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞控制",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "慢启动",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞控制",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "拥塞避免",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "计算机系统",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "运算器",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "计算机系统",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "控制器",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "Cache",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "主存",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "Cache",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "局部性原理",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令周期",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "取指",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令周期",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "执行",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "PREREQUISITE",
+    "t": "指令级并行",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线冲突",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "数据相关",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线冲突",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "控制相关",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "总线",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "地址总线",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "总线",
+    "h_type": "Concept",
+    "r": "HAS_SUB",
+    "t": "数据总线",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "中断系统",
+    "h_type": "Concept",
+    "r": "EQUIVALENT",
+    "t": "DMA",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "补码",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "有符号数表示",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "浮点数",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "IEEE754",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "Dijkstra算法",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "路由选择",
+    "t_type": "Example",
+    "subject": "数据结构|计算机网络"
+  },
+  {
+    "h": "并发控制",
+    "h_type": "Concept",
+    "r": "PREREQUISITE",
+    "t": "信号量",
+    "t_type": "Concept",
+    "subject": "操作系统|数据结构"
+  },
+  {
+    "h": "缓存一致性",
+    "h_type": "Concept",
+    "r": "PREREQUISITE",
+    "t": "总线协议",
+    "t_type": "Concept",
+    "subject": "计算机组成原理|操作系统"
+  },
+  {
+    "h": "套接字",
+    "h_type": "Concept",
+    "r": "PREREQUISITE",
+    "t": "系统调用",
+    "t_type": "Concept",
+    "subject": "计算机网络|操作系统"
+  },
+  {
+    "h": "B+树",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "文件系统索引",
+    "t_type": "Example",
+    "subject": "数据结构|操作系统"
+  },
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "栈",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "队列",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "循环队列",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "头插法",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "尾插法",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "顺序遍历",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "先进先出",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "后进先出",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "二叉树",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "平衡二叉树",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "红黑树",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "图",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "最小生成树",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "最短路径",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "深度优先搜索",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "广度优先搜索",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "Prim算法",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "Kruskal算法",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "Dijkstra算法",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "连通性",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "无环性",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "哈希表",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "快速排序",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "归并排序",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "堆排序",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "分治",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "堆调整",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "散列函数设计",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "稳定性",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "时间复杂度",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "进程",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "线程",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "进程同步",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "进程调度",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "死锁",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "互斥锁",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "信号量",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "银行家算法",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "上下文切换开销",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "并发性",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "虚拟内存",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "页表",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "页面置换",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "内存保护",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "LRU",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "FIFO",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "时钟算法",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "局部性原理",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "缺页率",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "文件系统",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "目录结构",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "磁盘调度",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "inode",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "索引分配",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "SCAN",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "SSTF",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "一致性",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "持久性",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "应用层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "HTTP",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "应用层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "DNS",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "应用层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "SMTP",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "应用层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "FTP",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "应用层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "域名解析",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "应用层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "请求响应模型",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "应用层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "无状态协议",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "应用层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "应用层语义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "TCP",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "UDP",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "拥塞控制",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "流量控制",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "三次握手",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "四次挥手",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "滑动窗口",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "慢启动",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "可靠传输",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "面向连接",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "IP",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "IPv4",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "IPv6",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "路由选择",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "RIP",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "OSPF",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "CIDR",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "分片",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "寻址",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "数据表示",
+    "h_type": "Chapter",
+    "r": "BELONGS_TO",
+    "t": "计算机组成原理",
+    "t_type": "Course",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据表示",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "补码",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据表示",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "浮点数",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据表示",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "IEEE754",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据表示",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "字长",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据表示",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "规格化",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据表示",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "舍入策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据表示",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "表示范围",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据表示",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "精度",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "指令周期",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "寻址方式",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "控制器",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "微程序",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "取指",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "译码",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "执行",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "指令并行性",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "指令兼容性",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "总线",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "DMA",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "写回策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "写直达策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "预取",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "命中率",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "带宽",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "流水线冲突",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "结构相关",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "数据相关",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "控制相关",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "旁路转发",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "分支预测",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "暂停气泡",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "吞吐率",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "加速比",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "AVL树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "AVL树核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "AVL树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "AVL树判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "AVL树",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "AVL树考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "AVL树考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "AVL树典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "AVL树",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "AVL树高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "AVL树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "AVL树易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "AVL树",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "AVL树应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "AVL树",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "AVL树优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "CIDR",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "CIDR核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "CIDR",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "CIDR判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "CIDR",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "CIDR考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "CIDR考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "CIDR典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "CIDR",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "CIDR高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "CIDR",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "CIDR易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "CIDR",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "CIDR应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "CIDR",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "CIDR优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "Cache",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Cache核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "Cache",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Cache判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "Cache",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "Cache考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "Cache考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "Cache典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "Cache",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "Cache高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "Cache",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Cache易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "Cache",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "Cache应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "Cache",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "Cache优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "DMA",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "DMA核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "DMA",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "DMA判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "DMA",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "DMA考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "DMA考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "DMA典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "DMA",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "DMA高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "DMA",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "DMA易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "DMA",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "DMA应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "DMA",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "DMA优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "DNS",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "DNS核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "DNS",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "DNS判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "DNS",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "DNS考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "DNS考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "DNS典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "DNS",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "DNS高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "DNS",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "DNS易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "DNS",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "DNS应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "DNS",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "DNS优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "Dijkstra算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Dijkstra算法核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Dijkstra算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Dijkstra算法判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Dijkstra算法",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "Dijkstra算法考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Dijkstra算法考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "Dijkstra算法典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Dijkstra算法",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "Dijkstra算法高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Dijkstra算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Dijkstra算法易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Dijkstra算法",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "Dijkstra算法应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Dijkstra算法",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "Dijkstra算法优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "FIFO",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "FIFO核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "FIFO",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "FIFO判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "FIFO",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "FIFO考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "FIFO考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "FIFO典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "FIFO",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "FIFO高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "FIFO",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "FIFO易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "FIFO",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "FIFO应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "FIFO",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "FIFO优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "FTP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "FTP核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "FTP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "FTP判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "FTP",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "FTP考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "FTP考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "FTP典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "FTP",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "FTP高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "FTP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "FTP易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "FTP",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "FTP应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "FTP",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "FTP优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "HTTP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "HTTP核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "HTTP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "HTTP判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "HTTP",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "HTTP考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "HTTP考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "HTTP典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "HTTP",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "HTTP高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "HTTP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "HTTP易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "HTTP",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "HTTP应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "HTTP",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "HTTP优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IEEE754",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IEEE754核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "IEEE754",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IEEE754判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "IEEE754",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "IEEE754考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "IEEE754考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "IEEE754典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "IEEE754",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "IEEE754高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "IEEE754",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IEEE754易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "IEEE754",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "IEEE754应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "IEEE754",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "IEEE754优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "IP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IP核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IP判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IP",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "IP考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IP考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "IP典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IP",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "IP高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IP易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IP",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "IP应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IP",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "IP优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv4",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IPv4核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv4",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IPv4判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv4",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "IPv4考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv4考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "IPv4典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv4",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "IPv4高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv4",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IPv4易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv4",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "IPv4应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv4",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "IPv4优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv6",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IPv6核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv6",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IPv6判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv6",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "IPv6考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv6考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "IPv6典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv6",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "IPv6高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv6",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "IPv6易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv6",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "IPv6应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "IPv6",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "IPv6优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "Kruskal算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Kruskal算法核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Kruskal算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Kruskal算法判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Kruskal算法",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "Kruskal算法考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Kruskal算法考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "Kruskal算法典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Kruskal算法",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "Kruskal算法高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Kruskal算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Kruskal算法易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Kruskal算法",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "Kruskal算法应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Kruskal算法",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "Kruskal算法优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "LRU",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "LRU核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "LRU",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "LRU判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "LRU",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "LRU考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "LRU考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "LRU典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "LRU",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "LRU高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "LRU",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "LRU易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "LRU",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "LRU应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "LRU",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "LRU优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "OSPF",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "OSPF核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "OSPF",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "OSPF判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "OSPF",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "OSPF考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "OSPF考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "OSPF典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "OSPF",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "OSPF高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "OSPF",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "OSPF易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "OSPF",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "OSPF应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "OSPF",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "OSPF优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "Prim算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Prim算法核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Prim算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Prim算法判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Prim算法",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "Prim算法考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Prim算法考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "Prim算法典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Prim算法",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "Prim算法高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Prim算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "Prim算法易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Prim算法",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "Prim算法应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "Prim算法",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "Prim算法优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "RIP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "RIP核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "RIP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "RIP判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "RIP",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "RIP考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "RIP考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "RIP典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "RIP",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "RIP高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "RIP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "RIP易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "RIP",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "RIP应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "RIP",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "RIP优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "SCAN",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "SCAN核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SCAN",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "SCAN判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SCAN",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "SCAN考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SCAN考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "SCAN典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SCAN",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "SCAN高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SCAN",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "SCAN易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SCAN",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "SCAN应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SCAN",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "SCAN优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SMTP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "SMTP核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "SMTP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "SMTP判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "SMTP",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "SMTP考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "SMTP考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "SMTP典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "SMTP",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "SMTP高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "SMTP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "SMTP易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "SMTP",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "SMTP应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "SMTP",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "SMTP优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "SSTF",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "SSTF核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SSTF",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "SSTF判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SSTF",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "SSTF考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SSTF考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "SSTF典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SSTF",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "SSTF高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SSTF",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "SSTF易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SSTF",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "SSTF应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "SSTF",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "SSTF优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "TCP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "TCP核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "TCP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "TCP判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "TCP",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "TCP考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "TCP考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "TCP典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "TCP",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "TCP高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "TCP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "TCP易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "TCP",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "TCP应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "TCP",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "TCP优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "UDP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "UDP核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "UDP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "UDP判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "UDP",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "UDP考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "UDP考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "UDP典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "UDP",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "UDP高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "UDP",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "UDP易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "UDP",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "UDP应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "UDP",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "UDP优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "inode",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "inode核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "inode",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "inode判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "inode",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "inode考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "inode考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "inode典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "inode",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "inode高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "inode",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "inode易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "inode",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "inode应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "inode",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "inode优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "三次握手",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "三次握手核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "三次握手",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "三次握手判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "三次握手",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "三次握手考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "三次握手考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "三次握手典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "三次握手",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "三次握手高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "三次握手",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "三次握手易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "三次握手",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "三次握手应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "三次握手",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "三次握手优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "上下文切换",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "上下文切换核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "上下文切换",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "上下文切换判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "上下文切换",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "上下文切换考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "上下文切换考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "上下文切换典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "上下文切换",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "上下文切换高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "上下文切换",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "上下文切换易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "上下文切换",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "上下文切换应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "上下文切换",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "上下文切换优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "不可剥夺",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "不可剥夺核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "不可剥夺",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "不可剥夺判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "不可剥夺",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "不可剥夺考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "不可剥夺考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "不可剥夺典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "不可剥夺",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "不可剥夺高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "不可剥夺",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "不可剥夺易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "不可剥夺",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "不可剥夺应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "不可剥夺",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "不可剥夺优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "主存",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "主存核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "主存",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "主存判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "主存",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "主存考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "主存考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "主存典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "主存",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "主存高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "主存",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "主存易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "主存",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "主存应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "主存",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "主存优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "二叉树核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "二叉树判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "二叉树",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "二叉树考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "二叉树考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "二叉树典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "二叉树",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "二叉树高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "二叉树易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "二叉树",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "二叉树应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "二叉树",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "二叉树优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "互斥",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "互斥核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "互斥判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "互斥考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "互斥典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "互斥高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "互斥易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "互斥应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "互斥优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥锁",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "互斥锁核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥锁",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "互斥锁判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥锁",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "互斥锁考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥锁考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "互斥锁典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥锁",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "互斥锁高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥锁",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "互斥锁易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥锁",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "互斥锁应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "互斥锁",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "互斥锁优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "信号量",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "信号量核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "信号量",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "信号量判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "信号量",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "信号量考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "信号量考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "信号量典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "信号量",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "信号量高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "信号量",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "信号量易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "信号量",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "信号量应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "信号量",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "信号量优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存保护",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "内存保护核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存保护",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "内存保护判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存保护",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "内存保护考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存保护考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "内存保护典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存保护",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "内存保护高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存保护",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "内存保护易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存保护",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "内存保护应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存保护",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "内存保护优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内核态",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "内核态核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内核态",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "内核态判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内核态",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "内核态考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内核态考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "内核态典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内核态",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "内核态高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内核态",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "内核态易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内核态",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "内核态应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内核态",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "内核态优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "写回策略",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "写回策略核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写回策略",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "写回策略判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写回策略",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "写回策略考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写回策略考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "写回策略典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写回策略",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "写回策略高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写回策略",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "写回策略易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写回策略",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "写回策略应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写回策略",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "写回策略优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写直达策略",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "写直达策略核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写直达策略",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "写直达策略判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写直达策略",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "写直达策略考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写直达策略考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "写直达策略典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写直达策略",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "写直达策略高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写直达策略",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "写直达策略易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写直达策略",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "写直达策略应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "写直达策略",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "写直达策略优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "分支预测",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "分支预测核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "分支预测",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "分支预测判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "分支预测",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "分支预测考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "分支预测考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "分支预测典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "分支预测",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "分支预测高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "分支预测",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "分支预测易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "分支预测",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "分支预测应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "分支预测",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "分支预测优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "分治",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "分治核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "分治",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "分治判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "分治",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "分治考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "分治考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "分治典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "分治",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "分治高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "分治",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "分治易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "分治",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "分治应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "分治",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "分治优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "取指",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "取指核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "取指",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "取指判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "取指",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "取指考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "取指考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "取指典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "取指",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "取指高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "取指",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "取指易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "取指",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "取指应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "取指",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "取指优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "哈希表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "哈希表核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "哈希表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "哈希表判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "哈希表",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "哈希表考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "哈希表考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "哈希表典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "哈希表",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "哈希表高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "哈希表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "哈希表易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "哈希表",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "哈希表应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "哈希表",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "哈希表优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "四次挥手",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "四次挥手核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "四次挥手",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "四次挥手判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "四次挥手",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "四次挥手考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "四次挥手考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "四次挥手典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "四次挥手",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "四次挥手高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "四次挥手",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "四次挥手易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "四次挥手",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "四次挥手应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "四次挥手",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "四次挥手优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "图",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "图核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "图",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "图判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "图",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "图考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "图考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "图典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "图",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "图高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "图",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "图易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "图",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "图应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "图",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "图优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "地址总线",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "地址总线核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "地址总线",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "地址总线判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "地址总线",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "地址总线考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "地址总线考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "地址总线典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "地址总线",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "地址总线高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "地址总线",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "地址总线易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "地址总线",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "地址总线应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "地址总线",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "地址总线优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "域名解析",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "域名解析核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "域名解析",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "域名解析判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "域名解析",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "域名解析考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "域名解析考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "域名解析典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "域名解析",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "域名解析高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "域名解析",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "域名解析易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "域名解析",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "域名解析应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "域名解析",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "域名解析优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "堆排序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "堆排序核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆排序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "堆排序判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆排序",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "堆排序考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆排序考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "堆排序典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆排序",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "堆排序高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆排序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "堆排序易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆排序",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "堆排序应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆排序",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "堆排序优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆调整",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "堆调整核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆调整",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "堆调整判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆调整",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "堆调整考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆调整考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "堆调整典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆调整",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "堆调整高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆调整",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "堆调整易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆调整",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "堆调整应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "堆调整",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "堆调整优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "头插法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "头插法核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "头插法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "头插法判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "头插法",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "头插法考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "头插法考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "头插法典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "头插法",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "头插法高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "头插法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "头插法易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "头插法",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "头插法应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "头插法",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "头插法优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "字长",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "字长核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "字长",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "字长判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "字长",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "字长考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "字长考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "字长典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "字长",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "字长高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "字长",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "字长易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "字长",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "字长应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "字长",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "字长优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "完全二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "完全二叉树核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "完全二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "完全二叉树判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "完全二叉树",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "完全二叉树考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "完全二叉树考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "完全二叉树典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "完全二叉树",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "完全二叉树高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "完全二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "完全二叉树易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "完全二叉树",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "完全二叉树应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "完全二叉树",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "完全二叉树优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "寻址方式",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "寻址方式核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "寻址方式",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "寻址方式判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "寻址方式",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "寻址方式考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "寻址方式考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "寻址方式典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "寻址方式",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "寻址方式高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "寻址方式",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "寻址方式易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "寻址方式",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "寻址方式应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "寻址方式",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "寻址方式优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "尾插法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "尾插法核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "尾插法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "尾插法判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "尾插法",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "尾插法考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "尾插法考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "尾插法典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "尾插法",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "尾插法高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "尾插法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "尾插法易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "尾插法",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "尾插法应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "尾插法",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "尾插法优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "局部性原理",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "局部性原理核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "局部性原理",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "局部性原理判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "局部性原理",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "局部性原理考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "局部性原理考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "局部性原理典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "局部性原理",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "局部性原理高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "局部性原理",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "局部性原理易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "局部性原理",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "局部性原理应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "局部性原理",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "局部性原理优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "平衡二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "平衡二叉树核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "平衡二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "平衡二叉树判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "平衡二叉树",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "平衡二叉树考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "平衡二叉树考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "平衡二叉树典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "平衡二叉树",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "平衡二叉树高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "平衡二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "平衡二叉树易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "平衡二叉树",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "平衡二叉树应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "平衡二叉树",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "平衡二叉树优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "广度优先搜索",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "广度优先搜索核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "广度优先搜索",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "广度优先搜索判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "广度优先搜索",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "广度优先搜索考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "广度优先搜索考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "广度优先搜索典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "广度优先搜索",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "广度优先搜索高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "广度优先搜索",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "广度优先搜索易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "广度优先搜索",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "广度优先搜索应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "广度优先搜索",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "广度优先搜索优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "归并排序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "归并排序核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "归并排序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "归并排序判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "归并排序",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "归并排序考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "归并排序考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "归并排序典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "归并排序",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "归并排序高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "归并排序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "归并排序易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "归并排序",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "归并排序应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "归并排序",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "归并排序优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "循环等待",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "循环等待核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "循环等待",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "循环等待判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "循环等待",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "循环等待考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "循环等待考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "循环等待典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "循环等待",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "循环等待高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "循环等待",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "循环等待易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "循环等待",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "循环等待应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "循环等待",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "循环等待优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "循环队列",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "循环队列核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "循环队列",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "循环队列判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "循环队列",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "循环队列考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "循环队列考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "循环队列典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "循环队列",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "循环队列高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "循环队列",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "循环队列易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "循环队列",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "循环队列应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "循环队列",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "循环队列优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "微程序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "微程序核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "微程序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "微程序判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "微程序",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "微程序考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "微程序考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "微程序典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "微程序",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "微程序高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "微程序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "微程序易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "微程序",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "微程序应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "微程序",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "微程序优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "快速排序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "快速排序核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "快速排序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "快速排序判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "快速排序",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "快速排序考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "快速排序考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "快速排序典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "快速排序",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "快速排序高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "快速排序",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "快速排序易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "快速排序",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "快速排序应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "快速排序",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "快速排序优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "总线",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "总线核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "总线",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "总线判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "总线",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "总线考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "总线考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "总线典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "总线",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "总线高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "总线",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "总线易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "总线",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "总线应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "总线",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "总线优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "总线协议",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "总线协议核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理|操作系统"
+  },
+  {
+    "h": "总线协议",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "总线协议判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理|操作系统"
+  },
+  {
+    "h": "总线协议",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "总线协议考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理|操作系统"
+  },
+  {
+    "h": "总线协议考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "总线协议典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理|操作系统"
+  },
+  {
+    "h": "总线协议",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "总线协议高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理|操作系统"
+  },
+  {
+    "h": "总线协议",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "总线协议易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理|操作系统"
+  },
+  {
+    "h": "总线协议",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "总线协议应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理|操作系统"
+  },
+  {
+    "h": "总线协议",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "总线协议优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理|操作系统"
+  },
+  {
+    "h": "慢启动",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "慢启动核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "慢启动",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "慢启动判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "慢启动",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "慢启动考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "慢启动考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "慢启动典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "慢启动",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "慢启动高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "慢启动",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "慢启动易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "慢启动",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "慢启动应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "慢启动",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "慢启动优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "执行",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "执行核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "执行",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "执行判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "执行",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "执行考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "执行考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "执行典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "执行",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "执行高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "执行",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "执行易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "执行",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "执行应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "执行",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "执行优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "拥塞控制",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "拥塞控制核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞控制",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "拥塞控制判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞控制",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "拥塞控制考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞控制考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "拥塞控制典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞控制",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "拥塞控制高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞控制",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "拥塞控制易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞控制",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "拥塞控制应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞控制",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "拥塞控制优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞避免",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "拥塞避免核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞避免",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "拥塞避免判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞避免",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "拥塞避免考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞避免考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "拥塞避免典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞避免",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "拥塞避免高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞避免",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "拥塞避免易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞避免",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "拥塞避免应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "拥塞避免",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "拥塞避免优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "指令周期",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "指令周期核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令周期",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "指令周期判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令周期",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "指令周期考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令周期考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "指令周期典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令周期",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "指令周期高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令周期",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "指令周期易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令周期",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "指令周期应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令周期",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "指令周期优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令级并行",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "指令级并行核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令级并行",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "指令级并行判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令级并行",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "指令级并行考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令级并行考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "指令级并行典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令级并行",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "指令级并行高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令级并行",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "指令级并行易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令级并行",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "指令级并行应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令级并行",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "指令级并行优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制器",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "控制器核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制器",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "控制器判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制器",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "控制器考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制器考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "控制器典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制器",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "控制器高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制器",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "控制器易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制器",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "控制器应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制器",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "控制器优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制相关",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "控制相关核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制相关",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "控制相关判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制相关",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "控制相关考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制相关考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "控制相关典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制相关",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "控制相关高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制相关",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "控制相关易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制相关",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "控制相关应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "控制相关",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "控制相关优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "散列函数",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "散列函数核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "散列函数判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "散列函数考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "散列函数典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "散列函数高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "散列函数易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "散列函数应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "散列函数优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数设计",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "散列函数设计核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数设计",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "散列函数设计判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数设计",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "散列函数设计考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数设计考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "散列函数设计典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数设计",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "散列函数设计高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数设计",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "散列函数设计易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数设计",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "散列函数设计应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "散列函数设计",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "散列函数设计优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "数据总线",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "数据总线核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据总线",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "数据总线判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据总线",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "数据总线考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据总线考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "数据总线典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据总线",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "数据总线高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据总线",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "数据总线易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据总线",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "数据总线应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据总线",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "数据总线优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据相关",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "数据相关核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据相关",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "数据相关判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据相关",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "数据相关考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据相关考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "数据相关典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据相关",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "数据相关高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据相关",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "数据相关易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据相关",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "数据相关应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据相关",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "数据相关优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "文件系统核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "文件系统判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "文件系统考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "文件系统典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "文件系统高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "文件系统易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "文件系统应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "文件系统优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "旁路转发",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "旁路转发核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "旁路转发",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "旁路转发判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "旁路转发",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "旁路转发考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "旁路转发考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "旁路转发典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "旁路转发",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "旁路转发高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "旁路转发",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "旁路转发易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "旁路转发",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "旁路转发应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "旁路转发",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "旁路转发优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "旋转",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "旋转核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "旋转",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "旋转判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "旋转",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "旋转考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "旋转考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "旋转典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "旋转",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "旋转高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "旋转",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "旋转易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "旋转",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "旋转应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "旋转",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "旋转优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "时钟算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "时钟算法核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "时钟算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "时钟算法判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "时钟算法",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "时钟算法考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "时钟算法考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "时钟算法典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "时钟算法",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "时钟算法高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "时钟算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "时钟算法易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "时钟算法",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "时钟算法应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "时钟算法",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "时钟算法优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "暂停气泡",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "暂停气泡核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "暂停气泡",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "暂停气泡判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "暂停气泡",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "暂停气泡考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "暂停气泡考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "暂停气泡典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "暂停气泡",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "暂停气泡高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "暂停气泡",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "暂停气泡易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "暂停气泡",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "暂停气泡应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "暂停气泡",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "暂停气泡优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "最小生成树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "最小生成树核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最小生成树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "最小生成树判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最小生成树",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "最小生成树考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最小生成树考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "最小生成树典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最小生成树",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "最小生成树高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最小生成树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "最小生成树易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最小生成树",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "最小生成树应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最小生成树",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "最小生成树优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最短路径",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "最短路径核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最短路径",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "最短路径判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最短路径",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "最短路径考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最短路径考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "最短路径典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最短路径",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "最短路径高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最短路径",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "最短路径易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最短路径",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "最短路径应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "最短路径",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "最短路径优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "栈",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "栈核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "栈",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "栈判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "栈",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "栈考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "栈考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "栈典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "栈",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "栈高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "栈",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "栈易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "栈",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "栈应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "栈",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "栈优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "死锁",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "死锁核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "死锁",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "死锁判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "死锁",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "死锁考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "死锁考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "死锁典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "死锁",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "死锁高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "死锁",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "死锁易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "死锁",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "死锁应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "死锁",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "死锁优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "流水线冲突",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "流水线冲突核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线冲突",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "流水线冲突判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线冲突",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "流水线冲突考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线冲突考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "流水线冲突典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线冲突",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "流水线冲突高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线冲突",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "流水线冲突易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线冲突",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "流水线冲突应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线冲突",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "流水线冲突优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流量控制",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "流量控制核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "流量控制",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "流量控制判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "流量控制",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "流量控制考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "流量控制考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "流量控制典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "流量控制",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "流量控制高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "流量控制",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "流量控制易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "流量控制",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "流量控制应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "流量控制",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "流量控制优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "浮点数",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "浮点数核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "浮点数",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "浮点数判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "浮点数",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "浮点数考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "浮点数考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "浮点数典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "浮点数",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "浮点数高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "浮点数",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "浮点数易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "浮点数",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "浮点数应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "浮点数",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "浮点数优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "深度优先搜索",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "深度优先搜索核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "深度优先搜索",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "深度优先搜索判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "深度优先搜索",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "深度优先搜索考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "深度优先搜索考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "深度优先搜索典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "深度优先搜索",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "深度优先搜索高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "深度优先搜索",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "深度优先搜索易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "深度优先搜索",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "深度优先搜索应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "深度优先搜索",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "深度优先搜索优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "滑动窗口",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "滑动窗口核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "滑动窗口",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "滑动窗口判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "滑动窗口",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "滑动窗口考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "滑动窗口考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "滑动窗口典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "滑动窗口",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "滑动窗口高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "滑动窗口",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "滑动窗口易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "滑动窗口",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "滑动窗口应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "滑动窗口",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "滑动窗口优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "满二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "满二叉树核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "满二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "满二叉树判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "满二叉树",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "满二叉树考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "满二叉树考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "满二叉树典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "满二叉树",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "满二叉树高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "满二叉树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "满二叉树易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "满二叉树",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "满二叉树应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "满二叉树",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "满二叉树优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "目录结构",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "目录结构核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "目录结构",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "目录结构判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "目录结构",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "目录结构考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "目录结构考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "目录结构典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "目录结构",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "目录结构高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "目录结构",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "目录结构易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "目录结构",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "目录结构应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "目录结构",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "目录结构优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "磁盘调度",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "磁盘调度核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "磁盘调度",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "磁盘调度判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "磁盘调度",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "磁盘调度考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "磁盘调度考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "磁盘调度典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "磁盘调度",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "磁盘调度高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "磁盘调度",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "磁盘调度易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "磁盘调度",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "磁盘调度应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "磁盘调度",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "磁盘调度优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "系统调用",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "系统调用核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络|操作系统"
+  },
+  {
+    "h": "系统调用",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "系统调用判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络|操作系统"
+  },
+  {
+    "h": "系统调用",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "系统调用考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络|操作系统"
+  },
+  {
+    "h": "系统调用考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "系统调用典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络|操作系统"
+  },
+  {
+    "h": "系统调用",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "系统调用高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络|操作系统"
+  },
+  {
+    "h": "系统调用",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "系统调用易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络|操作系统"
+  },
+  {
+    "h": "系统调用",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "系统调用应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络|操作系统"
+  },
+  {
+    "h": "系统调用",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "系统调用优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络|操作系统"
+  },
+  {
+    "h": "索引分配",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "索引分配核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "索引分配",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "索引分配判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "索引分配",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "索引分配考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "索引分配考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "索引分配典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "索引分配",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "索引分配高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "索引分配",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "索引分配易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "索引分配",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "索引分配应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "索引分配",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "索引分配优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "红黑树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "红黑树核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "红黑树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "红黑树判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "红黑树",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "红黑树考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "红黑树考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "红黑树典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "红黑树",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "红黑树高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "红黑树",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "红黑树易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "红黑树",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "红黑树应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "红黑树",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "红黑树优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "线程",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "线程核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "线程",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "线程判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "线程",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "线程考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "线程考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "线程典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "线程",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "线程高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "线程",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "线程易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "线程",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "线程应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "线程",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "线程优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "结构相关",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "结构相关核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "结构相关",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "结构相关判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "结构相关",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "结构相关考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "结构相关考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "结构相关典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "结构相关",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "结构相关高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "结构相关",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "结构相关易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "结构相关",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "结构相关应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "结构相关",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "结构相关优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "舍入策略",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "舍入策略核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "舍入策略",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "舍入策略判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "舍入策略",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "舍入策略考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "舍入策略考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "舍入策略典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "舍入策略",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "舍入策略高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "舍入策略",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "舍入策略易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "舍入策略",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "舍入策略应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "舍入策略",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "舍入策略优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "虚拟内存",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "虚拟内存核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "虚拟内存",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "虚拟内存判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "虚拟内存",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "虚拟内存考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "虚拟内存考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "虚拟内存典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "虚拟内存",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "虚拟内存高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "虚拟内存",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "虚拟内存易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "虚拟内存",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "虚拟内存应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "虚拟内存",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "虚拟内存优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "补码",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "补码核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "补码",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "补码判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "补码",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "补码考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "补码考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "补码典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "补码",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "补码高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "补码",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "补码易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "补码",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "补码应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "补码",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "补码优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "规格化",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "规格化核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "规格化",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "规格化判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "规格化",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "规格化考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "规格化考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "规格化典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "规格化",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "规格化高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "规格化",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "规格化易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "规格化",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "规格化应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "规格化",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "规格化优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "译码",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "译码核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "译码",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "译码判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "译码",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "译码考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "译码考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "译码典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "译码",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "译码高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "译码",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "译码易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "译码",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "译码应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "译码",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "译码优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "请求响应模型",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "请求响应模型核心定义",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "请求响应模型",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "请求响应模型判定条件",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "请求响应模型",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "请求响应模型考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "请求响应模型考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "请求响应模型典型题型",
+    "t_type": "Example",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "请求响应模型",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "请求响应模型高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "请求响应模型",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "请求响应模型易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "请求响应模型",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "请求响应模型应用边界",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "请求响应模型",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "请求响应模型优化策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "请求并保持",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "请求并保持核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "请求并保持",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "请求并保持判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "请求并保持",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "请求并保持考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "请求并保持考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "请求并保持典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "请求并保持",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "请求并保持高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "请求并保持",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "请求并保持易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "请求并保持",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "请求并保持应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "请求并保持",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "请求并保持优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "路由选择",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "路由选择核心定义",
+    "t_type": "Property",
+    "subject": "数据结构|计算机网络"
+  },
+  {
+    "h": "路由选择",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "路由选择判定条件",
+    "t_type": "Property",
+    "subject": "数据结构|计算机网络"
+  },
+  {
+    "h": "路由选择",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "路由选择考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构|计算机网络"
+  },
+  {
+    "h": "路由选择考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "路由选择典型题型",
+    "t_type": "Example",
+    "subject": "数据结构|计算机网络"
+  },
+  {
+    "h": "路由选择",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "路由选择高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构|计算机网络"
+  },
+  {
+    "h": "路由选择",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "路由选择易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构|计算机网络"
+  },
+  {
+    "h": "路由选择",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "路由选择应用边界",
+    "t_type": "Property",
+    "subject": "数据结构|计算机网络"
+  },
+  {
+    "h": "路由选择",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "路由选择优化策略",
+    "t_type": "Method",
+    "subject": "数据结构|计算机网络"
+  },
+  {
+    "h": "运算器",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "运算器核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "运算器",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "运算器判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "运算器",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "运算器考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "运算器考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "运算器典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "运算器",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "运算器高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "运算器",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "运算器易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "运算器",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "运算器应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "运算器",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "运算器优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "进程",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "进程核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "进程判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "进程考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "进程典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "进程高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "进程易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "进程应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "进程优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程同步",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "进程同步核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程同步",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "进程同步判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程同步",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "进程同步考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程同步考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "进程同步典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程同步",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "进程同步高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程同步",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "进程同步易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程同步",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "进程同步应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程同步",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "进程同步优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程调度",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "进程调度核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程调度",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "进程调度判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程调度",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "进程调度考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程调度考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "进程调度典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程调度",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "进程调度高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程调度",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "进程调度易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程调度",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "进程调度应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程调度",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "进程调度优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "银行家算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "银行家算法核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "银行家算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "银行家算法判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "银行家算法",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "银行家算法考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "银行家算法考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "银行家算法典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "银行家算法",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "银行家算法高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "银行家算法",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "银行家算法易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "银行家算法",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "银行家算法应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "银行家算法",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "银行家算法优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "链表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "链表核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "链表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "链表判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "链表",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "链表考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "链表考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "链表典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "链表",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "链表高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "链表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "链表易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "链表",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "链表应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "链表",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "链表优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "队列",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "队列核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "队列",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "队列判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "队列",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "队列考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "队列考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "队列典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "队列",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "队列高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "队列",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "队列易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "队列",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "队列应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "队列",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "队列优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "页表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "页表核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "页表判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页表",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "页表考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页表考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "页表典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页表",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "页表高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "页表易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页表",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "页表应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页表",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "页表优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页面置换",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "页面置换核心定义",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页面置换",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "页面置换判定条件",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页面置换",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "页面置换考研真题场景",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页面置换考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "页面置换典型题型",
+    "t_type": "Example",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页面置换",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "页面置换高频考点权重",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页面置换",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "页面置换易错陷阱",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页面置换",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "页面置换应用边界",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "页面置换",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "页面置换优化策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "顺序表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "顺序表核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "顺序表判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序表",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "顺序表考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序表考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "顺序表典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序表",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "顺序表高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序表",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "顺序表易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序表",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "顺序表应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序表",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "顺序表优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序遍历",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "顺序遍历核心定义",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序遍历",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "顺序遍历判定条件",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序遍历",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "顺序遍历考研真题场景",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序遍历考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "顺序遍历典型题型",
+    "t_type": "Example",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序遍历",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "顺序遍历高频考点权重",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序遍历",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "顺序遍历易错陷阱",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序遍历",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "顺序遍历应用边界",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "顺序遍历",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "顺序遍历优化策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "预取",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "预取核心定义",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "预取",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "预取判定条件",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "预取",
+    "h_type": "Concept",
+    "r": "USED_IN",
+    "t": "预取考研真题场景",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "预取考研真题场景",
+    "h_type": "Example",
+    "r": "VERIFIED_BY",
+    "t": "预取典型题型",
+    "t_type": "Example",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "预取",
+    "h_type": "Concept",
+    "r": "MEASURED_BY",
+    "t": "预取高频考点权重",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "预取",
+    "h_type": "Concept",
+    "r": "HAS_PROPERTY",
+    "t": "预取易错陷阱",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "预取",
+    "h_type": "Concept",
+    "r": "APPLIES_TO",
+    "t": "预取应用边界",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "预取",
+    "h_type": "Concept",
+    "r": "OPTIMIZED_BY",
+    "t": "预取优化策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "传输层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "传输层高频考点清单",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "传输层高效复习策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "传输层高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "传输层常见失分点",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "内存管理",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "内存管理高频考点清单",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "内存管理高效复习策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "内存管理高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "内存管理常见失分点",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "存储系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "存储系统高频考点清单",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "存储系统高效复习策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "存储系统高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "存储系统常见失分点",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "应用层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "应用层高频考点清单",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "应用层高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "应用层高效复习策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "应用层高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "应用层常见失分点",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "指令系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "指令系统高频考点清单",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令系统高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "指令系统高效复习策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "指令系统高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "指令系统常见失分点",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据表示",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "数据表示高频考点清单",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据表示高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "数据表示高效复习策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "数据表示高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "数据表示常见失分点",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "文件系统",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "文件系统高频考点清单",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "文件系统高效复习策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "文件系统高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "文件系统常见失分点",
+    "t_type": "Property",
+    "subject": "操作系统"
+  },
+  {
+    "h": "查找排序",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "查找排序高频考点清单",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "查找排序高效复习策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "查找排序高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "查找排序常见失分点",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "树与图高频考点清单",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "树与图高效复习策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "树与图高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "树与图常见失分点",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "流水线",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "流水线高频考点清单",
+    "t_type": "Concept",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "流水线高效复习策略",
+    "t_type": "Method",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "流水线高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "流水线常见失分点",
+    "t_type": "Property",
+    "subject": "计算机组成原理"
+  },
+  {
+    "h": "线性表",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "线性表高频考点清单",
+    "t_type": "Concept",
+    "subject": "数据结构"
+  },
+  {
+    "h": "线性表高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "线性表高效复习策略",
+    "t_type": "Method",
+    "subject": "数据结构"
+  },
+  {
+    "h": "线性表高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "线性表常见失分点",
+    "t_type": "Property",
+    "subject": "数据结构"
+  },
+  {
+    "h": "网络层",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "网络层高频考点清单",
+    "t_type": "Concept",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "网络层高效复习策略",
+    "t_type": "Method",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "网络层高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "网络层常见失分点",
+    "t_type": "Property",
+    "subject": "计算机网络"
+  },
+  {
+    "h": "进程线程",
+    "h_type": "Chapter",
+    "r": "HAS_SUB",
+    "t": "进程线程高频考点清单",
+    "t_type": "Concept",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程线程高频考点清单",
+    "h_type": "Concept",
+    "r": "HAS_METHOD",
+    "t": "进程线程高效复习策略",
+    "t_type": "Method",
+    "subject": "操作系统"
+  },
+  {
+    "h": "进程线程高效复习策略",
+    "h_type": "Method",
+    "r": "APPLIES_TO",
+    "t": "进程线程常见失分点",
+    "t_type": "Property",
+    "subject": "操作系统"
+  }
+]
