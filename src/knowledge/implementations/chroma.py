@@ -393,6 +393,30 @@ class ChromaKB(KnowledgeBase):
             metadata = prepare_item_metadata(item, content_type, db_id)
             file_id = metadata["file_id"]
             filename = metadata["filename"]
+            existed = self.find_existing_file_record(
+                db_id,
+                content_hash=metadata.get("content_hash"),
+                file_path=metadata.get("path"),
+                statuses=("processing", "done"),
+            )
+            if existed:
+                existed_file_id, existed_info = existed
+                logger.info(
+                    "Skip duplicate ingest for %s in %s, existing file_id=%s status=%s",
+                    filename,
+                    db_id,
+                    existed_file_id,
+                    existed_info.get("status"),
+                )
+                processed_items_info.append(
+                    {
+                        **metadata,
+                        "file_id": existed_file_id,
+                        "status": "skipped_duplicate",
+                        "duplicate_of": existed_file_id,
+                    }
+                )
+                continue
 
             # 添加文件记录
             file_record = metadata.copy()

@@ -192,7 +192,14 @@ export const neo4jApi = {
       clear_existing: payload.clear_existing || false
     }, {}, true)
   },
-
+  importCS408FullKG: async (payload = {}) => {
+    return await apiPost('/api/graph/neo4j/import-cs408-full', {
+      kgdb_name: payload.kgdb_name || 'neo4j',
+      file_path: payload.file_path || 'examples/cs408/cs408_full_kg_triples.jsonl',
+      clear_existing: payload.clear_existing !== false,
+      skip_embedding: payload.skip_embedding !== false
+    }, {}, true)
+  },
   /**
    * 获取图谱中的学科标签统计
    */

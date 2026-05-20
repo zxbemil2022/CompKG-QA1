@@ -137,7 +137,13 @@ export const agentApi = {
    * 获取所有可用工具的信息
    * @returns {Promise} - 工具信息列表
    */
-  getTools: (agentId) => apiGet(`/api/chat/tools?agent_id=${agentId}`)
+  getTools: (agentId) => apiGet(`/api/chat/tools?agent_id=${agentId}`),
+
+  /**
+   * 获取标准化 Skills 元数据。
+   * @returns {Promise} - Skills 信息列表
+   */
+  getSkills: () => apiGet('/api/chat/skills')
 }
 
 

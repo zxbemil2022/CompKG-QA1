@@ -86,6 +86,8 @@ class QAQualityStats(BaseModel):
     low_confidence_rate: float = 0.0
     contract_fail_rate: float = 0.0
     avg_source_ref_count: float = 0.0
+    retrieval_coverage_rate: float = 0.0
+    avg_retrieval_evidence_count: float = 0.0
     quality_by_agent: list[dict] = []
 
 
@@ -117,6 +119,10 @@ class ConversationDetailResponse(BaseModel):
     messages: list[dict]
 
 
+class ConversationStatusUpdate(BaseModel):
+    status: str
+
+
 # =============================================================================
 # Conversation Management
 # =============================================================================
@@ -126,6 +132,7 @@ class ConversationDetailResponse(BaseModel):
 async def get_all_conversations(
     user_id: str | None = None,
     agent_id: str | None = None,
+    keyword: str | None = None,
     status: str = "active",
     limit: int = 100,
     offset: int = 0,
@@ -133,7 +140,7 @@ async def get_all_conversations(
     current_user: User = Depends(get_admin_user),
 ):
     """Get all conversations (Admin only)"""
-    from src.storage.db.models import Conversation, ConversationStats
+    from src.storage.db.models import Conversation, ConversationStats, Message
 
     try:
         # Build query
@@ -146,11 +153,16 @@ async def get_all_conversations(
             query = query.filter(Conversation.user_id == user_id)
         if agent_id:
             query = query.filter(Conversation.agent_id == agent_id)
+        if keyword:
+            keyword_like = f"%{keyword.strip()}%"
+            query = query.join(Message, Message.conversation_id == Conversation.id).filter(
+                Message.content.ilike(keyword_like)
+            )
         if status != "all":
             query = query.filter(Conversation.status == status)
 
         # Order and paginate
-        query = query.order_by(Conversation.updated_at.desc()).limit(limit).offset(offset)
+        query = query.distinct(Conversation.id).order_by(Conversation.updated_at.desc()).limit(limit).offset(offset)
 
         results = query.all()
 
@@ -235,6 +247,33 @@ async def get_conversation_detail(
         logger.error(f"Error getting conversation detail: {e}")
         logger.error(traceback.format_exc())
         raise HTTPException(status_code=500, detail=f"Failed to get conversation detail: {str(e)}")
+
+
+@dashboard.put("/conversations/{thread_id}/status")
+async def update_conversation_status(
+    thread_id: str,
+    payload: ConversationStatusUpdate,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_admin_user),
+):
+    """Update conversation status (Admin only)"""
+    try:
+        allowed_status = {"active", "archived", "deleted"}
+        status = payload.status.strip().lower()
+        if status not in allowed_status:
+            raise HTTPException(status_code=400, detail=f"Invalid status: {status}")
+
+        conv_manager = ConversationManager(db)
+        updated = conv_manager.update_conversation(thread_id=thread_id, status=status)
+        if not updated:
+            raise HTTPException(status_code=404, detail="Conversation not found")
+        return {"message": "更新成功", "thread_id": thread_id, "status": status}
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error updating conversation status: {e}")
+        logger.error(traceback.format_exc())
+        raise HTTPException(status_code=500, detail=f"Failed to update conversation status: {str(e)}")
 
 
 # =============================================================================
@@ -673,6 +712,8 @@ async def get_qa_quality_stats(
         low_confidence_count = 0
         contract_fail_count = 0
         source_ref_total = 0
+        retrieval_executed_count = 0
+        retrieval_evidence_total = 0
         agent_quality_stats: dict[str, dict[str, float | int]] = {}
 
         for msg, conv in assistant_rows:
@@ -689,6 +730,10 @@ async def get_qa_quality_stats(
                 contract_fail_count += 1
             if isinstance(source_refs, list):
                 source_ref_total += len(source_refs)
+            if extra.get("retrieval_executed"):
+                retrieval_executed_count += 1
+            if isinstance(extra.get("retrieval_evidence_count"), int):
+                retrieval_evidence_total += int(extra.get("retrieval_evidence_count"))
 
             agent_bucket = agent_quality_stats.setdefault(
                 conv.agent_id,
@@ -706,6 +751,10 @@ async def get_qa_quality_stats(
         low_confidence_rate = round((low_confidence_count / quality_covered * 100), 2) if quality_covered > 0 else 0.0
         contract_fail_rate = round((contract_fail_count / total_assistant * 100), 2) if total_assistant > 0 else 0.0
         avg_source_ref_count = round((source_ref_total / total_assistant), 2) if total_assistant > 0 else 0.0
+        retrieval_coverage_rate = round((retrieval_executed_count / total_assistant * 100),2) if total_assistant > 0 else 0.0
+        avg_retrieval_evidence_count = (
+            round((retrieval_evidence_total / total_assistant), 2) if total_assistant > 0 else 0.0
+        )
 
         quality_by_agent = []
         for agent, bucket in agent_quality_stats.items():
@@ -735,6 +784,8 @@ async def get_qa_quality_stats(
             low_confidence_rate=low_confidence_rate,
             contract_fail_rate=contract_fail_rate,
             avg_source_ref_count=avg_source_ref_count,
+            retrieval_coverage_rate=retrieval_coverage_rate,
+            avg_retrieval_evidence_count=avg_retrieval_evidence_count,
             quality_by_agent=quality_by_agent,
         )
     except Exception as e:

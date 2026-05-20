@@ -16,6 +16,7 @@ from src.agents.common.agent_intelligence import (
 )
 from src.agents.common.mcp import get_mcp_tools
 from src.agents.common.models import load_chat_model
+from src.skills import get_skill_registry
 from src.utils import logger
 
 from .context import Context
@@ -76,6 +77,21 @@ class ChatbotAgent(BaseAgent):
             return _has_signal(str(cause))
 
         return False
+
+    def _is_image_processing_error(self, err: Exception) -> bool:
+        """检测图片解析失败（常见于上游返回 code=20040）。"""
+        text = str(err)
+        signals = [
+            "Unable to process the image",
+            "unable to process image",
+            "invalid_image",
+            "image parse",
+            "image decode",
+            "code': 20040",
+            '"code": 20040',
+            "code: 20040",
+        ]
+        return any(sig in text for sig in signals)
 
     def _is_vision_model(self, model_spec: str) -> bool:
         lowered = (model_spec or "").lower()
@@ -184,6 +200,7 @@ class ChatbotAgent(BaseAgent):
         except Exception as err:
             err_text = str(err)
             tool_call_unsupported = self._is_tool_call_unsupported_error(err)
+            image_process_error = self._is_image_processing_error(err)
             if self._is_tool_call_unsupported_error(err):
                 self._tool_call_unsupported_models.add(model_spec)
                 logger.warning(f"Model {model_spec} doesn't support function calling, retry without tools.")
@@ -195,16 +212,23 @@ class ChatbotAgent(BaseAgent):
                     err_text = str(plain_err)
                     err = plain_err
                     tool_call_unsupported = self._is_tool_call_unsupported_error(plain_err)
+                    image_process_error = self._is_image_processing_error(plain_err)
 
             is_not_open = self._is_model_not_open_error(err)
             is_not_vlm = "not a VLM" in err_text or "Please use text-only prompts" in err_text
-            if not (is_not_open or is_not_vlm or tool_call_unsupported):
+            if not (is_not_open or is_not_vlm or tool_call_unsupported or image_process_error):
                 raise
             fallback_tools = [] if tool_call_unsupported else available_tools
             fallback_messages = self._strip_tool_messages(messages) if tool_call_unsupported else messages
             if is_not_vlm:
                 # 当前模型不支持视觉，先尝试视觉模型；若无可用视觉模型则自动降级为文本输入
                 fallback_messages = messages
+            if image_process_error and require_vision:
+                logger.warning(
+                    "Model %s failed to process image input, degrade to text-only evidence mode.",
+                    model_spec,
+                )
+                fallback_messages = self._strip_vision_messages(fallback_messages)
 
             for fallback_spec in self._candidate_fallback_models(model_spec, require_vision=require_vision):
                 try:
@@ -280,18 +304,20 @@ class ChatbotAgent(BaseAgent):
                         continue
             raise
 
-    async def _get_invoke_tools(self, selected_tools: list[str], selected_mcps: list[str]):
-        """根据配置获取工具。
-        默认不使用任何工具。
-        如果配置为列表，则使用列表中的工具。
-        """
-        enabled_tools = []
-        # 如果agent_tools为空，则获取所有工具，否则使用agent_tools
+    async def _get_invoke_tools(
+        self,
+        selected_tools: list[str] | None,
+        selected_mcps: list[str] | None,
+        selected_skills: list[str] | None = None,
+    ):
+        """按 Skills + 显式工具配置动态挂载工具，避免 Agent 核心硬编码业务能力。"""
         self.agent_tools = self.agent_tools or self.get_tools()
-        if selected_tools and isinstance(selected_tools, list) and len(selected_tools) > 0:
-            enabled_tools = [tool for tool in self.agent_tools if tool.name in selected_tools]
-        else:
-            enabled_tools = list(self.agent_tools)
+        registry = get_skill_registry()
+        enabled_tools = registry.filter_tools(
+            self.agent_tools,
+            selected_skill_ids=selected_skills,
+            explicit_tool_ids=selected_tools if isinstance(selected_tools, list) else None,
+        )
 
         if selected_mcps and isinstance(selected_mcps, list) and len(selected_mcps) > 0:
             for mcp in selected_mcps:
@@ -303,7 +329,7 @@ class ChatbotAgent(BaseAgent):
         """调用 llm 模型 - 异步版本以支持异步工具"""
         current_model_spec = runtime.context.model
 
-        available_tools = await self._get_invoke_tools(runtime.context.tools, runtime.context.mcps)
+        available_tools = await self._get_invoke_tools(runtime.context.tools, runtime.context.mcps, runtime.context.skills)
 
         latest_user_query = ""
         for msg in reversed(state.messages):
@@ -317,6 +343,13 @@ class ChatbotAgent(BaseAgent):
         logger.info(f"LLM binded ({len(available_tools)}) available_tools: {[tool.name for tool in available_tools]}")
 
         system_notes = [runtime.context.system_prompt]
+        if getattr(runtime.context, "rag_grounding_context", ""):
+            system_notes.append(f"[RAG检索上下文]\n{runtime.context.rag_grounding_context}")
+        if getattr(runtime.context, "rag_image_grounding_context", ""):
+            system_notes.append(f"[RAG图像证据]\n{runtime.context.rag_image_grounding_context}")
+        skill_prompt = get_skill_registry().build_runtime_prompt(runtime.context.skills, runtime.context.skill_params)
+        if skill_prompt:
+            system_notes.append(skill_prompt)
         work_messages = list(state.messages)
 
         if runtime.context.enable_memory_manager:
@@ -356,7 +389,7 @@ class ChatbotAgent(BaseAgent):
         and executes the requested tool calls from the last message.
         """
         # Get available tools based on configuration
-        available_tools = await self._get_invoke_tools(runtime.context.tools, runtime.context.mcps)
+        available_tools = await self._get_invoke_tools(runtime.context.tools, runtime.context.mcps, runtime.context.skills)
 
         # Create a ToolNode with the available tools
         tool_node = ToolNode(available_tools)

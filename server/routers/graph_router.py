@@ -1,4 +1,5 @@
 import asyncio
+import re
 import traceback
 from pathlib import Path
 
@@ -68,6 +69,110 @@ def _collect_graph_diagnostics(db_id: str, total_nodes: int) -> dict:
         message = "图谱为空，原因待确认"
 
     return {"state": state, "message": message, "file_stats": {"total": total_files, **statuses}}
+
+
+def _extract_snippets_from_retrieval_docs(docs, limit: int = 2) -> list[str]:
+    """把不同知识库返回结构统一抽取为可展示片段。"""
+    snippets: list[str] = []
+    if docs is None:
+        return snippets
+
+    if isinstance(docs, str):
+        raw = docs.strip()
+        if not raw:
+            return snippets
+        lowered = raw.lower()
+        if "[no-context]" in lowered or "sorry, i'm not able to provide an answer" in lowered:
+            return snippets
+        if "knowledge graph data (entity)" in lowered:
+            entity_names = re.findall(r'"entity"\s*:\s*"([^"]+)"', raw)
+            if entity_names:
+                summary = "命中实体：" + "、".join(entity_names[:6])
+                snippets.append(summary[:220])
+                return snippets[:limit]
+        for line in docs.splitlines():
+            text = line.strip()
+            if text in {"Knowledge Graph Data (Entity):", "Knowledge Graph Data (Relationship):"}:
+                continue
+            if text:
+                snippets.append(text[:220])
+            if len(snippets) >= limit:
+                return snippets
+        text = raw
+        if text and not snippets:
+            snippets.append(text[:220])
+        return snippets[:limit]
+
+    if isinstance(docs, dict):
+        for key in ("content", "text", "snippet", "answer"):
+            value = docs.get(key)
+            if isinstance(value, str) and value.strip():
+                snippets.append(value.strip()[:220])
+                break
+        payload = docs.get("data")
+        if len(snippets) < limit and isinstance(payload, (list, dict, str)):
+            snippets.extend(_extract_snippets_from_retrieval_docs(payload, limit=limit - len(snippets)))
+        return snippets[:limit]
+
+    if isinstance(docs, list):
+        for item in docs:
+            if len(snippets) >= limit:
+                break
+            if isinstance(item, dict):
+                text = ""
+                for key in ("content", "text", "snippet", "chunk"):
+                    if isinstance(item.get(key), str) and item.get(key).strip():
+                        text = item.get(key).strip()
+                        break
+                if not text:
+                    text = str(item).strip()
+            else:
+                text = str(item).strip()
+            if text:
+                snippets.append(text[:220])
+        return snippets[:limit]
+
+    text = str(docs).strip()
+    if text:
+        snippets.append(text[:220])
+    return snippets[:limit]
+
+
+async def _collect_vector_evidence(question: str, max_per_db: int = 2) -> list[dict]:
+    """统一从所有知识库采集问答证据，兼容 LightRAG/Chroma 等不同返回结构。"""
+    evidences: list[dict] = []
+    try:
+        databases = knowledge_base.get_databases().get("databases", [])
+    except Exception as e:  # noqa: BLE001
+        logger.warning(f"获取知识库列表失败，跳过向量证据收集: {e}")
+        return evidences
+
+    for db in databases:
+        db_id = str(db.get("db_id", "")).strip()
+        if not db_id:
+            continue
+        kb_type = str(db.get("kb_type", "")).strip() or "unknown"
+        try:
+            if kb_type == "lightrag":
+                kb_instance = knowledge_base.get_kb(db_id)
+                docs = await kb_instance.aquery(
+                    db_id=db_id,
+                    query_text=question,
+                    query_desc="graph_qa",
+                    mode="mix",
+                    only_need_context=True,
+                    top_k=6,
+                )
+            else:
+                docs = await knowledge_base.aquery(query_text=question, db_id=db_id)
+        except Exception as e:  # noqa: BLE001
+            logger.warning(f"图谱问答向量检索失败，db_id={db_id}, kb_type={kb_type}: {e}")
+            continue
+
+        for snippet in _extract_snippets_from_retrieval_docs(docs, limit=max_per_db):
+            evidences.append({"source_db": db_id, "snippet": snippet, "kb_type": kb_type})
+
+    return evidences
 
 
 # =============================================================================
@@ -488,7 +593,42 @@ async def add_neo4j_entities(
         logger.error(f"添加实体失败: {e}, {traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=f"添加实体失败: {e}")
 
+@graph.post("/neo4j/import-cs408-full")
+async def import_cs408_full_graph(
+    data: dict = Body(default={}),
+    current_user: User = Depends(get_admin_user),
+):
+    """导入完整 408 图谱（可选清空旧图谱），避免误用 auto-build 导致数据混杂。"""
+    try:
+        if not graph_base.is_running():
+            raise HTTPException(status_code=400, detail="图数据库未启动")
+        kgdb_name = data.get("kgdb_name", "neo4j")
+        clear_existing = bool(data.get("clear_existing", True))
+        skip_embedding = bool(data.get("skip_embedding", True))
+        file_path = data.get("file_path") or "examples/cs408/cs408_full_kg_triples.jsonl"
 
+        if clear_existing:
+            graph_base.delete_entity(entity_name=None, kgdb_name=kgdb_name)
+        await graph_base.jsonl_file_add_entity(file_path, kgdb_name=kgdb_name, with_embedding=not skip_embedding)
+
+        return {
+            "success": True,
+            "status": "success",
+            "message": "完整版408图谱导入成功",
+            "data": {
+                "kgdb_name": kgdb_name,
+                "file_path": file_path,
+                "clear_existing": clear_existing,
+                "skip_embedding": skip_embedding,
+            },
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"导入完整版408图谱失败: {e}, {traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail=f"导入完整版408图谱失败: {e}")
+
+    
 @graph.post("/neo4j/auto-build-computer-kg")
 async def auto_build_computer_kg(data: dict = Body(default={}), current_user: User = Depends(get_admin_user)):
     """自动构建计算机专业知识图谱（支持 JSON/文本输入）。"""
@@ -691,14 +831,20 @@ async def ask_graph_question(
         current_user: User = Depends(get_admin_user),
 ):
     """
-    图谱问答一体化接口：
-    输入问题 -> GraphRAG检索 -> 返回答案 + 相关子图 + 高亮节点。
+    双引擎图谱问答一体化接口：
+    1. Neo4j 知识图谱推理
+    2. LightRAG 向量检索（文档）
+    3. 自动融合生成最终答案
     """
     try:
         if not question.strip():
             raise HTTPException(status_code=400, detail="question 不能为空")
 
         memory = GRAPH_QA_MEMORY.get(session_id, [])[-6:]
+
+        # ==========================
+        # 1. 图谱检索（Neo4j）
+        # ==========================
         graph_result = graph_base.query_node(
             keyword=question,
             kgdb_name=kgdb_name,
@@ -716,87 +862,72 @@ async def ask_graph_question(
             max_entities=8,
         )
         triples = triple_result.get("triples", []) if isinstance(triple_result, dict) else []
-        vector_evidence = []
+
+        # ==========================
+        # 2. 向量检索（LightRAG + 所有知识库）
+        # ==========================
+        vector_evidence = await _collect_vector_evidence(question=question, max_per_db=3)
+
+        # ==========================
+        # 3. 构造展示数据
+        # ==========================
+        highlight_nodes = []
+        for t in triples[:8]:
+            if len(t) >= 3:
+                highlight_nodes.extend([str(t[0]), str(t[2])])
+        highlight_nodes = list(dict.fromkeys(highlight_nodes))
+
+        reasoning_path = [f"Step {idx}: {h} --{r}--> {t}" for idx, (h, r, t) in enumerate(triples[:6], 1)]
+        derivation_chain = ""
+        if triples:
+            chain = [str(triples[0][0])] + [str(item[2]) for item in triples[:3] if len(item) >= 3]
+            derivation_chain = " -> ".join(chain)
+
+        learning_path = []
         try:
-            retrievers = knowledge_base.get_retrievers()
-            for db_id, info in retrievers.items():
-                retriever = info.get("retriever")
-                if retriever is None:
-                    continue
-                if asyncio.iscoroutinefunction(retriever):
-                    docs = await retriever(question, "", "")
-                else:
-                    docs = retriever(question, "", "")
-                    if isinstance(docs, list):
-                        for item in docs[:2]:
-                            text = str(item).strip()
-                            if text:
-                               vector_evidence.append(
-                                  {
-                                    "source_db": db_id,
-                                    "snippet": text[:220],
-                                 }
-                            )
-        except Exception as e:
-            logger.warning(f"图谱问答向量检索失败，已降级为图谱检索: {e}")
+            learning_path = graph_base.recommend_learning_path(
+                concept=question, kgdb_name=kgdb_name, subject=subject
+            )
+        except Exception:
+            pass
 
-            highlight_nodes = []
-            for t in triples[:8]:
-                if len(t) >= 3:
-                   highlight_nodes.extend([str(t[0]), str(t[2])])
-            highlight_nodes = list(dict.fromkeys(highlight_nodes))
+        # ==========================
+        # 4. 双引擎融合答案
+        # ==========================
+        answer_parts = []
 
-            reasoning_path = [f"Step {idx}: {h} --{r}--> {t}" for idx, (h, r, t) in enumerate(triples[:6], 1)]
-            derivation_chain = " -> ".join(
-                [str(triples[0][0])] + [str(item[2]) for item in triples[:3] if len(item) >= 3]
-            ) if triples else ""
+        # 图谱结果
+        if triples:
+            answer_parts.append("📊 **知识图谱推理**")
+            answer_parts.extend(reasoning_path[:4])
 
-            if triples or vector_evidence:
-                parts = []
-                if triples:
-                     parts.append("基于图谱证据可得：\n" + "\n".join(reasoning_path[:4]))
-                if vector_evidence:
-                    vec_lines = [f"- {ev['snippet']}" for ev in vector_evidence[:3]]
-                    parts.append("结合知识库检索片段：\n" + "\n".join(vec_lines))
-                answer = "\n\n".join(parts)
-            else:
-                # 图谱无命中时尝试模型增强
-                answer = "图谱暂无直接证据。"
-                try:
-                    from src import config
+        # 向量结果
+        if vector_evidence:
+            answer_parts.append("\n📄 **文档检索证据**")
+            for ev in vector_evidence[:3]:
+                answer_parts.append(f"- {ev['snippet']}")
 
-                    provider, model_name = config.default_model.split("/", 1)
-                    model = select_model(provider, model_name)
-                    resp = model.call(
-                         [
-                            {"role": "system","content": "你是计算机专业助教，请给出简洁专业回答，并优先使用检索证据。"},
-                            {"role": "user","content": f"学科：{subject or '综合'}\n历史问题：{memory or ['无']}\n当前问题：{question}\n图谱证据：{triples[:4]}\n向量证据：{vector_evidence[:3]}"},
-                            ],
-                            stream=False,
-                    )
-                    answer = f"{answer}\n模型增强回答：{getattr(resp, 'content', str(resp))}"
-                except Exception as e:
-                    logger.warning(f"图谱问答LLM增强失败: {e}")
+        # 最终回答
+        if answer_parts:
+            answer = "\n".join(answer_parts)
+        else:
+            answer = "⚠️ 暂无直接检索结果，请尝试更具体的问题。"
 
-            try:
-                learning_path = graph_base.recommend_learning_path(
-                    concept=question, kgdb_name=kgdb_name, subject=subject
-                )
-            except Exception:
-                learning_path = []
+        # 可信度分析
+        evidence_count = len(triples) + len(vector_evidence)
+        accuracy_analysis = {
+            "level": "high" if evidence_count >= 6 else "medium" if evidence_count >= 3 else "low",
+            "evidence_count": evidence_count,
+            "advice": "证据充分" if evidence_count >= 5 else "建议结合教材学习"
+        }
 
-            accuracy_analysis = {
-                "level": "high" if len(triples) >= 6 else "medium" if len(triples) >= 3 else "low",
-                "evidence_count": len(triples),
-                "advice": "证据较少，建议结合教材与题库验证" if len(triples) < 3 else "证据充分，可用于学习路径规划",
-            }
+        # 记忆
+        memory.append(f"Q: {question} | A: {answer[:120]}")
+        GRAPH_QA_MEMORY[session_id] = memory[-8:]
 
-            memory.append(f"Q: {question} | A: {answer[:120]}")
-            GRAPH_QA_MEMORY[session_id] = memory[-8:]
-
-            return {
-                "success": True,
-                "data": {
+        return {
+            "success": True,
+            "data": {
                 "answer": answer,
                 "triples": triples[:10],
                 "highlight_nodes": highlight_nodes,
@@ -806,12 +937,13 @@ async def ask_graph_question(
                 "session_id": session_id,
                 "memory_messages": GRAPH_QA_MEMORY.get(session_id, []),
                 "reasoning_path": reasoning_path,
-                "derivation_chain": derivation_chain or "暂无可推导链",
+                "derivation_chain": derivation_chain or "无",
                 "learning_path_recommendation": learning_path,
                 "accuracy_analysis": accuracy_analysis,
                 "vector_evidence": vector_evidence[:6],
-            },
+            }
         }
+
     except HTTPException:
         raise
     except Exception as e:

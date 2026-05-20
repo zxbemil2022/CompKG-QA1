@@ -46,6 +46,29 @@ ACADEMIC_RELATION_MAP = {
     "related_to": "EQUIVALENT",
 }
 
+CANONICAL_408_SUBJECTS = [
+    "数据结构",
+    "计算机组成原理",
+    "计算机网络",
+    "操作系统",
+]
+
+SUBJECT_ALIAS_TO_CANONICAL = {
+    "数据结构": "数据结构",
+    "数据结构与算法": "数据结构",
+    "计组": "计算机组成原理",
+    "组成原理": "计算机组成原理",
+    "计算机组成": "计算机组成原理",
+    "计算机组成原理": "计算机组成原理",
+    "计网": "计算机网络",
+    "网络": "计算机网络",
+    "计算机网络": "计算机网络",
+    "os": "操作系统",
+    "操作系统": "操作系统",
+}
+
+SUBJECT_ALL_ALIASES = {"", "all", "全部", "综合", "全科", "总图谱", "所有"}
+
 
 class GraphDatabase:
     def __init__(self):
@@ -92,7 +115,10 @@ class GraphDatabase:
         assert self.driver is not None, "Database is not connected"
         self.use_database(kgdb_name)
 
-        subject_filter = subject or ""
+        subject_normalized = str(subject or "").strip()
+        if subject_normalized.lower() in SUBJECT_ALL_ALIASES or subject_normalized in SUBJECT_ALL_ALIASES:
+            subject_normalized = ""
+        subject_filter = subject_normalized
 
         def query(tx, num, subject_filter):
             """Note: 使用连通性查询获取集中的节点子图"""
@@ -120,13 +146,13 @@ class GraphDatabase:
                 OPTIONAL MATCH (neighbor)-[*1..1]-(second_hop:Entity)
                 WHERE second_hop <> s AND ($subject = '' OR $subject IN coalesce(second_hop.subject_tags, []))
                 // 增加二跳节点的数量
-                WITH s, limited_neighbors, neighbor, collect(DISTINCT second_hop)[0..5] as second_hops
+                WITH s, limited_neighbors, neighbor, [x IN collect(DISTINCT second_hop) WHERE x IS NOT NULL][0..5] as second_hops
 
                 // 收集所有连通节点
                 WITH collect(DISTINCT s) as seeds,
                     collect(DISTINCT neighbor) as first_hop_nodes,
                     reduce(acc = [], x IN collect(second_hops) | acc + x) as second_hop_nodes
-                WITH seeds + first_hop_nodes + second_hop_nodes as connected_nodes
+                WITH [x IN (seeds + first_hop_nodes + second_hop_nodes) WHERE x IS NOT NULL] as connected_nodes
 
                 // 确保不会超过请求的节点数量
                 WITH connected_nodes[0..$num] as final_nodes
@@ -189,7 +215,7 @@ class GraphDatabase:
                         supplement_query,
                         existing_ids=list(node_ids),
                         count=remaining_count,
-                        subject=(subject or ""),
+                        subject=subject_filter,
                     )
 
                     for item in supplement_results:
@@ -359,13 +385,23 @@ class GraphDatabase:
                     embedding=embedding,
                 )
 
-        # 判断模型名称是否匹配
-        self.embed_model_name = self.embed_model_name or config.embed_model
+                # 对齐当前运行时 embedding 模型，避免因 graph_info 中历史模型名导致导入失败
+                runtime_embed_model = config.embed_model or self.embed_model_name
+                if self.embed_model_name != runtime_embed_model:
+                    logger.warning(
+                        "Embedding model mismatch detected, auto-switch runtime model: "
+                        f"graph.embed_model_name={self.embed_model_name}, config.embed_model={config.embed_model}"
+                    )
+                    self.embed_model_name = runtime_embed_model
+                    self.embed_model = select_embedding_model(self.embed_model_name)
+
         cur_embed_info = config.embed_model_names.get(self.embed_model_name)
+        if cur_embed_info is None:
+            raise ValueError(
+                f"Embedding model config not found for {self.embed_model_name}. "
+                f"Available models: {list(config.embed_model_names.keys())}"
+            )
         logger.warning(f"embed_model_name={self.embed_model_name}, {cur_embed_info=}")
-        assert self.embed_model_name == config.embed_model or self.embed_model_name is None, (
-            f"embed_model_name={self.embed_model_name}, {config.embed_model=}"
-        )
 
         logger.info(f"Adding entity to {kgdb_name}")
         with self.driver.session() as session:
@@ -432,13 +468,30 @@ class GraphDatabase:
 
         if not resolved_file_path.exists():
             if resolved_file_path.name in {"cs408_full_kg_triples.jsonl", "cs408_full_kg_triples.json","cs408_expert_seed.jsonl"}:
-                logger.warning(f"内置图谱文件缺失，回退到内置生成数据: {resolved_file_path}")
-                triples = self._generate_builtin_cs408_triples()
-                await self.txt_add_vector_entity(triples, kgdb_name, with_embedding=with_embedding)
-                self.status = "open"
-                self.save_graph_info()
-                return kgdb_name
+                # 优先专家种子，最后再退到小规模高语义内置样本，避免默认随机合成数据污染图谱质量
+                expert_seed = self._resolve_local_file("examples/cs408/cs408_expert_seed.jsonl")
+                if expert_seed.exists():
+                    logger.warning(f"内置图谱文件缺失，优先回退到专家种子: {expert_seed}")
+                    resolved_file_path = expert_seed
+                else:
+                    logger.warning(f"内置图谱文件缺失，回退到内置高语义样本: {resolved_file_path}")
+                    triples = self._generate_builtin_cs408_triples()
+                    await self.txt_add_vector_entity(triples, kgdb_name, with_embedding=with_embedding)
+                    self.status = "open"
+                    self.save_graph_info()
+                    return kgdb_name
+
+        if not resolved_file_path.exists():
             raise FileNotFoundError(f"图谱文件不存在: {file_path} (resolved: {resolved_file_path})")
+
+        # 识别旧版“章节-知识点编号”模板数据，自动切换到专家种子，避免导入低语义噪声图谱
+        if self._is_legacy_synthetic_cs408_file(resolved_file_path):
+            expert_seed = self._resolve_local_file("examples/cs408/cs408_expert_seed.jsonl")
+            if expert_seed.exists():
+                logger.warning(
+                    f"检测到旧版合成408图谱文件({resolved_file_path.name})，自动切换到专家种子: {expert_seed}"
+                )
+                resolved_file_path = expert_seed
 
         logger.info(f"Start adding entity to {kgdb_name} with {resolved_file_path}")
 
@@ -475,6 +528,13 @@ class GraphDatabase:
         return candidates[0] if candidates else candidate
 
     def _try_generate_builtin_cs408_dataset(self):
+        """
+        仅在显式开启时尝试生成合成全量数据，避免默认随机图谱污染线上语义质量。
+        """
+        allow_synthetic = str(os.getenv("ENABLE_CS408_SYNTHETIC_DATASET", "0")).lower() in {"1", "true", "yes", "on"}
+        if not allow_synthetic:
+            logger.info("未开启 ENABLE_CS408_SYNTHETIC_DATASET，跳过自动生成合成408图谱数据")
+            return
         project_root = Path(__file__).resolve().parents[2]
         script = project_root / "examples" / "cs408" / "generate_full_kg_dataset.py"
         if not script.exists():
@@ -485,6 +545,32 @@ class GraphDatabase:
             subprocess.run([sys.executable, str(script)], check=True, cwd=project_root)
         except Exception as e:
             logger.warning(f"自动生成内置408图谱数据失败: {e}")
+
+    def _is_legacy_synthetic_cs408_file(self, path: Path) -> bool:
+        """检测旧版随机合成数据（如 Concept01 / 知识点01 命名模式）。"""
+        if path.name not in {"cs408_full_kg_triples.jsonl", "cs408_full_kg_triples.json"}:
+            return False
+        if not path.exists():
+            return False
+        try:
+            if path.suffix == ".jsonl":
+                with path.open(encoding="utf-8") as f:
+                    for idx, line in enumerate(f):
+                        if idx > 20:
+                            break
+                        row = json.loads(line.strip())
+                        head = str(row.get("h", ""))
+                        if re.search(r"(Concept|Method|Property|Formula|Example)\d{2}$", head):
+                            return True
+            else:
+                payload = json.loads(path.read_text(encoding="utf-8"))
+                for row in payload[:20]:
+                    head = str(row.get("h", ""))
+                    if re.search(r"(Concept|Method|Property|Formula|Example)\d{2}$", head):
+                        return True
+        except Exception as exc:
+            logger.warning(f"legacy synthetic cs408 detection failed for {path}: {exc}")
+        return False
 
     def _generate_builtin_cs408_triples(self):
         """当本地文件不存在时的兜底内置图谱数据。"""
@@ -614,7 +700,20 @@ class GraphDatabase:
                 ORDER BY count DESC, subject ASC
                 """
             )
-            return [{"subject": row["subject"], "count": row["count"]} for row in result if row["subject"]]
+            raw_items = [{"subject": row["subject"], "count": row["count"]} for row in result if row["subject"]]
+            canonical_counts = {name: 0 for name in CANONICAL_408_SUBJECTS}
+
+            for item in raw_items:
+                raw_subject = str(item.get("subject", "")).strip()
+                normalized_key = raw_subject.lower()
+                canonical_subject = SUBJECT_ALIAS_TO_CANONICAL.get(raw_subject) or SUBJECT_ALIAS_TO_CANONICAL.get(
+                    normalized_key
+                )
+                if not canonical_subject:
+                    continue
+                canonical_counts[canonical_subject] += int(item.get("count", 0) or 0)
+
+            return [{"subject": subject, "count": canonical_counts[subject]} for subject in CANONICAL_408_SUBJECTS]
 
         with self.driver.session() as session:
             return session.execute_read(query)
@@ -801,9 +900,84 @@ class GraphDatabase:
         self.use_database(kgdb_name)
 
         # 简单空格分词，OR 聚合
-        tokens = [t for t in str(keyword).split(" ") if t]
+        normalized_keyword = re.sub(r"[\*\[\]\(\)\"'`]+", " ", str(keyword))
+        normalized_keyword = re.sub(r"[，,。！？?；;：:]+", " ", normalized_keyword).strip()
+
+        def _expand_query_tokens(text: str) -> list[str]:
+            base_tokens = re.findall(r"[\u4e00-\u9fffA-Za-z0-9_]+", text) or [text]
+            expanded = []
+            stop_suffixes = [
+                "的知识点",
+                "知识点",
+                "的概念",
+                "概念",
+                "是什么",
+                "什么意思",
+                "相关内容",
+                "相关",
+                "介绍",
+                "定义",
+            ]
+            split_delimiters = r"[和与及、/|]"
+
+            for token in base_tokens:
+                t = str(token).strip()
+                if not t:
+                    continue
+                expanded.append(t)
+
+                simplified = t
+                for suffix in stop_suffixes:
+                    if simplified.endswith(suffix):
+                        simplified = simplified[: -len(suffix)].strip()
+                        break
+                if simplified:
+                    expanded.append(simplified)
+
+                for part in re.split(split_delimiters, simplified):
+                    part = part.strip()
+                    if part:
+                        expanded.append(part)
+
+                if "的" in simplified:
+                    for part in simplified.split("的"):
+                        part = part.strip()
+                        if part:
+                            expanded.append(part)
+
+            dedup = []
+            seen = set()
+            for item in expanded:
+                # 过滤过短噪声词，但保留英文缩写
+                if len(item) == 1 and not re.match(r"[A-Za-z0-9]", item):
+                    continue
+                key = item.lower()
+                if key in seen:
+                    continue
+                seen.add(key)
+                dedup.append(item)
+            return dedup
+
+        # 更稳健的分词：加入“数组和表的知识点 -> 数组/表”之类的扩展词
+        tokens = _expand_query_tokens(normalized_keyword)
         if not tokens:
-            tokens = [str(keyword)]
+            tokens = [normalized_keyword or str(keyword)]
+
+        def _is_reasonable_entity_name(name: str) -> bool:
+            text = str(name or "").strip()
+            if not text:
+                return False
+            if len(text) > 36:
+                return False
+            if text in {"的", "了", "吗", "呢", "啊"}:
+                return False
+            noisy_markers = ["```", "\n", "\r", "  ", "内容：", "reference_id", "{", "}", ":"]
+            if any(marker in text for marker in noisy_markers):
+                return False
+            punctuation_count = len(re.findall(r"[，。；：！？,.!?;:]", text))
+            if punctuation_count >= 2:
+                return False
+            return True
 
         # name -> score 聚合；向量分数累加，模糊命中给予轻权重
         entity_to_score = {}
@@ -812,6 +986,8 @@ class GraphDatabase:
             results_sim = self._query_with_vector_sim(token, kgdb_name, threshold, subject=subject)
             for r in results_sim:
                 name = r[0]  # 与下方保持统一的 [0] 取 name 的方式
+                if not _is_reasonable_entity_name(name):
+                    continue
                 score = 0.0
                 try:
                     score = float(r["score"])  # neo4j.Record 支持键访问
@@ -825,6 +1001,8 @@ class GraphDatabase:
             for fr in results_fuzzy:
                 # _query_with_fuzzy_match 返回 values()，形如 [name]
                 name = fr[0]
+                if not _is_reasonable_entity_name(name):
+                    continue
                 # 给予轻权重，避免覆盖向量高分
                 entity_to_score[name] = max(entity_to_score.get(name, 0.0), 0.3)
 
@@ -1015,8 +1193,9 @@ class GraphDatabase:
         def query(tx, concept, subject, max_steps):
             result = tx.run(
                 """
-                MATCH p=(pre:Entity)-[:RELATION {type:'PREREQUISITE'}*1..6]->(target:Entity {name:$concept})
-                WHERE ($subject='' OR $subject IN coalesce(target.subject_tags, []))
+                MATCH p=(pre:Entity)-[rels:RELATION*1..6]->(target:Entity {name:$concept})
+                WHERE all(rel IN rels WHERE rel.type='PREREQUISITE')
+                  AND ($subject='' OR $subject IN coalesce(target.subject_tags, []))
                 RETURN [n IN nodes(p) | n.name] AS path
                 ORDER BY length(p) DESC
                 LIMIT 1

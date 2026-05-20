@@ -4,7 +4,7 @@ from typing import Annotated
 from src.agents.common.context import BaseContext
 from src.agents.common.mcp import MCP_SERVERS
 from src.agents.common.tools import gen_tool_info
-
+from src.skills import get_skill_registry
 from .tools import get_tools
 
 # @dataclass会自动帮你生成 __init__、__repr__、__eq__ 等常用方法，不用手动写。
@@ -24,6 +24,21 @@ class Context(BaseContext):
             "description": "工具列表",
         },
     )
+    skills: Annotated[list[str], {"__template_metadata__": {"kind": "skills"}}] = field(
+        default_factory=lambda: get_skill_registry().default_enabled_ids(),
+        metadata={
+            "name": "Skills",
+            "options": [skill.to_dict() for skill in get_skill_registry().list()],
+            "description": "按三类 Skill 选择 Agent 可见能力；运行期按依赖自动挂载工具/MCP。",
+        },
+    )
+
+    skill_params: dict = field(
+        default_factory=lambda: {skill.id: skill.params for skill in get_skill_registry().list()},
+        metadata={"name": "Skill 参数", "description": "每个 Skill 的运行参数，如 top_k、temperature、trace、timeout_ms。",
+                  "hide": True},
+    )
+
 
     mcps: list[str] = field(
         default_factory=list,

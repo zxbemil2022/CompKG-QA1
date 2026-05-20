@@ -1,10 +1,19 @@
 <template>
   <div class="dashboard-container">
-    <!-- 顶部状态条 -->
+    <div class="dashboard-hero">
+      <div>
+        <p class="eyebrow">Admin Analytics</p>
+        <h2>Dashboard 统计面板</h2>
+        <span>对话、用户、工具、知识库与反馈数据一屏掌握</span>
+      </div>
+      <a-space>
+        <StatusBar />
+        <a-button type="primary" :loading="loading" @click="loadAllStats">刷新统计</a-button>
+      </a-space>
+    </div>
 
     <!-- 现代化顶部统计栏 -->
     <div class="modern-stats-header">
-      <StatusBar />
       <StatsOverviewComponent :basic-stats="basicStats" />
     </div>
 
@@ -61,6 +70,13 @@
                 style="width: 120px"
                 @change="handleFilterChange"
               />
+              <a-input
+                v-model:value="filters.keyword"
+                placeholder="关键词"
+                size="small"
+                style="width: 140px"
+                @change="handleFilterChange"
+              />
               <a-select
                 v-model:value="filters.status"
                 placeholder="状态"
@@ -115,6 +131,24 @@
 
     <!-- 反馈模态框 -->
     <FeedbackModalComponent ref="feedbackModal" :admin-mode="true" />
+    <a-drawer v-model:open="qaPanelVisible" title="问答数据管理" width="760">
+      <div v-if="selectedConversation">
+        <a-space style="margin-bottom: 12px">
+          <a-tag color="blue">{{ selectedConversation.user_id }}</a-tag>
+          <a-tag color="purple">{{ selectedConversation.agent_id }}</a-tag>
+          <a-select v-model:value="selectedConversation.status" style="width: 120px" @change="handleStatusChange">
+            <a-select-option value="active">active</a-select-option>
+            <a-select-option value="archived">archived</a-select-option>
+            <a-select-option value="deleted">deleted</a-select-option>
+          </a-select>
+        </a-space>
+        <a-timeline>
+          <a-timeline-item v-for="msg in selectedConversation.messages" :key="msg.id">
+            <strong>{{ msg.role }}:</strong> {{ msg.content }}
+          </a-timeline-item>
+        </a-timeline>
+      </div>
+    </a-drawer>
   </div>
 </template>
 
@@ -151,6 +185,7 @@ const allStatsData = ref({
 const filters = reactive({
   user_id: '',
   agent_id: '',
+  keyword: '',
   status: 'active',
 })
 
@@ -158,6 +193,8 @@ const filters = reactive({
 const conversations = ref([])
 const loading = ref(false)
 const loadingDetail = ref(false)
+const qaPanelVisible = ref(false)
+const selectedConversation = ref(null)
 
 // 调用统计子组件引用
 const callStatsRef = ref(null)
@@ -269,6 +306,7 @@ const loadConversations = async () => {
       user_id: filters.user_id || undefined,
       agent_id: filters.agent_id || undefined,
       status: filters.status,
+      keyword: filters.keyword || undefined,
       limit: conversationPagination.pageSize,
       offset: (conversationPagination.current - 1) * conversationPagination.pageSize,
     }
@@ -308,13 +346,21 @@ const handleViewDetail = async (record) => {
   try {
     loadingDetail.value = true
     const detail = await dashboardApi.getConversationDetail(record.thread_id)
-    console.log(detail)
+    selectedConversation.value = detail
+    qaPanelVisible.value = true
   } catch (error) {
     console.error('获取对话详情失败:', error)
     message.error('获取对话详情失败')
   } finally {
     loadingDetail.value = false
   }
+}
+
+const handleStatusChange = async (status) => {
+  if (!selectedConversation.value?.thread_id) return
+  await dashboardApi.updateConversationStatus(selectedConversation.value.thread_id, status)
+  message.success('会话状态已更新')
+  loadConversations()
 }
 
 // 处理过滤器变化
@@ -355,10 +401,43 @@ onUnmounted(() => {
 <style scoped lang="less">
 
 .dashboard-container {
-  // padding: 0 24px 24px 24px;
-  background-color: var(--gray-25);
+  background: linear-gradient(180deg, #f8fbff 0%, var(--gray-25) 42%);
   min-height: calc(100vh - 64px);
   overflow-x: hidden;
+}
+
+.dashboard-hero {
+  margin: 16px 16px 0;
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #e7eef8;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+
+  .eyebrow {
+    margin: 0 0 4px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-weight: 700;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--gray-1000);
+  }
+
+  span {
+    display: inline-block;
+    margin-top: 6px;
+    color: var(--gray-600);
+  }
 }
 
 // Dashboard 特有的网格布局

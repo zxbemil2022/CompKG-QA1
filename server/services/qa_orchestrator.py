@@ -42,6 +42,7 @@ class QAOrchestrator:
         """提前执行可控检索（图谱优先策略），生成可解释上下文。"""
         plan = self.parse_query(query=query, subject=subject)
         image_evidence = image_evidence or []
+        force_retrieval = os.getenv("RAG_FORCE_RETRIEVAL", "true").lower() in {"1", "true", "yes", "on"}
         retrieval_bundle = {
             "plan": {
                 "strategy": plan.strategy,
@@ -50,16 +51,29 @@ class QAOrchestrator:
                 "subject": subject or "",
             },
             "evidence_bundle": image_evidence[:10],
+            "used_knowledge_bases": [],
+            "reasoning_path": [],
+            "derivation_chain": "暂无",
+            "retrieval_executed": False,
             "conflict_flags": [],
+            "retrieval_trace": [],
         }
         context_lines = []
 
-        if plan.should_prioritize_graph:
+        #output_contract_lines = self._build_structured_answer_contract()#
+
+        should_run_retrieval = bool(plan.raw_query) and (plan.should_prioritize_graph or force_retrieval)
+        if should_run_retrieval:
             retrieval_result = await self._run_hybrid_retrieval(plan)
             evidence_bundle = retrieval_result.get("evidence_bundle", [])
             retrieval_bundle["evidence_bundle"] = (image_evidence[:10] + evidence_bundle)[:30]
+            retrieval_bundle["used_knowledge_bases"] = retrieval_result.get("used_knowledge_bases", [])
+            retrieval_bundle["reasoning_path"] = retrieval_result.get("reasoning_path", [])
+            retrieval_bundle["derivation_chain"] = retrieval_result.get("derivation_chain", "暂无")
+            retrieval_bundle["retrieval_executed"] = True
             retrieval_bundle["conflict_flags"] = self._detect_conflicts(evidence_bundle)
-            context_lines = self._format_grounding_context(retrieval_result, plan)
+            retrieval_bundle["retrieval_trace"] = retrieval_result.get("retrieval_trace", [])
+            context_lines = self._format_grounding_context(retrieval_result, plan, forced=not plan.should_prioritize_graph)
         elif image_evidence:
             context_lines = [
                 "[系统编排提示] 当前问题包含图片输入，已启用图像理解双通路（VL + OCR）。",
@@ -67,6 +81,9 @@ class QAOrchestrator:
             ]
             for item in image_evidence[:3]:
                 context_lines.append(f"- {item.get('evidence_id', 'IMGUNK')} @ {item.get('image_type', 'unknown')}")
+
+        #if output_contract_lines:#
+            #context_lines.extend(output_contract_lines)#
 
         if image_evidence and not retrieval_bundle["conflict_flags"]:
             retrieval_bundle["conflict_flags"] = self._detect_conflicts(retrieval_bundle["evidence_bundle"])
@@ -88,6 +105,17 @@ class QAOrchestrator:
             "retrieval_bundle": retrieval_bundle,
             "grounding_context": "\n".join(context_lines).strip(),
         }
+
+    #def _build_structured_answer_contract(self) -> list[str]:
+        """统一回答结构约束，提升智能体页面输出稳定性与可读性。"""
+        #return [
+           # "[回答结构约束] 请严格按以下 4 段输出，且使用对应标题：",
+            #"1) 结论：先给一句话结论，再给 2-4 条关键点。",
+            #"2) 证据：逐条列出证据并显式引用 evidence_id（如 G001/V001/IMG001）。",
+            #"3) 推理路径：用 `A -> B -> C` 形式给出关键推导链。",
+            #"4) 置信度：给出 high/medium/low，并说明依据（证据数量、是否存在冲突）。",
+            #"[输出风格要求] 优先简洁、可核验；若证据不足，必须明确说明不确定项与补充信息建议。",
+        #]#
 
     async def _run_hybrid_retrieval(self, plan: OrchestratorPlan) -> dict[str, Any]:
         """图谱+向量混合检索。"""
@@ -134,6 +162,11 @@ class QAOrchestrator:
             "used_knowledge_bases": sorted(list(used_kbs)),
             "reasoning_path": reasoning_paths[:10],
             "derivation_chain": derivation_chain or "暂无",
+            "retrieval_trace": [
+                trace
+                for result in results if isinstance(result, dict)
+                for trace in (result.get("retrieval_trace", []) or [])
+            ][:30],
         }
         cache.set(cache_key, value)
         cache.set(f"retrieval:graph_path:{plan.subject}:{plan.raw_query}", value.get("reasoning_path", []))
@@ -200,14 +233,19 @@ class QAOrchestrator:
             return ["possible_conflict_detected"]
         return []
 
-    def _format_grounding_context(self, retrieval_result: dict[str, Any], plan: OrchestratorPlan) -> list[str]:
+    def _format_grounding_context(self, retrieval_result: dict[str, Any], plan: OrchestratorPlan, forced: bool = False) -> list[str]:
         evidence_bundle = retrieval_result.get("evidence_bundle", [])
         used_kbs = retrieval_result.get("used_knowledge_bases", [])
         reasoning_path = retrieval_result.get("reasoning_path", [])
         derivation_chain = retrieval_result.get("derivation_chain", "暂无")
 
+        retrieval_tip = (
+            "[系统编排提示] 当前问题命中关系/因果/比较/流程/推导意图，已优先执行图谱+向量混合检索。"
+            if not forced
+            else "[系统编排提示] 已执行默认RAG检索（向量优先，按需融合图谱），请严格依据证据回答。"
+        )
         lines = [
-            "[系统编排提示] 当前问题命中关系/因果/比较/流程/推导意图，已优先执行图谱+向量混合检索。",
+            retrieval_tip,
             f"[检索策略] {plan.strategy}",
             f"[使用知识库] {', '.join(used_kbs) if used_kbs else '未命中'}",
             f"[推导链] {derivation_chain}",
@@ -240,6 +278,12 @@ class QAOrchestrator:
         source_refs = source_refs or []
         retrieval_bundle = retrieval_bundle or {}
         expected_ids = [str(ref.get("evidence_id", "")).strip() for ref in source_refs if ref.get("evidence_id")]
+        valid_citation_objects = [
+            ref for ref in source_refs
+            if ref.get("evidence_id") and ref.get("source_kb") and (
+                    ref.get("source_type") == "graph" or ref.get("source_path") or ref.get("doc_id") or ref.get("chunk_id")
+            )
+        ]
         canonical_expected_ids = {eid.upper() for eid in expected_ids if eid}
         pattern_hits = re.findall(r"\b(?:G|V|IMG)\d{3}\b", answer.upper())
         explicit_hits = {hit.upper() for hit in pattern_hits}
@@ -248,9 +292,24 @@ class QAOrchestrator:
                 explicit_hits.add(eid)
         evidence_mentions = sorted(explicit_hits)
         has_evidence_ref = len(evidence_mentions) > 0
+        key_sentences = self._extract_key_sentences(answer)
+        sentence_citation_issues: list[str] = []
+        for sentence in key_sentences:
+            if not re.search(r"\b(?:G|V|IMG)\d{3}\b", sentence.upper()):
+                sentence_citation_issues.append(sentence[:120])
+        #normalized_answer = answer.lower()
+        #has_structured_sections = all(
+            #section in normalized_answer for section in ["结论", "证据", "推理路径", "置信度"]
+        #)#
         confidence_level = (quality_report.get("confidence_level") or "").lower()
         quality_flags = []
         remediation_notes = []
+
+        #if not has_structured_sections:
+            #quality_flags.append("missing_structured_sections")
+            #remediation_notes.append(
+                #"请按“结论 / 证据 / 推理路径 / 置信度”四段式重写答案，确保结构化可读。"
+            #)#
 
         if not has_evidence_ref:
             quality_flags.append("missing_evidence_citation")
@@ -275,6 +334,14 @@ class QAOrchestrator:
         if conflict_flags:
             quality_flags.append("evidence_conflict")
             remediation_notes.append("检测到证据可能冲突，请在答案中明确不确定项并给出验证建议。")
+        if sentence_citation_issues:
+            quality_flags.append("missing_key_sentence_citation")
+            remediation_notes.append(
+                "关键结论句缺少证据编号，请为每条结论/要点补充 [Gxxx]/[Vxxx]/[IMGxxx] 引用。"
+            )
+        if source_refs and not valid_citation_objects:
+            quality_flags.append("citation_object_incomplete")
+            remediation_notes.append("证据对象字段不完整，请补齐 source_kb + (source_path/doc_id/chunk_id) 后再输出。")
 
         return {
             "passed": len(quality_flags) == 0,
@@ -283,4 +350,22 @@ class QAOrchestrator:
                 [note if "\n" in note else f"- {note}" for note in remediation_notes]
             ).strip(),
             "evidence_mentions": evidence_mentions,
+            "missing_key_sentence_samples": sentence_citation_issues[:3],
+            "citation_object_count": len(valid_citation_objects),
         }
+
+    def _extract_key_sentences(self, answer: str) -> list[str]:
+        if not answer:
+            return []
+        lines = [line.strip() for line in answer.splitlines() if line and line.strip()]
+        key_sentences = []
+        for line in lines:
+            if line.startswith(("-", "*", "•")):
+                key_sentences.append(line)
+                continue
+            if re.match(r"^\d+[).、]", line):
+                key_sentences.append(line)
+                continue
+            if any(marker in line for marker in ["结论", "答案", "因此", "综上"]):
+                key_sentences.append(line)
+        return key_sentences[:8]

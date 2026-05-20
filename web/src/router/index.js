@@ -104,6 +104,19 @@ const router = createRouter({
       ]
     },
     {
+      path: '/skill-center',
+      name: 'skill-center',
+      component: AppLayout,
+      children: [
+        {
+          path: '',
+          name: 'SkillCenterComp',
+          component: () => import('../views/SkillCenterView.vue'),
+          meta: { keepAlive: false, requiresAuth: true, requiresAdmin: true }
+        }
+      ]
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: () => import('../views/EmptyView.vue'),

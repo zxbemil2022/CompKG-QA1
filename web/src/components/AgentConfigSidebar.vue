@@ -45,6 +45,7 @@
             <!-- 统一显示所有配置项 -->
             <template v-for="(value, key) in configurableItems" :key="key">
               <a-form-item
+                v-if="!isSkillConfigKey(key)"
                 :label="getConfigLabel(key, value)"
                 :name="key"
                 class="config-item"
@@ -213,6 +214,70 @@
 
           </a-form>
         </div>
+
+        <div class="skills-extension-panel">
+          <div class="skills-panel-header">
+            <div>
+              <h3>Skills</h3>
+              <p>核心扩展能力区，可按当前问答场景选择技能。</p>
+            </div>
+          </div>
+
+          <div class="skills-toolbar">
+            <span>已选择 {{ selectedSkillIds.length }} 项 | 共 {{ skillModules.length }} 项</span>
+            <div class="skills-actions">
+              <a-button type="link" size="small" @click="clearSkills" v-if="selectedSkillIds.length > 0">清空</a-button>
+              <a-button type="link" size="small" @click="refreshSkills">刷新</a-button>
+              <a-button type="link" size="small" @click="openSkillConfig(activeSkillForConfig || skillModules[0])">配置</a-button>
+            </div>
+          </div>
+
+          <div class="skills-group-list">
+            <div v-for="group in groupedSkillModules" :key="group.key" class="skill-type-group">
+              <div class="skill-type-header" @click="toggleSkillGroupCollapse(group.key)">
+                <div>
+                  <div class="skill-type-title">
+                    <a-tag :color="group.color">{{ group.title }}</a-tag>
+                    <span>{{ getGroupSelectedCount(group.key) }} / {{ group.skills.length }}</span>
+                  </div>
+                  <p>{{ group.subtitle }}</p>
+                </div>
+                <div class="skill-type-actions" @click.stop>
+                  <a-button type="link" size="small" @click="selectSkillGroup(group.key)">整组启用</a-button>
+                  <a-button type="link" size="small" @click="clearSkillGroup(group.key)">禁用</a-button>
+                </div>
+              </div>
+
+              <div v-show="!collapsedSkillGroups[group.key]" class="skills-list">
+                <div
+                  v-for="skill in group.skills"
+                  :key="skill.id"
+                  class="skill-option-card"
+                  :class="{ selected: isSkillSelected(skill.id) }"
+                  @click="toggleSkill(skill.id)"
+                >
+                  <div class="skill-option-main">
+                    <div class="skill-title-row">
+                      <span class="skill-name">{{ skill.name }}</span>
+                      <a-tag size="small">{{ skill.category }}</a-tag>
+                    </div>
+                    <span class="skill-desc">{{ skill.description }}</span>
+                    <div class="skill-meta-row">
+                      <span>加载：{{ skill.load_strategy }}</span>
+                      <span>状态：{{ skill.status }}</span>
+                      <span>依赖：{{ getSkillDependencyCount(skill) }}</span>
+                    </div>
+                  </div>
+                  <div class="skill-option-actions" @click.stop>
+                    <a-button type="link" size="small" @click="openSkillConfig(skill)">配置</a-button>
+                    <CheckCircleOutlined v-if="isSkillSelected(skill.id)" class="selected-icon" />
+                    <PlusCircleOutlined v-else class="unselected-icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- 固定在底部的操作按钮 -->
@@ -228,6 +293,71 @@
         </div>
       </div>
     </div>
+
+    <a-drawer
+      v-model:open="skillConfigOpen"
+      :title="activeSkillForConfig?.name || 'Skill 配置'"
+      width="520"
+      class="skill-config-drawer"
+    >
+      <template v-if="activeSkillForConfig">
+        <a-alert
+          type="info"
+          :message="activeSkillForConfig.description"
+          show-icon
+          class="skill-config-alert"
+        />
+        <div class="skill-detail-meta">
+          <a-descriptions size="small" :column="1" bordered>
+            <a-descriptions-item label="类型">{{ getSkillTypeMeta(activeSkillForConfig.skill_type)?.title }}</a-descriptions-item>
+            <a-descriptions-item label="目录">{{ activeSkillForConfig.dir_path }}</a-descriptions-item>
+            <a-descriptions-item label="版本">{{ activeSkillForConfig.version }}</a-descriptions-item>
+            <a-descriptions-item label="依赖">
+              <a-space wrap>
+                <a-tag v-for="dep in getAllSkillDependencies(activeSkillForConfig)" :key="dep">{{ dep }}</a-tag>
+                <span v-if="getAllSkillDependencies(activeSkillForConfig).length === 0">无</span>
+              </a-space>
+            </a-descriptions-item>
+            <a-descriptions-item label="适用场景">
+              {{ (activeSkillForConfig.scenarios || []).join('、') }}
+            </a-descriptions-item>
+            <a-descriptions-item label="调用示例">{{ activeSkillForConfig.call_example }}</a-descriptions-item>
+          </a-descriptions>
+        </div>
+        <a-form layout="vertical" class="skill-config-form">
+          <a-form-item label="启用状态">
+            <a-switch
+              :checked="isSkillSelected(activeSkillForConfig.id)"
+              @update:checked="() => toggleSkill(activeSkillForConfig.id)"
+            />
+          </a-form-item>
+          <a-form-item label="TopK / 证据数量">
+            <a-input-number
+              :value="getSkillParam(activeSkillForConfig.id, 'top_k')"
+              :min="1"
+              :max="50"
+              style="width: 100%"
+              @update:value="(value) => updateSkillParam(activeSkillForConfig.id, 'top_k', value)"
+            />
+          </a-form-item>
+          <a-form-item label="推理温度">
+            <a-slider
+              :value="getSkillParam(activeSkillForConfig.id, 'temperature')"
+              :min="0"
+              :max="1"
+              :step="0.1"
+              @update:value="(value) => updateSkillParam(activeSkillForConfig.id, 'temperature', value)"
+            />
+          </a-form-item>
+          <a-form-item label="追踪日志">
+            <a-switch
+              :checked="getSkillParam(activeSkillForConfig.id, 'trace')"
+              @update:checked="(value) => updateSkillParam(activeSkillForConfig.id, 'trace', value)"
+            />
+          </a-form-item>
+        </a-form>
+      </template>
+    </a-drawer>
 
     <!-- 工具选择弹窗 -->
     <a-modal
@@ -300,6 +430,7 @@ import { message } from 'ant-design-vue';
 import ModelSelectorComponent from '@/components/ModelSelectorComponent.vue';
 import { useAgentStore } from '@/stores/agent';
 import { storeToRefs } from 'pinia';
+import { defaultSkillModules, skillTypeGroups } from '@/constants/skill_modules';
 
 // Props
 const props = defineProps({
@@ -321,7 +452,8 @@ const {
   selectedAgent,
   selectedAgentId,
   agentConfig,
-  configurableItems
+  configurableItems,
+  availableSkills
 } = storeToRefs(agentStore);
 
 // console.log(availableTools.value)
@@ -331,6 +463,10 @@ const toolsModalOpen = ref(false);
 const selectedTools = ref([]);
 const toolsSearchText = ref('');
 const systemPromptEditMode = ref(false);
+const skillModules = ref(JSON.parse(JSON.stringify(defaultSkillModules)));
+const skillConfigOpen = ref(false);
+const activeSkillForConfig = ref(null);
+const collapsedSkillGroups = ref({});
 
 
 const isEmptyConfig = computed(() => {
@@ -349,6 +485,25 @@ const filteredTools = computed(() => {
   );
 });
 
+const defaultSelectedSkillIds = computed(() =>
+  skillModules.value.filter(skill => skill.enabled).map(skill => skill.id)
+);
+
+const selectedSkillIds = computed(() => {
+  const configuredSkills = agentConfig.value?.skills;
+  return Array.isArray(configuredSkills) ? configuredSkills : defaultSelectedSkillIds.value;
+});
+
+const skillParamConfig = computed(() => ({
+  ...Object.fromEntries(skillModules.value.map(skill => [skill.id, { ...skill.params }])),
+  ...(agentConfig.value?.skill_params || {})
+}));
+
+const groupedSkillModules = computed(() => skillTypeGroups.map(group => ({
+  ...group,
+  skills: skillModules.value.filter(skill => skill.skill_type === group.key)
+})));
+
 // 方法
 const closeSidebar = () => {
   emit('close');
@@ -365,6 +520,8 @@ const getConfigLabel = (key, value) => {
 const getPlaceholder = (key, value) => {
   return `（默认: ${value.default}）`;
 };
+
+const isSkillConfigKey = (key) => ['skills', 'skill_params'].includes(key);
 
 const handleModelChange = (spec) => {
   if (typeof spec !== 'string' || !spec) return;
@@ -411,6 +568,90 @@ const clearSelection = (key) => {
   agentStore.updateAgentConfig({
     [key]: []
   });
+};
+
+const isSkillSelected = (skillId) => {
+  return selectedSkillIds.value.includes(skillId);
+};
+
+const toggleSkill = (skillId) => {
+  const nextSkills = [...selectedSkillIds.value];
+  const index = nextSkills.indexOf(skillId);
+  if (index > -1) {
+    nextSkills.splice(index, 1);
+  } else {
+    nextSkills.push(skillId);
+  }
+  agentStore.updateAgentConfig({ skills: nextSkills });
+};
+
+const clearSkills = () => {
+  agentStore.updateAgentConfig({ skills: [] });
+};
+
+const applyAvailableSkills = () => {
+  const backendSkills = availableSkills.value ? Object.values(availableSkills.value) : [];
+  skillModules.value = backendSkills.length > 0
+    ? backendSkills
+    : JSON.parse(JSON.stringify(defaultSkillModules));
+};
+
+const refreshSkills = async () => {
+  await agentStore.fetchSkills();
+  applyAvailableSkills();
+  message.success('Skills 列表已刷新');
+};
+
+const openSkillConfig = (skill) => {
+  if (!skill) return;
+  activeSkillForConfig.value = skill;
+  skillConfigOpen.value = true;
+};
+
+const getSkillParam = (skillId, key) => {
+  return skillParamConfig.value?.[skillId]?.[key];
+};
+
+const updateSkillParam = (skillId, key, value) => {
+  const params = { ...skillParamConfig.value };
+  params[skillId] = { ...(params[skillId] || {}), [key]: value };
+  agentStore.updateAgentConfig({ skill_params: params });
+};
+
+const getSkillTypeMeta = (skillType) => {
+  return skillTypeGroups.find(group => group.key === skillType);
+};
+
+const getAllSkillDependencies = (skill) => {
+  return [
+    ...(skill.tool_dependencies || []),
+    ...(skill.mcp_dependencies || []),
+    ...(skill.skill_dependencies || [])
+  ];
+};
+
+const getSkillDependencyCount = (skill) => getAllSkillDependencies(skill).length;
+
+const toggleSkillGroupCollapse = (groupKey) => {
+  collapsedSkillGroups.value = {
+    ...collapsedSkillGroups.value,
+    [groupKey]: !collapsedSkillGroups.value[groupKey]
+  };
+};
+
+const getGroupSelectedCount = (groupKey) => {
+  const groupSkillIds = skillModules.value.filter(skill => skill.skill_type === groupKey).map(skill => skill.id);
+  return groupSkillIds.filter(skillId => selectedSkillIds.value.includes(skillId)).length;
+};
+
+const selectSkillGroup = (groupKey) => {
+  const groupSkillIds = skillModules.value.filter(skill => skill.skill_type === groupKey).map(skill => skill.id);
+  agentStore.updateAgentConfig({ skills: [...new Set([...selectedSkillIds.value, ...groupSkillIds])] });
+};
+
+const clearSkillGroup = (groupKey) => {
+  const groupSkillIds = new Set(skillModules.value.filter(skill => skill.skill_type === groupKey).map(skill => skill.id));
+  agentStore.updateAgentConfig({ skills: selectedSkillIds.value.filter(skillId => !groupSkillIds.has(skillId)) });
 };
 
 // 工具相关方法
@@ -492,6 +733,7 @@ const validateAndFilterConfig = () => {
 
   // 遍历所有配置项
   Object.keys(configItems).forEach(key => {
+    if (isSkillConfigKey(key)) return;
     const configItem = configItems[key];
     const currentValue = validatedConfig[key];
 
@@ -560,10 +802,17 @@ const resetConfig = async () => {
 };
 
 // 监听器
-watch(() => props.isOpen, (newVal) => {
+watch(() => props.isOpen, async (newVal) => {
   if (newVal && (!availableTools.value || Object.keys(availableTools.value).length === 0)) {
     loadAvailableTools();
   }
+  if (newVal) {
+    await refreshSkills();
+  }
+});
+
+watch(availableSkills, () => {
+  applyAvailableSkills();
 });
 </script>
 
@@ -787,6 +1036,200 @@ watch(() => props.isOpen, (newVal) => {
         }
       }
     }
+  }
+}
+
+.skills-extension-panel {
+  margin: 4px 0 100px;
+  padding: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+
+  .skills-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--gray-1000);
+    }
+
+    p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--gray-600);
+    }
+  }
+
+  .skills-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: var(--gray-25);
+    color: var(--gray-700);
+    font-size: 12px;
+
+    .skills-actions {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      white-space: nowrap;
+    }
+  }
+
+  .skills-group-list {
+    display: grid;
+    gap: 12px;
+  }
+
+  .skill-type-group {
+    border: 1px solid var(--gray-200);
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.76);
+  }
+
+  .skill-type-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 12px;
+    background: var(--gray-25);
+    cursor: pointer;
+
+    .skill-type-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+      font-size: 12px;
+      color: var(--gray-700);
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      color: var(--gray-600);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .skill-type-actions {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+    }
+  }
+
+  .skills-list {
+    display: grid;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .skill-option-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--gray-200);
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: var(--main-color);
+      box-shadow: 0 6px 16px rgba(16, 129, 155, 0.08);
+      transform: translateY(-1px);
+    }
+
+    &.selected {
+      border-color: var(--main-color);
+      background: #f0fbff;
+
+      .skill-name {
+        color: var(--main-color);
+      }
+    }
+
+    .skill-option-main {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .skill-title-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .skill-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gray-900);
+    }
+
+    .skill-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      color: var(--gray-500);
+      font-size: 11px;
+    }
+
+    .skill-desc {
+      font-size: 12px;
+      color: var(--gray-600);
+      line-height: 1.35;
+    }
+
+    .skill-option-actions {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .selected-icon {
+      color: var(--main-color);
+      font-size: 16px;
+    }
+
+    .unselected-icon {
+      color: var(--gray-400);
+      font-size: 16px;
+    }
+  }
+}
+
+.skill-config-drawer {
+  .skill-config-alert {
+    margin-bottom: 16px;
+  }
+
+  .skill-detail-meta {
+    margin-bottom: 16px;
+  }
+
+  .skill-config-form {
+    margin-top: 8px;
   }
 }
 

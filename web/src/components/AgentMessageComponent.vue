@@ -34,6 +34,26 @@
           <a-tag color="blue" v-for="r in groupedImageRefs.kb" :key="`kb-${r.evidence_id}`">{{ r.evidence_id }}</a-tag>
         </div>
       </div>
+      <div v-if="textualRefs.length" class="text-evidence-block">
+        <div class="evidence-title">文本证据</div>
+        <div
+          v-for="ref in textualRefs.slice(0, 6)"
+          :key="`text-${ref.evidence_id}-${ref.source_kb || 'unknown'}`"
+          class="text-evidence-item"
+        >
+          <div class="text-evidence-head">
+            <a-tag color="purple">{{ ref.evidence_id || 'UNK' }}</a-tag>
+            <a-tag>{{ ref.source_kb || 'unknown_kb' }}</a-tag>
+            <a-tag v-if="ref.chunk_id" color="blue">chunk: {{ ref.chunk_id }}</a-tag>
+            <a-tag v-if="ref.doc_id" color="gold">doc: {{ ref.doc_id }}</a-tag>
+            <a-tag v-if="ref.similarity != null" color="cyan">sim: {{ Number(ref.similarity).toFixed(3) }}</a-tag>
+            <a-tag v-else-if="ref.score != null" color="cyan">score: {{ Number(ref.score).toFixed(3) }}</a-tag>
+            <a-tag v-if="ref.confidence != null" color="green">conf: {{ Number(ref.confidence).toFixed(3) }}</a-tag>
+          </div>
+          <div v-if="ref.source_path" class="text-evidence-source">来源: {{ ref.source_path }}</div>
+          <div v-if="ref.preview" class="text-evidence-preview">{{ ref.preview }}</div>
+        </div>
+      </div>
 
         <div v-if="shouldShowReasoning" class="reasoning-box">
           <div class="reasoning-toggle-row">
@@ -59,6 +79,10 @@
         :modelValue="parsedData.content"
         :key="message.id"
         class="message-md"/>
+      <div v-if="citationLines.length" class="citation-inline">
+        <div class="citation-title">证据来源</div>
+        <div v-for="(line, idx) in citationLines" :key="`citation-${idx}`" class="citation-line">{{ line }}</div>
+      </div>
 
       <div v-else-if="shouldShowReasoning"  class="empty-block"></div>
 
@@ -312,11 +336,24 @@ const parsedData = computed(() => {
 const shouldShowReasoning = computed(() => !!parsedData.value.reasoning_content);
 
 const groupedImageRefs = computed(() => {
-  const refs = props.message?.extra_metadata?.source_refs || [];
+  const refs = props.message?.extra_metadata?.evidence_bundle || props.message?.extra_metadata?.source_refs || [];
   return {
     temp: refs.filter((r) => r?.mode === 'temp_chat_image'),
     kb: refs.filter((r) => r?.mode === 'kb_image'),
   };
+});
+
+const textualRefs = computed(() => {
+  const refs = props.message?.extra_metadata?.evidence_bundle || props.message?.extra_metadata?.source_refs || [];
+  return refs.filter((r) => !['temp_chat_image', 'kb_image'].includes(r?.mode));
+});
+
+const citationLines = computed(() => {
+  return textualRefs.value.slice(0, 6).map((ref) => {
+    const source = ref.source_path || ref.doc_id || ref.source_kb || 'unknown_source';
+    const chunk = ref.chunk_id ? `#${ref.chunk_id}` : '';
+    return `${ref.evidence_id || 'UNK'} @ ${source}${chunk ? ` (${chunk})` : ''}`;
+  });
 });
 
 const toggleToolCall = (toolCallId) => {
@@ -364,6 +401,50 @@ const toggleToolCall = (toolCallId) => {
 
   .image-evidence-block {
     margin-bottom: 8px;
+  }
+  .text-evidence-block {
+    margin-bottom: 8px;
+    border-left: 2px solid #d8b4fe;
+    padding-left: 8px;
+  }
+  .text-evidence-item {
+    margin-bottom: 6px;
+  }
+  .text-evidence-head {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .text-evidence-preview {
+    font-size: 12px;
+    color: #475569;
+    line-height: 1.5;
+    margin-top: 2px;
+    word-break: break-word;
+  }
+  .text-evidence-source {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 2px;
+    word-break: break-all;
+  }
+  .citation-inline {
+    margin-top: 8px;
+    padding-top: 6px;
+    border-top: 1px dashed #cbd5e1;
+  }
+  .citation-title {
+    font-size: 12px;
+    color: #475569;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .citation-line {
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.5;
+    word-break: break-all;
   }
 
   .evidence-group {

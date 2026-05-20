@@ -17,6 +17,7 @@ export const useAgentStore = defineStore('agent', {
 
     // 工具相关状态
     availableTools: [], // 所有可用工具列表
+    availableSkills: {}, // 标准化 Skills 元数据
 
     // 线程相关状态已迁移到组件级别
 
@@ -81,6 +82,7 @@ export const useAgentStore = defineStore('agent', {
         if (this.selectedAgentId) {
           await this.loadAgentConfig();
           await this.fetchTools();
+          await this.fetchSkills();
         }
 
         this.isInitialized = true;
@@ -220,6 +222,17 @@ export const useAgentStore = defineStore('agent', {
       }
     },
 
+     // 获取 Skills 列表
+    async fetchSkills() {
+      try {
+        const response = await agentApi.getSkills();
+        this.availableSkills = response.skills || {};
+      } catch (error) {
+        console.error('Failed to fetch skills:', error);
+        this.availableSkills = {};
+      }
+    },
+
     // 清除错误状态
     clearError() {
       this.error = null;
@@ -235,6 +248,7 @@ export const useAgentStore = defineStore('agent', {
       this.agentConfig = {};
       this.originalAgentConfig = {};
       this.availableTools = [];
+      this.availableSkills = {};
       this.isLoadingAgents = false;
       this.isLoadingConfig = false;
       this.isLoadingTools = false;

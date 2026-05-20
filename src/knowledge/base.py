@@ -432,6 +432,35 @@ class KnowledgeBase(ABC):
         except Exception as e:
             logger.error(f"Error checking processing status for database {db_id}: {e}")
 
+    def find_existing_file_record(
+            self,
+            db_id: str,
+            *,
+            content_hash: str | None = None,
+            file_path: str | None = None,
+            statuses: tuple[str, ...] = ("processing", "done"),
+    ) -> tuple[str, dict] | None:
+        """
+        在指定知识库中查找已存在的文件记录，用于避免重复入库。
+
+        优先按 content_hash 匹配；若缺失则按 path 匹配。
+        """
+        normalized_path = os.path.normpath(file_path) if file_path else None
+        for fid, finfo in self.files_meta.items():
+            if finfo.get("database_id") != db_id:
+                continue
+            if statuses and finfo.get("status") not in statuses:
+                continue
+
+            if content_hash and finfo.get("content_hash") == content_hash:
+                return fid, finfo
+
+            if normalized_path:
+                existing_path = finfo.get("path")
+                if existing_path and os.path.normpath(str(existing_path)) == normalized_path:
+                    return fid, finfo
+        return None
+
     @abstractmethod
     async def delete_file(self, db_id: str, file_id: str) -> None:
         """
@@ -537,7 +566,12 @@ class KnowledgeBase(ABC):
 
             def make_retriever(db_id):
                 async def retriever(query_text: str = "", img_path: str = "", query_desc: str = ""):
-                    return await self.aquery(db_id, query_text, img_path, query_desc)
+                    return await self.aquery(
+                        db_id=db_id,
+                        query_text=query_text,
+                        img_path=img_path,
+                        query_desc=query_desc,
+                    )
 
                 return retriever
 

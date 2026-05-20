@@ -22,14 +22,23 @@
     <a-divider style="margin: 12px 0" />
 
     <a-row :gutter="12" style="margin-bottom: 10px;">
-      <a-col :span="8">
+      <a-col :span="6">
         <a-statistic title="低置信度占比" :value="qaStats?.low_confidence_rate || 0" suffix="%" />
       </a-col>
-      <a-col :span="8">
+      <a-col :span="6">
         <a-statistic title="契约失败率" :value="qaStats?.contract_fail_rate || 0" suffix="%" />
       </a-col>
-      <a-col :span="8">
+      <a-col :span="6">
         <a-statistic title="平均来源引用数" :value="qaStats?.avg_source_ref_count || 0" />
+      </a-col>
+      <a-col :span="6">
+        <a-statistic title="检索覆盖率" :value="qaStats?.retrieval_coverage_rate || 0" suffix="%" />
+      </a-col>
+    </a-row>
+
+    <a-row :gutter="12" style="margin-bottom: 10px;">
+      <a-col :span="24">
+        <a-statistic title="平均检索证据数" :value="qaStats?.avg_retrieval_evidence_count || 0" />
       </a-col>
     </a-row>
 

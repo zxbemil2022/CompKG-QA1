@@ -1,6 +1,10 @@
 import asyncio
+import json
+import os
 import re
 import traceback
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from typing import Annotated, Any
 
 from langchain_core.tools import StructuredTool, tool
@@ -98,6 +102,44 @@ def multimodal_image_understand(image_urls: list[str], subject: str = "") -> Any
         "summary": [f"{x['evidence_id']}: {x.get('description','')[:160]}" for x in bundle],
     }
 
+
+@tool
+def current_time_query(timezone_name: str = "UTC", days: int = 0) -> Any:
+    """查询当前时间、指定时区时间和可选日期偏移。timezone_name 示例：UTC/Asia/Shanghai/America/New_York。"""
+    try:
+        tz = ZoneInfo(timezone_name or "UTC")
+    except Exception:
+        tz = timezone.utc
+        timezone_name = "UTC"
+    now = datetime.now(tz)
+    target = now.replace()
+    if days:
+        from datetime import timedelta
+
+        target = now + timedelta(days=int(days))
+    return {
+        "timezone": timezone_name,
+        "now_iso": now.isoformat(),
+        "date": target.date().isoformat(),
+        "weekday": target.strftime("%A"),
+        "offset_days": days,
+    }
+
+
+@tool
+def rule_based_qa(query: str, subject: str = "") -> Any:
+    """规则问答：匹配项目固定 FAQ/评分/权限规则，未命中时返回 miss，供 Agent 决定是否转 RAG。"""
+    normalized = (query or "").strip().lower()
+    rules = [
+        {"keywords": ["证据", "引用", "来源"], "answer": "回答应优先引用 evidence_id、source_kb、文档片段或图谱三元组。"},
+        {"keywords": ["低置信", "不确定", "没有命中"], "answer": "当证据不足或低置信时，应明确说明未命中原因，并建议补充文档或切换检索范围。"},
+        {"keywords": ["408", "考研"], "answer": "408 问答应尽量限定学科：数据结构、操作系统、计算机网络、计算机组成原理。"},
+    ]
+    for rule in rules:
+        if any(keyword in normalized for keyword in rule["keywords"]):
+            return {"status": "hit", "subject": subject, "answer": rule["answer"], "matched_keywords": rule["keywords"]}
+    return {"status": "miss", "subject": subject, "answer": "未命中固定规则，可转入 RAG/图谱 Skill。"}
+
 def get_static_tools() -> list:
     """注册静态工具"""
     static_tools = [
@@ -107,6 +149,8 @@ def get_static_tools() -> list:
         kg_complete_and_fuse,
         graph_reasoning_visualization,
         multimodal_image_understand,
+        current_time_query,
+        rule_based_qa,
     ]
 
     # 检查是否启用网页搜索
@@ -213,6 +257,93 @@ def _safe_snippet(text: Any, max_len: int = 400) -> str:
     return t[:max_len]
 
 
+def _normalize_retriever_output(raw_docs: Any, source_db: str) -> list[dict[str, Any]]:
+    """统一解析不同知识库返回，避免多RAG融合时因数据结构差异丢证据。"""
+    normalized: list[dict[str, Any]] = []
+    if raw_docs is None:
+        return normalized
+
+    # LightRAG 有时返回 str（上下文文本），这里拆分为可引用片段
+    if isinstance(raw_docs, str):
+        text = raw_docs.strip()
+        if not text:
+            return normalized
+        paragraphs = [seg.strip() for seg in re.split(r"\n{2,}|[。！？]\s*", text) if seg and seg.strip()]
+        for seg in paragraphs[:8]:
+            normalized.append(
+                {
+                    "source_db": source_db,
+                    "source_kb": source_db,
+                    "content": _safe_snippet(seg),
+                    "raw": {"content": seg, "metadata": {"source": source_db, "chunk_id": f"{source_db}_seg_{len(normalized)+1}"}},
+                }
+            )
+        return normalized
+
+    if isinstance(raw_docs, dict):
+        raw_docs = raw_docs.get("results", []) or raw_docs.get("documents", []) or [raw_docs]
+    if not isinstance(raw_docs, list):
+        return normalized
+
+    for item in raw_docs[:12]:
+        if isinstance(item, str):
+            doc_text = item
+            metadata = {}
+        elif isinstance(item, dict):
+            doc_text = item.get("content") or item.get("text") or item.get("chunk") or item.get("doc") or ""
+            metadata = item.get("metadata") if isinstance(item.get("metadata"), dict) else {}
+        else:
+            continue
+        if not str(doc_text).strip():
+            continue
+        normalized.append(
+            {
+                "source_db": source_db,
+                "source_kb": source_db,
+                "content": _safe_snippet(doc_text),
+                "raw": item if isinstance(item, dict) else {"content": doc_text, "metadata": metadata},
+                "score": item.get("score") if isinstance(item, dict) else None,
+                "similarity": item.get("similarity") if isinstance(item, dict) else None,
+            }
+        )
+    return normalized
+
+
+def _build_evidence_contract(
+    evidence_id: str,
+    source_type: str,
+    source_kb: str,
+    payload: dict[str, Any],
+) -> dict[str, Any]:
+    raw = payload.get("raw") if isinstance(payload.get("raw"), dict) else {}
+    metadata = raw.get("metadata") if isinstance(raw.get("metadata"), dict) else {}
+    content = str(payload.get("content") or payload.get("triple") or "")
+    score = payload.get("score")
+    rerank_score = payload.get("rerank_score", payload.get("blended_score"))
+    similarity = payload.get("similarity")
+    confidence_base = rerank_score if rerank_score is not None else score if score is not None else similarity
+    try:
+        confidence = max(0.0, min(1.0, float(confidence_base))) if confidence_base is not None else 0.5
+    except (TypeError, ValueError):
+        confidence = 0.5
+
+    return {
+        "evidence_id": evidence_id,
+        "source_kb": source_kb,
+        "source_type": source_type,
+        "doc_id": metadata.get("full_doc_id") or metadata.get("file_id") or payload.get("doc_id") or "",
+        "chunk_id": metadata.get("chunk_id") or payload.get("chunk_id") or "",
+        "source_path": metadata.get("path") or metadata.get("source") or payload.get("source_path") or "",
+        "page": metadata.get("page") or payload.get("page"),
+        "content": _safe_snippet(content, max_len=500),
+        "score": score,
+        "rerank_score": rerank_score,
+        "similarity": similarity,
+        "confidence": round(float(confidence), 4),
+        "raw": raw if raw else payload.get("raw", {}),
+    }
+
+
 def _fallback_rerank_score(query: str, text: str) -> float:
     """无 cross-encoder 时的兜底 lexical score。"""
     q_tokens = set([t for t in re.split(r"[\s,，。；;:：]+", query.lower()) if t])
@@ -220,6 +351,61 @@ def _fallback_rerank_score(query: str, text: str) -> float:
     if not q_tokens:
         return 0.0
     return len(q_tokens & d_tokens) / len(q_tokens)
+
+
+def _extract_query_terms(query: str) -> list[str]:
+    """提取查询关键术语，用于轻量语义约束与去噪。"""
+    if not query:
+        return []
+    lowered = query.lower()
+    terms = re.findall(r"[A-Za-z][A-Za-z0-9\-/]{1,}", lowered)
+    domain_phrases = [
+        "物理层",
+        "数据链路层",
+        "网络层",
+        "传输层",
+        "应用层",
+        "osi",
+        "tcp/ip",
+        "协议",
+        "分层",
+        "拥塞控制",
+        "路由",
+        "寻址",
+        "dns",
+        "http",
+    ]
+    terms.extend([p for p in domain_phrases if p in lowered])
+    stop_terms = {
+        "什么",
+        "如何",
+        "为什么",
+        "哪个",
+        "怎么",
+        "概念",
+        "定义",
+        "介绍",
+        "一下",
+        "计算机",
+        "网络",
+    }
+    deduped: list[str] = []
+    for term in terms:
+        if term in stop_terms:
+            continue
+        if term not in deduped:
+            deduped.append(term)
+    return deduped[:10]
+
+
+def _keyword_hit_ratio(query_terms: list[str], text: str) -> float:
+    if not query_terms:
+        return 0.0
+    normalized_text = (text or "").lower()
+    if not normalized_text:
+        return 0.0
+    hit_count = sum(1 for term in query_terms if term in normalized_text)
+    return hit_count / max(1, len(query_terms))
 
 
 def _build_prompt_template(
@@ -261,27 +447,87 @@ async def _hybrid_retrieve(query: str, subject: str = "") -> dict[str, Any]:
     """
     Graph + Vector 融合 + Rerank（cross-encoder）
     """
-    graph_result = graph_base.query_node(query, hops=2, return_format="triples", subject=subject or None)
+    cleaned_query = re.sub(r"[\*\[\]\(\)\"'`]+", " ", query or "").strip()
+    graph_query = cleaned_query or query
+    graph_result = graph_base.query_node(graph_query, hops=2, return_format="triples", subject=subject or None)
     graph_triples = graph_result.get("triples", []) if isinstance(graph_result, dict) else []
 
     vector_docs: list[dict[str, Any]] = []
+    normalized_query = re.sub(r"[^\u4e00-\u9fffA-Za-z0-9_]+", " ", query or "").strip()
+    query_variants = []
+    for q in [query, normalized_query]:
+        if q and q not in query_variants:
+            query_variants.append(q)
+    # 主题增强：提升“物理层/协议层/概念定义类”问法召回稳定性
+    keyword_terms = _extract_query_terms(query)
+    if keyword_terms:
+        boosted_query = " ".join(keyword_terms + ["定义", "原理", "作用"])
+        if boosted_query not in query_variants:
+            query_variants.append(boosted_query)
+
     retrievers = knowledge_base.get_retrievers()
+    retrieve_timeout = float(os.getenv("RAG_RETRIEVE_TIMEOUT_SEC", "12"))
+    retrieval_trace: list[dict[str, Any]] = []
     for db_id, info in retrievers.items():
         retriever = info.get("retriever")
         if retriever is None:
             continue
+        trace_item = {
+            "db_id": db_id,
+            "kb_type": str((info.get("metadata") or {}).get("kb_type", "unknown")),
+            "called": False,
+            "latency_ms": 0,
+            "hit_count": 0,
+            "status": "init",
+            "retrieval_skipped_reason": "",
+        }
+        db_meta = info.get("metadata", {}) if isinstance(info.get("metadata"), dict) else {}
+        db_info = knowledge_base.get_database_info(db_id) or {}
+        files_meta = db_info.get("files", {}) if isinstance(db_info.get("files"), dict) else {}
+        if not files_meta:
+            trace_item["status"] = "skip_empty"
+            trace_item["retrieval_skipped_reason"] = "no_files_indexed"
+            retrieval_trace.append(trace_item)
+            continue
         try:
-            if asyncio.iscoroutinefunction(retriever):
-                docs = await retriever(query, "", "")
-            else:
-                docs = retriever(query, "", "")
-            if isinstance(docs, list):
-                for d in docs[:8]:
-                    vector_docs.append(
-                        {"source_db": db_id, "content": _safe_snippet(d), "raw": d}
-                    )
+            db_candidates: list[dict[str, Any]] = []
+            kb_type = str(db_meta.get("kb_type", "")).lower()
+            for query_item in query_variants:
+                begin = asyncio.get_running_loop().time()
+                trace_item["called"] = True
+                if asyncio.iscoroutinefunction(retriever):
+                    try:
+                        docs = await asyncio.wait_for(retriever(query_item, "", ""), timeout=retrieve_timeout)
+                    except TypeError:
+                        docs = await asyncio.wait_for(
+                            retriever(query_text=query_item, img_path="", query_desc=""),
+                            timeout=retrieve_timeout,
+                        )
+                else:
+                    try:
+                        docs = await asyncio.to_thread(retriever, query_item, "", "")
+                    except TypeError:
+                        docs = await asyncio.to_thread(retriever, query_text=query_item, img_path="", query_desc="")
+                        trace_item["latency_ms"] += int((asyncio.get_running_loop().time() - begin) * 1000)
+
+                normalized_docs = _normalize_retriever_output(docs, source_db=db_id)
+                # 向量库优先保留相似度更高候选，图谱上下文保留更多片段供引用
+                candidate_limit = 10 if kb_type == "chroma" else 6
+                if normalized_docs:
+                    db_candidates.extend(normalized_docs[:candidate_limit])
+
+                if len(db_candidates) >= 8:
+                    break
+
+            if db_candidates:
+                vector_docs.extend(db_candidates[:8])
+            trace_item["hit_count"] = len(db_candidates[:8])
+            trace_item["status"] = "ok" if db_candidates else "miss"
         except Exception as e:
             logger.warning(f"Hybrid retrieve vector db failed: {db_id}, error={e}")
+            trace_item["status"] = "failed"
+            trace_item["retrieval_skipped_reason"] = str(e)
+        retrieval_trace.append(trace_item)
 
     # Rerank
     reranked_docs = []
@@ -299,8 +545,23 @@ async def _hybrid_retrieve(query: str, subject: str = "") -> dict[str, Any]:
             scores = [_fallback_rerank_score(query, d["content"]) for d in vector_docs]
 
         for item, score in zip(vector_docs, scores):
-            reranked_docs.append({**item, "score": float(score)})
-        reranked_docs = sorted(reranked_docs, key=lambda x: x["score"], reverse=True)
+            lexical_score = _fallback_rerank_score(query, item["content"])
+            keyword_ratio = _keyword_hit_ratio(keyword_terms, item["content"])
+            blended = 0.6 * float(score) + 0.25 * lexical_score + 0.15 * keyword_ratio
+            reranked_docs.append(
+                {
+                    **item,
+                    "score": float(score),
+                    "lexical_score": round(float(lexical_score), 4),
+                    "keyword_hit_ratio": round(float(keyword_ratio), 4),
+                    "blended_score": round(float(blended), 4),
+                }
+            )
+        reranked_docs = sorted(reranked_docs, key=lambda x: x["blended_score"], reverse=True)
+        # 轻量过滤：保留至少部分命中查询关键词的证据，减少跨学科噪声（如 C++ 文档串入）
+        filtered_docs = [doc for doc in reranked_docs if doc.get("keyword_hit_ratio", 0.0) >= 0.1]
+        if filtered_docs:
+            reranked_docs = filtered_docs
 
     # Agent 自动推理路径 + 知识点推导链（可解释结构）
     reasoning_path = []
@@ -317,20 +578,35 @@ async def _hybrid_retrieve(query: str, subject: str = "") -> dict[str, Any]:
 
     graph_evidence = []
     for idx, triple in enumerate(graph_triples[:20], 1):
-        graph_evidence.append({"evidence_id": f"G{idx:03d}", "triple": triple, "source_kb": "neo4j_graph"})
+        evidence = _build_evidence_contract(
+            evidence_id=f"G{idx:03d}",
+            source_type="graph",
+            source_kb="neo4j_graph",
+            payload={"triple": triple, "content": str(triple)},
+        )
+        evidence["triple"] = triple
+        graph_evidence.append(evidence)
 
     vector_evidence = []
     for idx, doc in enumerate(reranked_docs[:8], 1):
-        vector_evidence.append({"evidence_id": f"V{idx:03d}", **doc})
+        vector_evidence.append(
+            _build_evidence_contract(
+                evidence_id=f"V{idx:03d}",
+                source_type="vector",
+                source_kb=str(doc.get("source_db") or "unknown_kb"),
+                payload=doc,
+            )
+        )
 
     return {
         "graph_triples": graph_triples[:20],
         "vector_docs": reranked_docs[:8],
         "graph_evidence": graph_evidence,
         "vector_evidence": vector_evidence,
-        "used_knowledge_bases": sorted(list({d["source_db"] for d in reranked_docs})),
+        "used_knowledge_bases": sorted(list({d["source_db"] for d in reranked_docs} | ({"neo4j_graph"} if graph_triples else set()))),
         "reasoning_path": reasoning_path,
         "derivation_chain": derivation_chain or "暂无可推导链",
+        "retrieval_trace": retrieval_trace,
     }
 
 
@@ -396,6 +672,24 @@ async def adaptive_graph_rag_qa(
             vector_docs=retrieval["vector_docs"],
         )
 
+        learning_path_recommendation: list[str] = []
+        knowledge_association_analysis: dict[str, Any] = {"neighbors": [], "relation_distribution": {}}
+        graph_concept = re.sub(r"[\*\[\]\(\)\"'`]+", " ", query or "").strip() or query
+        try:
+            learning_path_recommendation = graph_base.recommend_learning_path(
+                concept=graph_concept,
+                subject=chapter_route["subject"] if chapter_route["subject"] != "综合" else (subject or None),
+            )
+        except Exception as graph_err:
+            logger.warning(f"recommend_learning_path failed: {graph_err}")
+        try:
+            knowledge_association_analysis = graph_base.analyze_knowledge_association(
+                concept=graph_concept,
+                subject=chapter_route["subject"] if chapter_route["subject"] != "综合" else (subject or None),
+            )
+        except Exception as graph_err:
+            logger.warning(f"analyze_knowledge_association failed: {graph_err}")
+
         return {
             "strategy": strategy,
             "subject": subject or "all",
@@ -406,17 +700,12 @@ async def adaptive_graph_rag_qa(
             "used_knowledge_bases": retrieval.get("used_knowledge_bases", []),
             "reasoning_path": retrieval["reasoning_path"],
             "derivation_chain": retrieval["derivation_chain"],
+            "retrieval_trace": retrieval.get("retrieval_trace", []),
             "accuracy_analysis": _analyze_answer_confidence(
                 retrieval["graph_triples"], retrieval["vector_docs"]
             ),
-            "learning_path_recommendation": graph_base.recommend_learning_path(
-                concept=query,
-                subject=chapter_route["subject"] if chapter_route["subject"] != "综合" else (subject or None),
-            ),
-            "knowledge_association_analysis": graph_base.analyze_knowledge_association(
-                concept=query,
-                subject=chapter_route["subject"] if chapter_route["subject"] != "综合" else (subject or None),
-            ),
+            "learning_path_recommendation": learning_path_recommendation,
+            "knowledge_association_analysis": knowledge_association_analysis,
             "llm_fallback_answer": _llm_fallback_answer(query, subject, prompt)
             if len(retrieval["graph_triples"]) == 0 and len(retrieval["vector_docs"]) == 0
             else "",

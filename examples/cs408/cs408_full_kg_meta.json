@@ -1,31 +1,29 @@
 {
-  "node_count": 980,
-  "edge_count": 4810,
+  "generation_mode": "semantic_curated",
+  "node_count": 1126,
+  "edge_count": 1,
   "subject_count": 4,
   "subjects": [
-    "数据结构",
     "操作系统",
-    "计算机网络",
-    "计算机组成原理"
-  ],
-  "allowed_entity_types": [
-    "Course",
-    "Chapter",
-    "Concept",
-    "Method",
-    "Property",
-    "Formula",
-    "Example"
+    "数据结构",
+    "计算机组成原理",
+    "计算机网络"
   ],
   "allowed_relations": [
+    "APPLIES_TO",
     "BELONGS_TO",
-    "HAS_SUB",
+    "CAUSE",
+    "DEPENDS_ON",
+    "EQUIVALENT",
+    "HAS_COMPLEXITY",
     "HAS_METHOD",
     "HAS_PROPERTY",
-    "HAS_COMPLEXITY",
+    "HAS_SUB",
+    "MEASURED_BY",
+    "OPTIMIZED_BY",
     "PREREQUISITE",
-    "CAUSE",
+    "SOLVES",
     "USED_IN",
-    "EQUIVALENT"
+    "VERIFIED_BY"
   ]
 }

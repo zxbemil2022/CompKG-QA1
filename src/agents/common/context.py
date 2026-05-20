@@ -73,9 +73,10 @@ class BaseContext:
         """Save configuration to a YAML file 用于持久化配置"""
 
         configurable_items = cls.get_configurable_items()
+        persisted_field_names = {f.name for f in fields(cls) if f.init}
         configurable_config = {}
         for k, v in config.items():
-            if k in configurable_items:
+            if k in configurable_items or k in persisted_field_names:
                 configurable_config[k] = v
 
         try:

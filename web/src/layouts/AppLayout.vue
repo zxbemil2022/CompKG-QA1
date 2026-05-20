@@ -5,7 +5,7 @@ import {
   GithubOutlined,
   ExclamationCircleOutlined,
 } from '@ant-design/icons-vue'
-import { Bot, Waypoints, LibraryBig, Settings, BarChart3, BookOpen, ListChecks } from 'lucide-vue-next';
+import {Bot, Waypoints, LibraryBig, Settings, BarChart3, BookOpen, ListChecks, Sparkles} from 'lucide-vue-next';
 import { onLongPress } from '@vueuse/core'
 
 import { useConfigStore } from '@/stores/config'
@@ -110,6 +110,16 @@ const mainList = [{
     path: '/database',
     icon: LibraryBig,
     activeIcon: LibraryBig,
+  }, {
+    name: 'Dashboard',
+    path: '/dashboard',
+    icon: BarChart3,
+    activeIcon: BarChart3,
+  }, {
+    name: 'Skill中心',
+    path: '/skill-center',
+    icon: Sparkles,
+    activeIcon: Sparkles,
   }
   // , {
   //   name: 'Dashboard',

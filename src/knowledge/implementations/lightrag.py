@@ -195,7 +195,7 @@ class LightRagKB(KnowledgeBase):
         rag = LightRAG(
             working_dir=working_dir,
             workspace=db_id,
-            llm_model_func=self._get_llm_func(llm_info),
+            llm_model_func=self._get_llm_func(llm_info, db_id=db_id),
             embedding_func=self._get_embedding_func(embed_info),
             vector_storage="FaissVectorDBStorage",
             kv_storage="JsonKVStorage",
@@ -236,9 +236,10 @@ class LightRagKB(KnowledgeBase):
             logger.error(f"Traceback: {traceback.format_exc()}")
             return None
 
-    def _get_llm_func(self, llm_info: dict):
+    def _get_llm_func(self, llm_info: dict, db_id: str | None = None):
         """获取 LLM 函数"""
         from src.models import select_model
+        from src import config as app_config
 
         # 如果用户选择了LLM，使用用户选择的；否则使用环境变量默认值
         if llm_info and llm_info.get("model_spec"):
@@ -254,17 +255,68 @@ class LightRagKB(KnowledgeBase):
             logger.info(f"Using default LLM from environment: {provider}/{model_name}")
 
         model = select_model(model_spec=model_spec)
+        active_model = {"spec": model_spec, "client": model}
+
+        fallback_specs: list[str] = []
+        default_spec = str(getattr(app_config, "default_model", "") or "").strip()
+        if default_spec and default_spec != model_spec:
+            fallback_specs.append(default_spec)
+        # 兜底补充一个已知稳定模型，防止配置中仍残留已停服模型
+        if "siliconflow/deepseek-ai/DeepSeek-V3.2-Exp" not in fallback_specs:
+            fallback_specs.append("siliconflow/deepseek-ai/DeepSeek-V3.2-Exp")
 
         async def llm_model_func(prompt, system_prompt=None, history_messages=[], **kwargs):
-            return await openai_complete_if_cache(
-                model=model.model_name,
-                prompt=prompt,
-                system_prompt=system_prompt,
-                history_messages=history_messages,
-                api_key=model.api_key,
-                base_url=model.base_url,
-                **kwargs,
-            )
+            try:
+                return await openai_complete_if_cache(
+                    model=active_model["client"].model_name,
+                    prompt=prompt,
+                    system_prompt=system_prompt,
+                    history_messages=history_messages,
+                    api_key=active_model["client"].api_key,
+                    base_url=active_model["client"].base_url,
+                    **kwargs,
+                )
+            except Exception as e:  # noqa: BLE001
+                err_text = str(e)
+                disabled_markers = [
+                    "Model disabled",
+                    '"code": 30003',
+                    "code': 30003",
+                    "model_not_found",
+                    "does not exist",
+                ]
+                if not any(marker in err_text for marker in disabled_markers):
+                    raise
+
+                logger.warning(
+                    f"LightRAG LLM({active_model['spec']}) unavailable, trying fallbacks: {fallback_specs}. error={err_text}"
+                )
+                for fallback_spec in fallback_specs:
+                    if not fallback_spec or fallback_spec == active_model["spec"]:
+                        continue
+                    try:
+                        fallback_model = select_model(model_spec=fallback_spec)
+                        response = await openai_complete_if_cache(
+                            model=fallback_model.model_name,
+                            prompt=prompt,
+                            system_prompt=system_prompt,
+                            history_messages=history_messages,
+                            api_key=fallback_model.api_key,
+                            base_url=fallback_model.base_url,
+                            **kwargs,
+                        )
+                        active_model["spec"] = fallback_spec
+                        active_model["client"] = fallback_model
+                        if db_id and db_id in self.databases_meta:
+                            llm_meta = self.databases_meta[db_id].setdefault("llm_info", {})
+                            llm_meta["model_spec"] = fallback_spec
+                            self._save_metadata()
+                        logger.info(f"LightRAG LLM fallback succeeded: {fallback_spec}")
+                        return response
+                    except Exception as fallback_err:  # noqa: BLE001
+                        logger.warning(f"LightRAG LLM fallback failed: {fallback_spec}, err={fallback_err}")
+                        continue
+                raise
 
         return llm_model_func
 
@@ -370,7 +422,7 @@ class LightRagKB(KnowledgeBase):
 
         embedding_func = EmbeddingFunc(
             embedding_dim=embedding_state["dimension"],
-            max_token_size=4096,
+            max_token_size=4090,
             func=custom_embed,
         )
         return embedding_func
@@ -766,29 +818,98 @@ class LightRagKB(KnowledgeBase):
         finally:
             self._remove_from_processing_queue(file_id)
 
-    async def aquery(self, query_text: str, db_id: str, **kwargs) -> str:
-        """异步查询知识库"""
-        rag = await self._get_lightrag_instance(db_id)
-        if not rag:
-            raise ValueError(f"Database {db_id} not found")
+    # ==========================
+    # ✅ 双引擎联合查询：向量 + 图谱
+    # ==========================
+    async def query_hybrid(self, db_id: str, query_text: str, **kwargs) -> dict:
+        """
+        双引擎联合查询：
+        1. 向量检索：文档片段
+        2. 图谱检索：关系/路径/实体
+        3. 返回融合结果
+        """
+        result = {
+            "vector_context": "",
+            "graph_triples": [],
+            "graph_nodes": [],
+            "combined_context": "",
+        }
+
+        # ----------------------
+        # 1. 向量检索
+        # ----------------------
+        try:
+            rag = await self._get_lightrag_instance(db_id)
+            if rag:
+                param = QueryParam(mode="mix", only_need_context=True, top_k=8)
+                vector_context = await rag.aquery(query_text, param)
+                result["vector_context"] = vector_context
+        except Exception as e:
+            logger.warning(f"向量检索跳过: {e}")
+
+        # ----------------------
+        # 2. Neo4j 图谱检索
+        # ----------------------
+        try:
+            neo4j_uri, user, pwd = _get_neo4j_connection_config()
+            with GraphDatabase.driver(neo4j_uri, auth=(user, pwd)) as driver:
+                with driver.session() as session:
+                    # 实体模糊匹配
+                    entity_res = session.run("""
+                        MATCH (n:Entity {workspace: $ws})
+                        WHERE toLower(n.name) CONTAINS toLower($q)
+                        RETURN n.name AS name LIMIT 8
+                    """, ws=db_id, q=query_text.lower())
+                    entities = [r["name"] for r in entity_res]
+
+                    # 查询关系路径
+                    if entities:
+                        trip_res = session.run("""
+                            MATCH (a:Entity {workspace: $ws})-[r]->(b:Entity {workspace: $ws})
+                            WHERE a.name IN $ents OR b.name IN $ents
+                            RETURN a.name AS h, type(r) AS rel, b.name AS t LIMIT 10
+                        """, ws=db_id, ents=entities)
+                        triples = [(r["h"], r["rel"], r["t"]) for r in trip_res]
+                        result["graph_triples"] = triples
+                        result["graph_nodes"] = entities
+        except Exception as e:
+            logger.warning(f"图谱检索跳过: {e}")
+
+        # ----------------------
+        # 3. 融合上下文
+        # ----------------------
+        parts = []
+        if result["vector_context"]:
+            parts.append(f"文档资料：\n{result['vector_context']}")
+        if result["graph_triples"]:
+            graph_text = "\n".join([f"- {h} {rel} {t}" for h, rel, t in result["graph_triples"]])
+            parts.append(f"知识图谱：\n{graph_text}")
+
+        result["combined_context"] = "\n\n".join(parts) if parts else "无检索结果"
+        return result
+
+    async def aquery(
+            self,
+            db_id: str | None = None,
+            query_text: str = "",
+            img_path: str = "",
+            query_desc: str = "",
+            **kwargs,
+    ) -> str:
+        """异步查询知识库（兼容 db_id/query_text 不同历史参数顺序）。"""
+        # 历史兼容：若调用侧传参顺序为 aquery(query_text, db_id, ...)
+        if isinstance(db_id, str) and db_id and not db_id.startswith("kb_") and isinstance(query_text, str) and query_text.startswith("kb_"):
+            db_id, query_text = query_text, db_id
+        if not db_id:
+            raise ValueError("Database id is required")
 
         try:
-            # 设置查询参数
-            params_dict = {
-                              "mode": "mix",
-                              "only_need_context": True,
-                              "top_k": 10,
-                          } | kwargs
-            param = QueryParam(**params_dict)
-
-            # 执行查询
-            response = await rag.aquery(query_text, param)
-            logger.debug(f"Query response: {response}")
-
-            return response
+            # ✅ 直接调用双引擎查询
+            hybrid = await self.query_hybrid(db_id=db_id, query_text=query_text)
+            return hybrid["combined_context"]
 
         except Exception as e:
-            logger.error(f"Query error: {e}, {traceback.format_exc()}")
+            logger.error(f"Hybrid query error: {e}, {traceback.format_exc()}")
             return ""
 
     async def delete_file(self, db_id: str, file_id: str) -> None:

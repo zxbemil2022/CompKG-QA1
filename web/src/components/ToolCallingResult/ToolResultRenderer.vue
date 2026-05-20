@@ -100,6 +100,17 @@ const isWebSearchResult = computed(() => {
 
 // 判断是否为知识库检索结果
 const isKnowledgeBaseResult = computed(() => {
+  const data = parsedData.value
+  const looksLikeKbChunks = Array.isArray(data) &&
+    data.length > 0 &&
+    data.every(item =>
+      item &&
+      typeof item === 'object' &&
+      'content' in item &&
+      (('score' in item) || ('similarity' in item)) &&
+      'metadata' in item
+    )
+
   // 首先检查工具的 metadata
   const currentTool = tool.value
   if (currentTool && currentTool.metadata) {
@@ -108,20 +119,12 @@ const isKnowledgeBaseResult = computed(() => {
     const isNotLightrag = metadata.kb_type !== 'lightrag'
 
     if (hasKnowledgebaseTag && isNotLightrag) {
-      const data = parsedData.value
-      return Array.isArray(data) &&
-             data.length > 0 &&
-             data.every(item =>
-               item &&
-               typeof item === 'object' &&
-               'content' in item &&
-               'score' in item &&
-               'metadata' in item
-             )
+      return looksLikeKbChunks
     }
   }
 
-  return false
+  // 回退：工具元信息缺失时，按结果结构识别，避免前端不展示知识库卡片
+  return looksLikeKbChunks
 })
 
 const isImageResult = computed(() => {

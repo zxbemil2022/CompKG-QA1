@@ -233,7 +233,7 @@ const modelMatched = computed(() => !graphInfo?.value?.embed_model_name || graph
 const graphRef = ref(null)
 const graphInfo = ref(null)
 const fileList = ref([]);
-const sampleNodeCount = ref(100);
+const sampleNodeCount = ref(300);
 const graphData = reactive({
   nodes: [],
   edges: [],
@@ -273,10 +273,19 @@ const state = reactive({
   showPage: true,
 })
 
+const SUBJECT_DISPLAY_ORDER = ['数据结构', '计算机组成原理', '计算机网络', '操作系统'];
+
 const subjectOptions = computed(() => {
   const options = [{ value: '', label: '全部学科（总图谱）' }];
+  const subjectCountMap = new Map();
   for (const item of state.subjects) {
-    options.push({ value: item.subject, label: `${item.subject} (${item.count})` });
+     const subjectName = String(item?.subject || '').trim();
+    if (!subjectName) continue;
+    const count = Number(item?.count || 0);
+    subjectCountMap.set(subjectName, (subjectCountMap.get(subjectName) || 0) + count);
+  }
+  for (const subjectName of SUBJECT_DISPLAY_ORDER) {
+    options.push({ value: subjectName, label: `${subjectName} (${subjectCountMap.get(subjectName) || 0})` });
   }
   return options;
 });
@@ -533,7 +542,7 @@ const autoBuildComputerKG = () => {
 
   state.autoBuilding = true;
   neo4jApi.autoBuildComputerKG({
-    file_path: 'examples/cs408/cs408_auto_sample.json',
+    file_path: 'examples/cs408/cs408_full_kg_triples.jsonl',
     clear_existing: false,
   })
     .then((data) => {
@@ -594,7 +603,11 @@ const loadBuiltinFullKG = () => {
   }
 
   state.loadingBuiltinKG = true;
-  neo4jApi.addEntities('examples/cs408/cs408_expert_seed.jsonl', 'neo4j', true)
+  neo4jApi.importCS408FullKG({
+    file_path: 'examples/cs408/cs408_full_kg_triples.jsonl',
+    clear_existing: true,
+    skip_embedding: true,
+  })
     .then((data) => {
       if (data.status !== 'success') {
         throw new Error(data.message || '内置专家图谱导入失败');
@@ -622,7 +635,21 @@ const loadSubjects = () => {
   state.loadingSubjects = true;
   neo4jApi.getSubjects('neo4j')
     .then((data) => {
-      state.subjects = data?.data?.subjects || [];
+      const rawSubjects = data?.data?.subjects || [];
+      const subjectCountMap = new Map();
+      for (const item of rawSubjects) {
+        const subjectName = String(item?.subject || '').trim();
+        if (!SUBJECT_DISPLAY_ORDER.includes(subjectName)) continue;
+        const count = Number(item?.count || 0);
+        subjectCountMap.set(subjectName, (subjectCountMap.get(subjectName) || 0) + count);
+      }
+      state.subjects = SUBJECT_DISPLAY_ORDER.map(subjectName => ({
+        subject: subjectName,
+        count: subjectCountMap.get(subjectName) || 0,
+      }));
+      if (state.selectedSubject && !SUBJECT_DISPLAY_ORDER.includes(state.selectedSubject)) {
+        state.selectedSubject = '';
+      }
     })
     .catch((error) => {
       console.error(error);

@@ -8,11 +8,11 @@
     </div>
 
     <div class="kb-results">
-      <div
-        v-for="fileGroup in fileGroups"
-        :key="fileGroup.filename"
-        class="file-group"
-      >
+        <div
+          v-for="fileGroup in fileGroups"
+          :key="fileGroup.filename"
+          class="file-group"
+        >
         <!-- 文件级别的头部 -->
         <div
           class="file-header"
@@ -23,6 +23,7 @@
             <FileOutlined />
             <span class="file-name">{{ fileGroup.filename }}</span>
             <span class="chunk-count">{{ fileGroup.chunks.length }} chunks</span>
+            <span class="chunk-count">平均分 {{ fileGroup.avgScore }}%</span>
           </div>
           <div class="expand-icon">
             <DownOutlined :class="{ 'rotated': expandedFiles.has(fileGroup.filename) }" />
@@ -128,18 +129,25 @@ const fileGroups = computed(() => {
   const groups = new Map()
 
   props.data.forEach(item => {
-    const filename = item.metadata.source
+    const metadata = item?.metadata || {}
+    const filename = metadata.source || metadata.path || metadata.file_name || metadata.file_id || 'unknown_source'
     if (!groups.has(filename)) {
       groups.set(filename, {
         filename,
-        chunks: []
+        chunks: [],
+        totalScore: 0
       })
     }
     groups.get(filename).chunks.push(item)
+    const score = Number(item.score ?? item.similarity ?? item.rerank_score ?? 0)
+    groups.get(filename).totalScore += Number.isFinite(score) ? score : 0
   })
 
   // 转换为数组并按文件名排序
-  return Array.from(groups.values()).sort((a, b) => a.filename.localeCompare(b.filename))
+  return Array.from(groups.values()).map(group => ({
+    ...group,
+    avgScore: Math.round((group.totalScore / Math.max(1, group.chunks.length)) * 100)
+  })).sort((a, b) => a.filename.localeCompare(b.filename))
 })
 
 // 切换文件展开/折叠状态
@@ -162,6 +170,7 @@ const showChunkDetail = (chunk, index) => {
 
 // 获取预览文本
 const getPreviewText = (text) => {
+  if (!text) return ''
   if (text.length <= 100) return text
   return text.substring(0, 100) + '...'
 }
